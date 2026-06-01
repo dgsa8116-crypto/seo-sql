@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dgsa8116-crypto.github.io/seo-sql/sitemap.xml

@@ -1,0 +1,114 @@
+export const keywordSeeds = [
+  {
+    keyword: "百家樂規則",
+    category: "rules",
+    searchIntent: "了解遊戲基本規則",
+    suggestedPageType: "規則指南",
+    sensitivityLevel: "Low",
+    complianceRisk: "低；教育型查詢",
+    recommendedUsage: "可用於規則頁標題、導言與 FAQ。",
+    relatedLongTailKeywords: ["百家樂規則教學", "百家樂牌值怎麼算", "百家樂第三張牌規則"]
+  },
+  {
+    keyword: "百家樂新手教學",
+    category: "beginner",
+    searchIntent: "新手入門學習",
+    suggestedPageType: "新手指南",
+    sensitivityLevel: "Low",
+    complianceRisk: "低；以入門教育為主",
+    recommendedUsage: "可用於新手頁 H1、摘要與內部連結錨點。",
+    relatedLongTailKeywords: ["百家樂入門指南", "百家樂常見錯誤", "百家樂新手注意事項"]
+  },
+  {
+    keyword: "百家樂牌值計算",
+    category: "rules",
+    searchIntent: "查詢牌面點數計算方式",
+    suggestedPageType: "規則指南",
+    sensitivityLevel: "Low",
+    complianceRisk: "低；純規則說明",
+    recommendedUsage: "適合用於規則頁的小節標題與 FAQ。",
+    relatedLongTailKeywords: ["百家樂點數怎麼看", "百家樂 10 點怎麼算", "百家樂 A 牌點數"]
+  },
+  {
+    keyword: "百家樂第三張牌規則",
+    category: "rules",
+    searchIntent: "理解補牌流程",
+    suggestedPageType: "規則指南",
+    sensitivityLevel: "Low",
+    complianceRisk: "低；規則解釋",
+    recommendedUsage: "可放在規則頁與術語頁，避免宣稱可預測結果。",
+    relatedLongTailKeywords: ["百家樂補牌規則", "莊家第三張牌", "閒家補牌條件"]
+  },
+  {
+    keyword: "百家樂術語",
+    category: "terminology",
+    searchIntent: "查詢遊戲名詞",
+    suggestedPageType: "術語指南",
+    sensitivityLevel: "Low",
+    complianceRisk: "低；資訊整理",
+    recommendedUsage: "適合建立術語頁與 FAQ 內部連結。",
+    relatedLongTailKeywords: ["百家樂莊閒和意思", "百家樂常見名詞", "百家樂投注選項說明"]
+  },
+  {
+    keyword: "責任娛樂",
+    category: "responsible",
+    searchIntent: "了解風險與自我控管",
+    suggestedPageType: "責任娛樂頁",
+    sensitivityLevel: "Low",
+    complianceRisk: "低；合規與風險提醒",
+    recommendedUsage: "應出現在首頁、頁尾、FAQ、條款與指南頁。",
+    relatedLongTailKeywords: ["娛樂風險提醒", "量力而為娛樂", "法定年齡提醒"]
+  },
+  {
+    keyword: "百家樂下注流程",
+    category: "betting-flow",
+    searchIntent: "了解投注步驟與選項",
+    suggestedPageType: "下注流程指南",
+    sensitivityLevel: "Medium",
+    complianceRisk: "中；需搭配風險聲明，不可鼓勵加碼",
+    recommendedUsage: "可用於下注指南頁，但需加入結果不確定與量力而為提醒。",
+    relatedLongTailKeywords: ["百家樂下注教學", "百家樂下注選項", "百家樂流程說明"]
+  },
+  {
+    keyword: "莊閒和說明",
+    category: "betting-flow",
+    searchIntent: "比較常見投注選項",
+    suggestedPageType: "下注流程指南",
+    sensitivityLevel: "Medium",
+    complianceRisk: "中；需避免暗示特定選項必勝",
+    recommendedUsage: "可作為表格或 FAQ 條目，不用於誇大 CTA。",
+    relatedLongTailKeywords: ["百家樂莊家意思", "百家樂閒家意思", "百家樂和局意思"]
+  },
+  {
+    keyword: "百家樂勝率",
+    category: "restricted-copy",
+    searchIntent: "尋找結果或機率相關資訊",
+    suggestedPageType: "僅供人工審核",
+    sensitivityLevel: "High",
+    complianceRisk: "高；容易被誤寫成收益或保證結果",
+    recommendedUsage: "不得自動放入標題、描述或 H1；如需使用，只能在風險教育脈絡下人工審核。",
+    relatedLongTailKeywords: ["百家樂機率", "百家樂賠率風險", "百家樂結果不確定"]
+  },
+  {
+    keyword: "百家樂必勝法",
+    category: "restricted-copy",
+    searchIntent: "尋找保證獲利或不當策略",
+    suggestedPageType: "禁止自動使用",
+    sensitivityLevel: "Restricted",
+    complianceRisk: "限制；涉及誤導性收益暗示",
+    recommendedUsage: "不得自動使用；內容中應明確否定保證獲勝說法。",
+    relatedLongTailKeywords: ["包贏方法", "穩賺技巧", "保證獲利"]
+  },
+  {
+    keyword: "博弈漏洞",
+    category: "restricted-copy",
+    searchIntent: "尋找繞過或利用平台的方法",
+    suggestedPageType: "禁止使用",
+    sensitivityLevel: "Restricted",
+    complianceRisk: "限制；可能涉及違規或非法行為",
+    recommendedUsage: "不得使用於 SEO、自動推薦或頁面內容。",
+    relatedLongTailKeywords: ["平台漏洞", "繞過限制", "非法套利"]
+  }
+];
+
+export const safeSensitivityLevels = new Set(["Low", "Medium"]);

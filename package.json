@@ -1,0 +1,16 @@
+{
+  "name": "prelanding-github-pages",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A static Traditional Chinese educational pre-landing website with SEO automation for GitHub Pages.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "seo:update": "node scripts/build.mjs",
+    "validate": "node scripts/validate.mjs",
+    "check": "node scripts/build.mjs && node scripts/validate.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
