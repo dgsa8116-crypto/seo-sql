@@ -582,7 +582,7 @@ function renderUpcomingMatchCard(event) {
     <span>${escapeHtml(event.league || "賽事")}</span>
     <strong>${escapeHtml(event.status || "追蹤中")}</strong>
   </div>
-  <h3>${escapeHtml(event.matchup || `${awayName} @ ${homeName}`)}</h3>
+  <h3>${escapeHtml(event.matchup || `${awayName} vs ${homeName}`)}</h3>
   <div class="match-meta">
     <span>${escapeHtml(event.time || "")}</span>
     <span>${escapeHtml(event.venue || "")}</span>

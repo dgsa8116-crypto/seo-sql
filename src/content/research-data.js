@@ -47,16 +47,16 @@ export const sportsResearchBoard = {
       league: "NHL",
       status: "即將開賽",
       time: "06/06 20:00 ET｜台灣 06/07 08:00",
-      matchup: "Carolina Hurricanes @ Vegas Golden Knights",
-      awayTeam: "Carolina Hurricanes",
-      homeTeam: "Vegas Golden Knights",
-      venue: "T-Mobile Arena｜Vegas 主場",
-      sourceNote: "NHL 公開賽程顯示 Stanley Cup Final Game 3 為 Carolina at Vegas。",
+      matchup: "卡羅萊納颶風 vs 維加斯黃金騎士",
+      awayTeam: "卡羅萊納颶風",
+      homeTeam: "維加斯黃金騎士",
+      venue: "T-Mobile體育館｜維加斯主場",
+      sourceNote: "NHL 公開賽程顯示 Stanley Cup Final Game 3 為卡羅萊納颶風 vs 維加斯黃金騎士。",
       estimatedProbability: {
         awayWin: 48,
         homeWin: 52,
         confidence: "中",
-        basis: "系列賽 1-1，Vegas 主場加成明顯；Carolina 整季防守與東區戰績較佳，差距不拉大。"
+        basis: "系列賽 1-1，維加斯主場加成明顯；卡羅萊納整季防守與東區戰績較佳，差距不拉大。"
       },
       away: {
         strength: "整季戰績與防守結構穩定，Game 2 延長賽扳平系列賽後士氣回升。",
@@ -64,7 +64,7 @@ export const sportsResearchBoard = {
       },
       home: {
         strength: "回到主場後可掌握對位與換線節奏，前兩戰進攻產量仍具威脅。",
-        weakness: "Game 2 後段失守，若防區出球失誤增加會被 Carolina 前壓放大。"
+        weakness: "Game 2 後段失守，若防區出球失誤增加會被卡羅萊納前壓放大。"
       },
       keyFactors: ["先發守門員", "PP/PK 特別組", "最後變陣權", "傷兵與受限上場名單"],
       liveCheck: "開賽前確認守門員、傷兵、特別組配置與主場冰面狀態。"
@@ -74,10 +74,10 @@ export const sportsResearchBoard = {
       league: "NPB",
       status: "即將開賽",
       time: "06/07 14:00 JST｜台灣 13:00",
-      matchup: "Chiba Lotte Marines @ Yomiuri Giants",
-      awayTeam: "Chiba Lotte Marines",
-      homeTeam: "Yomiuri Giants",
-      venue: "Tokyo Dome",
+      matchup: "千葉羅德海洋 vs 讀賣巨人",
+      awayTeam: "千葉羅德海洋",
+      homeTeam: "讀賣巨人",
+      venue: "東京巨蛋",
       sourceNote: "NPB 2026/06/07 交流戰公開賽程。",
       estimatedProbability: {
         awayWin: 45,
@@ -101,10 +101,10 @@ export const sportsResearchBoard = {
       league: "NPB",
       status: "即將開賽",
       time: "06/07 14:00 JST｜台灣 13:00",
-      matchup: "Hokkaido Nippon-Ham Fighters @ Tokyo Yakult Swallows",
-      awayTeam: "Hokkaido Nippon-Ham Fighters",
-      homeTeam: "Tokyo Yakult Swallows",
-      venue: "Jingu Stadium",
+      matchup: "北海道日本火腿鬥士 vs 東京養樂多燕子",
+      awayTeam: "北海道日本火腿鬥士",
+      homeTeam: "東京養樂多燕子",
+      venue: "明治神宮球場",
       sourceNote: "NPB 2026/06/07 交流戰公開賽程。",
       estimatedProbability: {
         awayWin: 52,
@@ -128,16 +128,16 @@ export const sportsResearchBoard = {
       league: "NPB",
       status: "即將開賽",
       time: "06/07 14:00 JST｜台灣 13:00",
-      matchup: "Fukuoka SoftBank Hawks @ Yokohama DeNA BayStars",
-      awayTeam: "Fukuoka SoftBank Hawks",
-      homeTeam: "Yokohama DeNA BayStars",
-      venue: "Yokohama Stadium",
+      matchup: "福岡軟銀鷹 vs 橫濱DeNA海灣之星",
+      awayTeam: "福岡軟銀鷹",
+      homeTeam: "橫濱DeNA海灣之星",
+      venue: "橫濱球場",
       sourceNote: "NPB 2026/06/07 交流戰公開賽程。",
       estimatedProbability: {
         awayWin: 54,
         homeWin: 46,
         confidence: "中低",
-        basis: "SoftBank 陣容深度給客隊小幅優勢；橫濱室外場需確認風向與先發。"
+        basis: "福岡軟銀陣容深度給客隊小幅優勢；橫濱室外場需確認風向與先發。"
       },
       away: {
         strength: "投打深度與後段輪替選擇較多，客場仍具壓制力。",
@@ -155,16 +155,16 @@ export const sportsResearchBoard = {
       league: "KBO",
       status: "即將開賽",
       time: "06/07 17:00 KST｜台灣 16:00",
-      matchup: "Hanwha Eagles @ Lotte Giants",
-      awayTeam: "Hanwha Eagles",
-      homeTeam: "Lotte Giants",
-      venue: "Busan-Sajik",
+      matchup: "韓華鷹 vs 樂天巨人",
+      awayTeam: "韓華鷹",
+      homeTeam: "樂天巨人",
+      venue: "釜山社稷球場",
       sourceNote: "MyKBO Stats 2026/06/07 公開賽程。",
       estimatedProbability: {
         awayWin: 49,
         homeWin: 51,
         confidence: "低",
-        basis: "兩隊前兩戰互有調整空間，主場 Lotte 只取得極小幅場地優勢。"
+        basis: "兩隊前兩戰互有調整空間，樂天巨人只取得極小幅主場優勢。"
       },
       away: {
         strength: "前段打線若能延續近期上壘，會讓主隊投手用球數升高。",
@@ -182,16 +182,16 @@ export const sportsResearchBoard = {
       league: "KBO",
       status: "即將開賽",
       time: "06/07 17:00 KST｜台灣 16:00",
-      matchup: "KT Wiz @ SSG Landers",
-      awayTeam: "KT Wiz",
-      homeTeam: "SSG Landers",
-      venue: "Incheon-Munhak",
+      matchup: "KT巫師 vs SSG登陸者",
+      awayTeam: "KT巫師",
+      homeTeam: "SSG登陸者",
+      venue: "仁川文鶴球場",
       sourceNote: "MyKBO Stats 2026/06/07 公開賽程。",
       estimatedProbability: {
         awayWin: 46,
         homeWin: 54,
         confidence: "中低",
-        basis: "SSG 主場與長打環境給主隊優勢；KT 若能壓低長打才有機會拉近。"
+        basis: "SSG登陸者主場與長打環境給主隊優勢；KT巫師若能壓低長打才有機會拉近。"
       },
       away: {
         strength: "若先發控球穩定，可限制主隊長打串聯。",
@@ -209,16 +209,16 @@ export const sportsResearchBoard = {
       league: "KBO",
       status: "即將開賽",
       time: "06/07 17:00 KST｜台灣 16:00",
-      matchup: "LG Twins @ NC Dinos",
-      awayTeam: "LG Twins",
-      homeTeam: "NC Dinos",
-      venue: "Changwon NC Park",
+      matchup: "LG雙子 vs NC恐龍",
+      awayTeam: "LG雙子",
+      homeTeam: "NC恐龍",
+      venue: "昌原NC球場",
       sourceNote: "MyKBO Stats 2026/06/07 公開賽程。",
       estimatedProbability: {
         awayWin: 51,
         homeWin: 49,
         confidence: "低",
-        basis: "LG 團隊穩定度略好，但 Changwon 主場變數讓差距接近五五波。"
+        basis: "LG雙子團隊穩定度略好，但昌原主場變數讓差距接近五五波。"
       },
       away: {
         strength: "攻守平衡與比賽後段調度較穩，適合拉長局數。",
@@ -236,16 +236,16 @@ export const sportsResearchBoard = {
       league: "KBO",
       status: "即將開賽",
       time: "06/07 17:00 KST｜台灣 16:00",
-      matchup: "Samsung Lions @ Kia Tigers",
-      awayTeam: "Samsung Lions",
-      homeTeam: "Kia Tigers",
-      venue: "Gwangju-KIA Champions Field",
+      matchup: "三星獅 vs 起亞虎",
+      awayTeam: "三星獅",
+      homeTeam: "起亞虎",
+      venue: "光州起亞冠軍球場",
       sourceNote: "MyKBO Stats 2026/06/07 公開賽程。",
       estimatedProbability: {
         awayWin: 47,
         homeWin: 53,
         confidence: "中低",
-        basis: "Kia 主場與近期對戰壓制給主隊小幅優勢，Samsung 仍可用長打翻盤。"
+        basis: "起亞虎主場與近期對戰壓制給主隊小幅優勢，三星獅仍可用長打翻盤。"
       },
       away: {
         strength: "長打與攻擊爆發力足以在單局改變比數。",
@@ -263,16 +263,16 @@ export const sportsResearchBoard = {
       league: "KBO",
       status: "即將開賽",
       time: "06/07 17:00 KST｜台灣 16:00",
-      matchup: "Kiwoom Heroes @ Doosan Bears",
-      awayTeam: "Kiwoom Heroes",
-      homeTeam: "Doosan Bears",
-      venue: "Seoul-Jamsil",
+      matchup: "培證英雄 vs 斗山熊",
+      awayTeam: "培證英雄",
+      homeTeam: "斗山熊",
+      venue: "首爾蠶室球場",
       sourceNote: "MyKBO Stats 2026/06/07 公開賽程。",
       estimatedProbability: {
         awayWin: 43,
         homeWin: 57,
         confidence: "中",
-        basis: "Doosan 主場與近期對 Kiwoom 的壓制提高主隊估計勝率。"
+        basis: "斗山熊主場與近期對培證英雄的壓制提高主隊估計勝率。"
       },
       away: {
         strength: "若先發能壓低保送，仍能把比賽拖進低比分。",
@@ -290,7 +290,7 @@ export const sportsResearchBoard = {
       league: "CPBL",
       status: "即將開賽",
       time: "06/07 16:05 台灣時間",
-      matchup: "富邦悍將 @ 統一7-ELEVEn獅",
+      matchup: "富邦悍將 vs 統一7-ELEVEn獅",
       awayTeam: "富邦悍將",
       homeTeam: "統一7-ELEVEn獅",
       venue: "台北大巨蛋",
@@ -317,7 +317,7 @@ export const sportsResearchBoard = {
       league: "CPBL",
       status: "即將開賽",
       time: "06/07 16:05 台灣時間",
-      matchup: "味全龍 @ 台鋼雄鷹",
+      matchup: "味全龍 vs 台鋼雄鷹",
       awayTeam: "味全龍",
       homeTeam: "台鋼雄鷹",
       venue: "澄清湖",
@@ -344,7 +344,7 @@ export const sportsResearchBoard = {
       league: "CPBL",
       status: "即將開賽",
       time: "06/07 17:05 台灣時間",
-      matchup: "樂天桃猿 @ 中信兄弟",
+      matchup: "樂天桃猿 vs 中信兄弟",
       awayTeam: "樂天桃猿",
       homeTeam: "中信兄弟",
       venue: "洲際",
@@ -371,16 +371,16 @@ export const sportsResearchBoard = {
       league: "MLB",
       status: "下一波開賽",
       time: "06/07 13:35 EDT｜台灣 06/08 01:35",
-      matchup: "Pittsburgh Pirates @ Atlanta Braves",
-      awayTeam: "Pittsburgh Pirates",
-      homeTeam: "Atlanta Braves",
-      venue: "Atlanta 主場",
+      matchup: "匹茲堡海盜 vs 亞特蘭大勇士",
+      awayTeam: "匹茲堡海盜",
+      homeTeam: "亞特蘭大勇士",
+      venue: "亞特蘭大主場",
       sourceNote: "06/07 MLB 公開賽程顯示 13:35 EDT 開賽。",
       estimatedProbability: {
         awayWin: 41,
         homeWin: 59,
         confidence: "中",
-        basis: "Atlanta 主場與整體打線深度給主隊優勢；仍需確認先發投手與天候。"
+        basis: "亞特蘭大勇士主場與整體打線深度給主隊優勢；仍需確認先發投手與天候。"
       },
       away: {
         strength: "若先發能壓低長打，可把比賽留在低比分。",
@@ -398,20 +398,20 @@ export const sportsResearchBoard = {
       league: "MLB",
       status: "下一波開賽",
       time: "06/07 13:35 EDT｜台灣 06/08 01:35",
-      matchup: "Boston Red Sox @ New York Yankees",
-      awayTeam: "Boston Red Sox",
-      homeTeam: "New York Yankees",
-      venue: "Yankee Stadium",
+      matchup: "波士頓紅襪 vs 紐約洋基",
+      awayTeam: "波士頓紅襪",
+      homeTeam: "紐約洋基",
+      venue: "洋基球場",
       sourceNote: "06/07 MLB 公開賽程顯示 13:35 EDT 開賽。",
       estimatedProbability: {
         awayWin: 44,
         homeWin: 56,
         confidence: "中低",
-        basis: "Yankees 主場與長打環境小幅占優；同區對戰變數偏高。"
+        basis: "紐約洋基主場與長打環境小幅占優；同區對戰變數偏高。"
       },
       away: {
         strength: "打線若能提高上壘與消耗用球數，可削弱主隊先發優勢。",
-        weakness: "Yankee Stadium 長打環境會提高投手失投成本。"
+        weakness: "洋基球場長打環境會提高投手失投成本。"
       },
       home: {
         strength: "主場長打牆與中心打線威脅高，能快速拉開比分。",
@@ -425,16 +425,16 @@ export const sportsResearchBoard = {
       league: "MLB",
       status: "下一波開賽",
       time: "06/07 13:35 EDT｜台灣 06/08 01:35",
-      matchup: "Chicago White Sox @ Philadelphia Phillies",
-      awayTeam: "Chicago White Sox",
-      homeTeam: "Philadelphia Phillies",
-      venue: "Philadelphia 主場",
+      matchup: "芝加哥白襪 vs 費城費城人",
+      awayTeam: "芝加哥白襪",
+      homeTeam: "費城費城人",
+      venue: "費城主場",
       sourceNote: "06/07 MLB 公開賽程顯示 13:35 EDT 開賽。",
       estimatedProbability: {
         awayWin: 39,
         homeWin: 61,
         confidence: "中",
-        basis: "Philadelphia 主場、打線深度與整體穩定性給主隊較大優勢。"
+        basis: "費城費城人主場、打線深度與整體穩定性給主隊較大優勢。"
       },
       away: {
         strength: "若投手能壓制前段打線，仍可利用低比分保留機會。",
@@ -452,16 +452,16 @@ export const sportsResearchBoard = {
       league: "MLB",
       status: "下一波開賽",
       time: "06/07 13:40 EDT｜台灣 06/08 01:40",
-      matchup: "Seattle Mariners @ Detroit Tigers",
-      awayTeam: "Seattle Mariners",
-      homeTeam: "Detroit Tigers",
-      venue: "Comerica Park",
+      matchup: "西雅圖水手 vs 底特律老虎",
+      awayTeam: "西雅圖水手",
+      homeTeam: "底特律老虎",
+      venue: "考邁利卡球場",
       sourceNote: "06/07 MLB 公開賽程顯示 13:40 EDT 開賽。",
       estimatedProbability: {
         awayWin: 49,
         homeWin: 51,
         confidence: "低",
-        basis: "兩隊差距接近，Detroit 主場只提供微幅優勢；先發投手公布後才會明顯移動。"
+        basis: "兩隊差距接近，底特律老虎主場只提供微幅優勢；先發投手公布後才會明顯移動。"
       },
       away: {
         strength: "若先發壓制長打，客隊投手戰能力可拉近勝率。",
@@ -471,7 +471,7 @@ export const sportsResearchBoard = {
         strength: "主場外野空間與熟悉路線有利守備判斷。",
         weakness: "若打線長打不足，得分會依賴連續安打。"
       },
-      keyFactors: ["Comerica 外野", "先發投手", "旅行節奏", "長打控制"],
+      keyFactors: ["考邁利卡外野", "先發投手", "旅行節奏", "長打控制"],
       liveCheck: "賽前確認天候、風向與先發名單。"
     },
     {
@@ -479,24 +479,24 @@ export const sportsResearchBoard = {
       league: "NBA",
       status: "決賽下一場",
       time: "06/08 20:30 ET｜台灣 06/09 08:30",
-      matchup: "San Antonio Spurs @ New York Knicks",
-      awayTeam: "San Antonio Spurs",
-      homeTeam: "New York Knicks",
-      venue: "Madison Square Garden",
+      matchup: "聖安東尼奧馬刺 vs 紐約尼克",
+      awayTeam: "聖安東尼奧馬刺",
+      homeTeam: "紐約尼克",
+      venue: "麥迪遜花園廣場",
       sourceNote: "NBA Finals Game 3 公開賽程。",
       estimatedProbability: {
         awayWin: 43,
         homeWin: 57,
         confidence: "中",
-        basis: "Knicks 系列賽 2-0 領先且回到 MSG，主場與系列賽節奏給主隊優勢。"
+        basis: "紐約尼克系列賽 2-0 領先且回到麥迪遜花園廣場，主場與系列賽節奏給主隊優勢。"
       },
       away: {
-        strength: "Spurs 仍有高位防守與禁區牽制能力，若降低失誤可提高競爭力。",
-        weakness: "0-2 落後後客場壓力大，年輕輪替在 MSG 的穩定度需觀察。"
+        strength: "馬刺仍有高位防守與禁區牽制能力，若降低失誤可提高競爭力。",
+        weakness: "0-2 落後後客場壓力大，年輕輪替在麥迪遜花園廣場的穩定度需觀察。"
       },
       home: {
-        strength: "Knicks 回主場掌握節奏，前兩戰系列賽數據與籃板表現占優。",
-        weakness: "若犯規麻煩或外線失準，會讓 Spurs 用禁區優勢拉近。"
+        strength: "尼克回主場掌握節奏，前兩戰系列賽數據與籃板表現占優。",
+        weakness: "若犯規麻煩或外線失準，會讓馬刺用禁區優勢拉近。"
       },
       keyFactors: ["傷兵報告", "先發五人", "籃板", "失誤率", "主場噪音"],
       liveCheck: "開賽前確認 injury report、先發五人與主要輪替。"
@@ -518,8 +518,8 @@ export const sportsResearchBoard = {
       events: [
         {
           time: "06/08 18:35 ET｜台灣 06/09 06:35",
-          matchup: "Seattle Mariners @ Baltimore Orioles",
-          venue: "Oriole Park at Camden Yards",
+          matchup: "西雅圖水手 vs 巴爾的摩金鶯",
+          venue: "金鶯公園",
           personnel: "先發投手、打線與捕手搭配需賽前確認。",
           injuries: "查看 IL 與每日觀察名單，不用舊名單判斷。",
           season: "比較兩隊近 10 場攻擊效率、牛棚連投與先發投手局數。",
@@ -527,8 +527,8 @@ export const sportsResearchBoard = {
         },
         {
           time: "06/08 18:40 ET｜台灣 06/09 06:40",
-          matchup: "Boston Red Sox @ Tampa Bay Rays",
-          venue: "Tampa Bay 主場",
+          matchup: "波士頓紅襪 vs 坦帕灣光芒",
+          venue: "坦帕灣主場",
           personnel: "打線左右打配置與先發投手型態是主要觀察點。",
           injuries: "每日觀察名單與牛棚可用性需賽前更新。",
           season: "比較上壘率、長打率、先發投手 WHIP 與近期牛棚負荷。",
@@ -536,8 +536,8 @@ export const sportsResearchBoard = {
         },
         {
           time: "06/08 18:40 ET｜台灣 06/09 06:40",
-          matchup: "New York Yankees @ Cleveland Guardians",
-          venue: "Progressive Field",
+          matchup: "紐約洋基 vs 克里夫蘭守護者",
+          venue: "進步球場",
           personnel: "先發投手對中心打線與後段牛棚安排要分開看。",
           injuries: "長期 IL 與每日觀察球員會影響守備與代打深度。",
           season: "比較團隊 OPS、三振率、ERA、WHIP 與近況。",
@@ -545,8 +545,8 @@ export const sportsResearchBoard = {
         },
         {
           time: "06/08 19:07 ET｜台灣 06/09 07:07",
-          matchup: "Philadelphia Phillies @ Toronto Blue Jays",
-          venue: "Rogers Centre",
+          matchup: "費城費城人 vs 多倫多藍鳥",
+          venue: "羅傑斯中心",
           personnel: "先發投手與左右打輪值會影響前半場節奏。",
           injuries: "賽前看捕手、內野與牛棚可用名單。",
           season: "比較主客場攻擊效率、長打率與先發投手近期局數。",
@@ -554,8 +554,8 @@ export const sportsResearchBoard = {
         },
         {
           time: "06/08 21:38 ET｜台灣 06/09 09:38",
-          matchup: "Houston Astros @ Los Angeles Angels",
-          venue: "Angel Stadium",
+          matchup: "休士頓太空人 vs 洛杉磯天使",
+          venue: "天使球場",
           personnel: "客隊旅行與主隊打線完整度需賽前確認。",
           injuries: "每日觀察名單、休養與牛棚連用是風險點。",
           season: "比較先發投手局數、團隊長打率與牛棚近 3 日使用量。",
@@ -563,17 +563,17 @@ export const sportsResearchBoard = {
         },
         {
           time: "06/08 21:40 ET｜台灣 06/09 09:40",
-          matchup: "Cincinnati Reds @ San Diego Padres",
-          venue: "Petco Park",
+          matchup: "辛辛那提紅人 vs 聖地牙哥教士",
+          venue: "沛可球場",
           personnel: "先發投手控球、捕手搭配與牛棚順位要同步看。",
           injuries: "確認主力野手是否休養或限制出賽。",
           season: "比較兩隊近期得分、盜壘企圖與先發投手 WHIP。",
-          live: "Petco Park 夜場需看海風、溫度與打線公布。"
+          live: "沛可球場夜場需看海風、溫度與打線公布。"
         },
         {
           time: "06/08 21:45 ET｜台灣 06/09 09:45",
-          matchup: "Washington Nationals @ San Francisco Giants",
-          venue: "Oracle Park",
+          matchup: "華盛頓國民 vs 舊金山巨人",
+          venue: "甲骨文球場",
           personnel: "外野守備、左投右投對位與牛棚可用性是重點。",
           injuries: "賽前看每日觀察名單與主力輪休。",
           season: "比較主客場 OPS、先發投手 ERA/WHIP 與守備失誤。",
@@ -581,8 +581,8 @@ export const sportsResearchBoard = {
         },
         {
           time: "06/08 22:05 ET｜台灣 06/09 10:05",
-          matchup: "Milwaukee Brewers @ Athletics",
-          venue: "Athletics 主場",
+          matchup: "密爾瓦基釀酒人 vs 運動家",
+          venue: "運動家主場",
           personnel: "先發投手與後援投手連用狀態需賽前查核。",
           injuries: "觀察主力打者是否休養、是否有臨時傷停。",
           season: "比較客隊旅行、團隊 OPS、ERA 與牛棚負荷。",
@@ -605,7 +605,7 @@ export const sportsResearchBoard = {
       events: [
         {
           time: "06/08 18:00 JST｜台灣 17:00",
-          matchup: "福岡軟銀 Hawks @ DeNA BayStars（預備日）",
+          matchup: "福岡軟銀鷹 vs 橫濱DeNA海灣之星（預備日）",
           venue: "橫濱",
           personnel: "預告先發與登錄名單需賽前確認。",
           injuries: "抹消、復歸與主力休養名單會影響打線深度。",
@@ -629,8 +629,8 @@ export const sportsResearchBoard = {
       events: [
         {
           time: "下一輪 06/09 18:30 KST｜台灣 17:30",
-          matchup: "Kia Tigers @ Hanwha Eagles",
-          venue: "Daejeon",
+          matchup: "起亞虎 vs 韓華鷹",
+          venue: "大田",
           personnel: "06/09 先發投手與中心打線確認。",
           injuries: "登錄異動與休養名單賽前更新。",
           season: "比較得分效率、先發局數與牛棚負荷。",
@@ -638,8 +638,8 @@ export const sportsResearchBoard = {
         },
         {
           time: "下一輪 06/09 18:30 KST｜台灣 17:30",
-          matchup: "NC Dinos @ Kiwoom Heroes",
-          venue: "Seoul-Gocheok",
+          matchup: "NC恐龍 vs 培證英雄",
+          venue: "首爾高尺",
           personnel: "高尺室內場，重點看先發投手與打線。",
           injuries: "登錄異動與替補輪換需確認。",
           season: "比較近況、牛棚連用與團隊上壘率。",
@@ -647,8 +647,8 @@ export const sportsResearchBoard = {
         },
         {
           time: "下一輪 06/09 18:30 KST｜台灣 17:30",
-          matchup: "Doosan Bears @ Lotte Giants",
-          venue: "Busan-Sajik",
+          matchup: "斗山熊 vs 樂天巨人",
+          venue: "釜山社稷",
           personnel: "先發投手、捕手與牛棚順位是重點。",
           injuries: "主力傷停與休養名單需賽前確認。",
           season: "比較先發投手局數、團隊得分與主客場表現。",
@@ -656,8 +656,8 @@ export const sportsResearchBoard = {
         },
         {
           time: "下一輪 06/09 18:30 KST｜台灣 17:30",
-          matchup: "SSG Landers @ LG Twins",
-          venue: "Seoul-Jamsil",
+          matchup: "SSG登陸者 vs LG雙子",
+          venue: "首爾蠶室",
           personnel: "中心打線與牛棚可用性需確認。",
           injuries: "登錄異動、休養與外援狀態賽前更新。",
           season: "比較蠶室場地特性、得分效率與投手近況。",
@@ -665,8 +665,8 @@ export const sportsResearchBoard = {
         },
         {
           time: "下一輪 06/09 18:30 KST｜台灣 17:30",
-          matchup: "Samsung Lions @ KT Wiz",
-          venue: "Suwon",
+          matchup: "三星獅 vs KT巫師",
+          venue: "水原",
           personnel: "先發投手與後援輪替需要當日確認。",
           injuries: "傷兵、休養與登錄變動賽前重查。",
           season: "比較團隊得分、牛棚負荷與近 5 場內容。",
@@ -689,7 +689,7 @@ export const sportsResearchBoard = {
       events: [
         {
           time: "下一輪 06/09 18:35 台灣時間",
-          matchup: "味全龍 @ 富邦悍將",
+          matchup: "味全龍 vs 富邦悍將",
           venue: "新莊",
           personnel: "先發投手、先發打線與捕手搭配需確認。",
           injuries: "傷兵、休養與二軍調整會影響先發名單。",
@@ -698,7 +698,7 @@ export const sportsResearchBoard = {
         },
         {
           time: "下一輪 06/09 18:35 台灣時間",
-          matchup: "台鋼雄鷹 @ 中信兄弟",
+          matchup: "台鋼雄鷹 vs 中信兄弟",
           venue: "洲際",
           personnel: "先發投手、中心打線與後援安排需賽前確認。",
           injuries: "主力休養、傷兵與登錄異動賽前更新。",
@@ -735,7 +735,7 @@ export const sportsResearchBoard = {
       name: "籃球",
       scope: "NBA、WNBA、國際與小型聯賽",
       status: "NBA 已排定",
-      match: "NBA Finals Game 3：Spurs @ Knicks",
+      match: "NBA Finals Game 3：聖安東尼奧馬刺 vs 紐約尼克",
       time: "06/08 20:30 ET；台灣 06/09 08:30",
       venue: "Madison Square Garden；主客場、旅程與休息日需同步看",
       personnel: "先發預估、輪替、上場時間與犯規風險",
@@ -746,11 +746,11 @@ export const sportsResearchBoard = {
       events: [
         {
           time: "06/08 20:30 ET｜台灣 06/09 08:30",
-          matchup: "San Antonio Spurs @ New York Knicks｜NBA Finals Game 3",
-          venue: "Madison Square Garden",
+          matchup: "聖安東尼奧馬刺 vs 紐約尼克｜NBA Finals Game 3",
+          venue: "麥迪遜花園廣場",
           personnel: "先發、主要輪替與第四節使用率是研究重點。",
           injuries: "賽前 injury report 會影響輪替與防守對位。",
-          season: "Knicks 系列賽 2-0 領先；比較 pace、usage、失誤率與籃板。",
+          season: "紐約尼克系列賽 2-0 領先；比較 pace、usage、失誤率與籃板。",
           live: "開賽前確認先發五人、傷兵與臨場節奏。"
         }
       ]
@@ -761,20 +761,20 @@ export const sportsResearchBoard = {
       status: "06/08 休兵",
       match: "Stanley Cup Final 下一場 06/09",
       time: "Game 4：06/09 20:00 ET；台灣 06/10 08:00",
-      venue: "Vegas 主場；旅程、連戰狀態與主場對位需追蹤",
+      venue: "維加斯主場；旅程、連戰狀態與主場對位需追蹤",
       personnel: "先發守門員、攻防組合與特別組",
       injuries: "傷兵、每日觀察、復出與受限上場",
       season: "得失球、PP/PK、守門員近況與系列賽調整",
       live: "06/08 無賽事；06/09 賽前確認守門員與傷兵",
-      sourceNote: "NHL 公開賽程顯示 Game 4 為 06/09 Carolina at Vegas。",
+      sourceNote: "NHL 公開賽程顯示 Game 4 為 06/09 卡羅萊納颶風 vs 維加斯黃金騎士。",
       events: [
         {
           time: "下一場 06/09 20:00 ET｜台灣 06/10 08:00",
-          matchup: "Carolina Hurricanes @ Vegas Golden Knights｜Stanley Cup Final Game 4",
-          venue: "Vegas 主場",
+          matchup: "卡羅萊納颶風 vs 維加斯黃金騎士｜Stanley Cup Final Game 4",
+          venue: "維加斯主場",
           personnel: "先發守門員、攻防組合與 PP/PK 是核心觀察點。",
           injuries: "每日觀察與受限上場球員會影響輪替深度。",
-          season: "系列賽 1-1 後進入 Vegas 主場段，需看守門員近況。",
+          season: "系列賽 1-1 後進入維加斯主場段，需看守門員近況。",
           live: "賽前確認守門員、傷兵與特別組配置。"
         }
       ]
