@@ -1008,7 +1008,8 @@ function isValid539Numbers(numbers) {
 }
 
 function getSportsTargetDateLabel() {
-  const targetDate = new Date(buildDate.getTime() + 24 * 60 * 60 * 1000);
+  const [year, month, day] = lotto539Analysis.latest.date.split("-").map(Number);
+  const targetDate = new Date(Date.UTC(year, month - 1, day + 1, 12, 0, 0));
   return new Intl.DateTimeFormat("zh-Hant-TW", {
     timeZone: "Asia/Taipei",
     year: "numeric",
