@@ -1,16 +1,16 @@
 # Content Build Report
 
-Generated at: 2026-06-06T16:53:22.489Z
+Generated at: 2026-06-06T17:06:46.292Z
 
 ## Summary
 
-- Pages generated: 14
+- Pages generated: 15
 - Missing titles: 0
 - Missing meta descriptions: 0
 - Duplicate titles: 0
 - Duplicate descriptions: 0
 - Missing image alt text: 0
-- Topic recommendations: 34
+- Topic recommendations: 42
 - 539 data source status: fallback
 - 539 latest draw: 2026-06-06 13, 27, 30, 37, 38
 

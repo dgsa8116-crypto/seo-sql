@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T16:53:22.489Z",
+  "generatedAt": "2026-06-06T17:06:46.292Z",
   "policy": "僅保留可用於一般內容閱讀與主題延伸的低敏感度詞組。",
   "recommended": [
     {
@@ -53,9 +53,9 @@
     {
       "keyword": "539 碰數計算",
       "language": "zh-Hant",
-      "category": "home",
+      "category": "lotto539-calculator",
       "searchIntent": "頁面主題相關資訊查詢",
-      "suggestedPageType": "研究入口頁",
+      "suggestedPageType": "文章型頁面",
       "sensitivityLevel": "Low",
       "complianceRisk": "需保持中性語氣，不使用保證結果或誇大收益文案。",
       "recommendedUsage": "可用於內文、FAQ、標題或內部連結，並搭配責任提醒。",
@@ -163,6 +163,22 @@
       ]
     },
     {
+      "keyword": "百家樂 FAQ",
+      "language": "zh-Hant",
+      "category": "faq",
+      "searchIntent": "頁面主題相關資訊查詢",
+      "suggestedPageType": "研究入口頁",
+      "sensitivityLevel": "Low",
+      "complianceRisk": "需保持中性語氣，不使用保證結果或誇大收益文案。",
+      "recommendedUsage": "可用於內文、FAQ、標題或內部連結，並搭配責任提醒。",
+      "autoUseAllowed": true,
+      "relatedLongTailKeywords": [
+        "百家樂 FAQ教學",
+        "百家樂 FAQ說明",
+        "百家樂 FAQ常見問題"
+      ]
+    },
+    {
       "keyword": "百家樂入門指南",
       "language": "zh-Hant",
       "category": "beginner",
@@ -179,6 +195,22 @@
       ]
     },
     {
+      "keyword": "百家樂指南",
+      "language": "zh-Hant",
+      "category": "home",
+      "searchIntent": "頁面主題相關資訊查詢",
+      "suggestedPageType": "研究入口頁",
+      "sensitivityLevel": "Low",
+      "complianceRisk": "需保持中性語氣，不使用保證結果或誇大收益文案。",
+      "recommendedUsage": "可用於內文、FAQ、標題或內部連結，並搭配責任提醒。",
+      "autoUseAllowed": true,
+      "relatedLongTailKeywords": [
+        "百家樂指南教學",
+        "百家樂指南說明",
+        "百家樂指南常見問題"
+      ]
+    },
+    {
       "keyword": "百家樂常見名詞",
       "language": "zh-Hant",
       "category": "terminology",
@@ -192,6 +224,22 @@
         "百家樂常見名詞教學",
         "百家樂常見名詞說明",
         "百家樂常見名詞常見問題"
+      ]
+    },
+    {
+      "keyword": "百家樂常見錯誤",
+      "language": "zh-Hant",
+      "category": "beginner",
+      "searchIntent": "頁面主題相關資訊查詢",
+      "suggestedPageType": "文章型頁面",
+      "sensitivityLevel": "Low",
+      "complianceRisk": "需保持中性語氣，不使用保證結果或誇大收益文案。",
+      "recommendedUsage": "可用於內文、FAQ、標題或內部連結，並搭配責任提醒。",
+      "autoUseAllowed": true,
+      "relatedLongTailKeywords": [
+        "百家樂常見錯誤教學",
+        "百家樂常見錯誤說明",
+        "百家樂常見錯誤常見問題"
       ]
     },
     {
@@ -272,6 +320,22 @@
         "百家樂入門指南",
         "百家樂常見錯誤",
         "百家樂新手注意事項"
+      ]
+    },
+    {
+      "keyword": "百家樂選項差異",
+      "language": "zh-Hant",
+      "category": "betting",
+      "searchIntent": "頁面主題相關資訊查詢",
+      "suggestedPageType": "文章型頁面",
+      "sensitivityLevel": "Low",
+      "complianceRisk": "需保持中性語氣，不使用保證結果或誇大收益文案。",
+      "recommendedUsage": "可用於內文、FAQ、標題或內部連結，並搭配責任提醒。",
+      "autoUseAllowed": true,
+      "relatedLongTailKeywords": [
+        "百家樂選項差異教學",
+        "百家樂選項差異說明",
+        "百家樂選項差異常見問題"
       ]
     },
     {
@@ -419,7 +483,7 @@
       ]
     },
     {
-      "keyword": "賽事研究",
+      "keyword": "電子攻略",
       "language": "zh-Hant",
       "category": "home",
       "searchIntent": "頁面主題相關資訊查詢",
@@ -429,13 +493,13 @@
       "recommendedUsage": "可用於內文、FAQ、標題或內部連結，並搭配責任提醒。",
       "autoUseAllowed": true,
       "relatedLongTailKeywords": [
-        "賽事研究教學",
-        "賽事研究說明",
-        "賽事研究常見問題"
+        "電子攻略教學",
+        "電子攻略說明",
+        "電子攻略常見問題"
       ]
     },
     {
-      "keyword": "賽事研究 FAQ",
+      "keyword": "電子攻略 FAQ",
       "language": "zh-Hant",
       "category": "faq",
       "searchIntent": "頁面主題相關資訊查詢",
@@ -445,9 +509,41 @@
       "recommendedUsage": "可用於內文、FAQ、標題或內部連結，並搭配責任提醒。",
       "autoUseAllowed": true,
       "relatedLongTailKeywords": [
-        "賽事研究 FAQ教學",
-        "賽事研究 FAQ說明",
-        "賽事研究 FAQ常見問題"
+        "電子攻略 FAQ教學",
+        "電子攻略 FAQ說明",
+        "電子攻略 FAQ常見問題"
+      ]
+    },
+    {
+      "keyword": "電子遊戲 RTP",
+      "language": "zh-Hant",
+      "category": "egames",
+      "searchIntent": "了解理論回收率",
+      "suggestedPageType": "電子攻略頁",
+      "sensitivityLevel": "Low",
+      "complianceRisk": "低；以規則與數據解釋為主",
+      "recommendedUsage": "可用於電子攻略頁的小節標題與說明卡。",
+      "autoUseAllowed": true,
+      "relatedLongTailKeywords": [
+        "RTP 是什麼",
+        "電子遊戲回收率",
+        "RTP 與波動"
+      ]
+    },
+    {
+      "keyword": "電子遊戲波動",
+      "language": "zh-Hant",
+      "category": "egames",
+      "searchIntent": "了解獎勵頻率與起伏",
+      "suggestedPageType": "電子攻略頁",
+      "sensitivityLevel": "Low",
+      "complianceRisk": "低；以波動教育為主",
+      "recommendedUsage": "可用於高波動、低波動與獎勵型態說明。",
+      "autoUseAllowed": true,
+      "relatedLongTailKeywords": [
+        "高波動電子遊戲",
+        "低波動電子遊戲",
+        "獎勵觸發條件"
       ]
     },
     {
@@ -515,6 +611,22 @@
       ]
     },
     {
+      "keyword": "RNG 說明",
+      "language": "zh-Hant",
+      "category": "egames",
+      "searchIntent": "了解隨機結果機制",
+      "suggestedPageType": "電子攻略頁",
+      "sensitivityLevel": "Low",
+      "complianceRisk": "低；以機制說明為主",
+      "recommendedUsage": "可用於電子攻略頁的結果獨立性說明。",
+      "autoUseAllowed": true,
+      "relatedLongTailKeywords": [
+        "隨機數產生器",
+        "每次結果獨立",
+        "電子遊戲機率"
+      ]
+    },
+    {
       "keyword": "次日賽事分析",
       "language": "zh-Hant",
       "category": "sports",
@@ -544,6 +656,22 @@
         "百家樂下注教學",
         "百家樂下注選項",
         "百家樂流程說明"
+      ]
+    },
+    {
+      "keyword": "電子遊戲攻略",
+      "language": "zh-Hant",
+      "category": "egames",
+      "searchIntent": "理解電子遊戲規則與特色",
+      "suggestedPageType": "電子攻略頁",
+      "sensitivityLevel": "Medium",
+      "complianceRisk": "中；需避免保證結果或誘導加碼",
+      "recommendedUsage": "可用於電子攻略頁標題、摘要與 FAQ，需搭配 RTP 與波動說明。",
+      "autoUseAllowed": true,
+      "relatedLongTailKeywords": [
+        "電子遊戲 RTP",
+        "電子遊戲波動",
+        "電子遊戲規則說明"
       ]
     }
   ]

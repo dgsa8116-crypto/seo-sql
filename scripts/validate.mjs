@@ -12,6 +12,7 @@ const requiredFiles = [
   "lotto539/index.html",
   "lotto539/calculator/index.html",
   "sports/index.html",
+  "egames/index.html",
   "rules/index.html",
   "betting/index.html",
   "beginner/index.html",
@@ -104,7 +105,7 @@ function checkHtml(relative, html) {
   if (!/<meta name="twitter:card" content="summary_large_image">/.test(html)) failures.push(`${relative}: missing Twitter card`);
   if (!/<script type="application\/ld\+json">/.test(html)) failures.push(`${relative}: missing JSON-LD`);
   if (!/data-register-cta/.test(html)) failures.push(`${relative}: missing CTA`);
-  if (relative !== "index.html" && !/class="toc-panel"/.test(html) && /page-(rules|betting|beginner|terminology|responsible)/.test(html)) {
+  if (relative !== "index.html" && !/class="toc-panel"/.test(html) && /page-(rules|betting|beginner|terminology|egames|responsible)/.test(html)) {
     failures.push(`${relative}: missing article table of contents`);
   }
   if (/class="faq-item"/.test(html) && !/<details class="faq-item"/.test(html)) {

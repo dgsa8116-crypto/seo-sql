@@ -156,7 +156,7 @@ function renderPage(page) {
 
 function renderHeader(page, prefix) {
   const links = pages.filter((item) =>
-    ["home", "lotto539", "lotto539-calculator", "sports", "rules", "faq"].includes(item.id)
+    ["home", "lotto539", "lotto539-calculator", "sports", "egames", "rules", "faq"].includes(item.id)
   );
 
   return `<header class="site-header">
@@ -180,7 +180,7 @@ function renderHeader(page, prefix) {
 
 function renderSideRail(page, prefix) {
   const groups = [
-    { label: "研究儀表板", ids: ["home", "lotto539", "lotto539-calculator", "sports"] },
+    { label: "研究儀表板", ids: ["home", "lotto539", "lotto539-calculator", "sports", "egames"] },
     { label: "百家樂指南", ids: ["rules", "betting", "beginner", "terminology"] },
     { label: "提醒與聯絡", ids: ["responsible", "faq", "about", "contact", "terms", "privacy"] }
   ];
@@ -391,6 +391,12 @@ function renderHomeResearchPreview(prefix) {
       <h3>${escapeHtml(getSportsTargetDateLabel())} 追蹤卡</h3>
       <p>球場、人員、傷兵、整季表現與臨場狀態一次整理。</p>
       <a href="${prefix}sports/">查看賽事研究</a>
+    </article>
+    <article class="feature-panel">
+      <span>電子攻略</span>
+      <h3>2026 RTP 與波動研究</h3>
+      <p>用 RTP、波動、RNG 與獎勵型態整理電子遊戲閱讀重點。</p>
+      <a href="${prefix}egames/">查看電子攻略</a>
     </article>
   </div>
 </section>`;

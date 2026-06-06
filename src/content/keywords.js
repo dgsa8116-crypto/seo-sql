@@ -100,6 +100,46 @@ export const keywordSeeds = [
     relatedLongTailKeywords: ["百家樂補牌規則", "莊家第三張牌", "閒家補牌條件"]
   },
   {
+    keyword: "電子遊戲攻略",
+    category: "egames",
+    searchIntent: "理解電子遊戲規則與特色",
+    suggestedPageType: "電子攻略頁",
+    sensitivityLevel: "Medium",
+    complianceRisk: "中；需避免保證結果或誘導加碼",
+    recommendedUsage: "可用於電子攻略頁標題、摘要與 FAQ，需搭配 RTP 與波動說明。",
+    relatedLongTailKeywords: ["電子遊戲 RTP", "電子遊戲波動", "電子遊戲規則說明"]
+  },
+  {
+    keyword: "電子遊戲 RTP",
+    category: "egames",
+    searchIntent: "了解理論回收率",
+    suggestedPageType: "電子攻略頁",
+    sensitivityLevel: "Low",
+    complianceRisk: "低；以規則與數據解釋為主",
+    recommendedUsage: "可用於電子攻略頁的小節標題與說明卡。",
+    relatedLongTailKeywords: ["RTP 是什麼", "電子遊戲回收率", "RTP 與波動"]
+  },
+  {
+    keyword: "電子遊戲波動",
+    category: "egames",
+    searchIntent: "了解獎勵頻率與起伏",
+    suggestedPageType: "電子攻略頁",
+    sensitivityLevel: "Low",
+    complianceRisk: "低；以波動教育為主",
+    recommendedUsage: "可用於高波動、低波動與獎勵型態說明。",
+    relatedLongTailKeywords: ["高波動電子遊戲", "低波動電子遊戲", "獎勵觸發條件"]
+  },
+  {
+    keyword: "RNG 說明",
+    category: "egames",
+    searchIntent: "了解隨機結果機制",
+    suggestedPageType: "電子攻略頁",
+    sensitivityLevel: "Low",
+    complianceRisk: "低；以機制說明為主",
+    recommendedUsage: "可用於電子攻略頁的結果獨立性說明。",
+    relatedLongTailKeywords: ["隨機數產生器", "每次結果獨立", "電子遊戲機率"]
+  },
+  {
     keyword: "責任娛樂",
     category: "responsible",
     searchIntent: "了解風險與自我控管",

@@ -14,5 +14,5 @@ window.SiteConfig = {
       38
     ]
   },
-  "sportsTrackingUpdatedAt": "2026-06-06T16:53:22.489Z"
+  "sportsTrackingUpdatedAt": "2026-06-06T17:06:46.292Z"
 };
