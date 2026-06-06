@@ -1,10 +1,10 @@
-# Keyword Recommendations
+# 主題延伸建議
 
-Generated at: 2026-06-06T16:40:46.974Z
+Generated at: 2026-06-06T16:47:04.378Z
 
-Only Low and Medium keywords are recommended for normal SEO usage. High and Restricted keywords are flagged and excluded from automatic title, description, and heading generation.
+僅保留可用於一般內容閱讀與主題延伸的低敏感度詞組。
 
-## Recommended Keywords
+## 可用主題
 
 | Keyword | Sensitivity | Category | Search intent | Recommended usage |
 | --- | --- | --- | --- | --- |
@@ -28,7 +28,7 @@ Only Low and Medium keywords are recommended for normal SEO usage. High and Rest
 | 服務條款 | Low | terms | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
 | 法定年齡提醒 | Low | responsible | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
 | 娛樂風險提醒 | Low | responsible | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
-| 球員傷兵狀態 | Low | sports | 理解賽前人員與傷兵資訊 | 可用於賽事頁欄位卡片與資料源說明。 |
+| 球員傷兵狀態 | Low | sports | 理解賽前人員與傷兵資訊 | 可用於賽事頁欄位卡片與狀態追蹤。 |
 | 莊閒和說明 | Low | betting | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
 | 責任限制 | Low | terms | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
 | 責任娛樂 | Low | responsible | 了解風險與自我控管 | 應出現在首頁、頁尾、FAQ、條款與指南頁。 |
@@ -42,9 +42,3 @@ Only Low and Medium keywords are recommended for normal SEO usage. High and Rest
 | 體育賽事研究 | Low | sports | 以研究角度閱讀賽程、球場與人員資訊 | 可用於賽事研究頁標題與內文，不使用投注承諾語氣。 |
 | 次日賽事分析 | Medium | sports | 查詢隔日賽程與賽事研究欄位 | 可用於賽事研究頁，必須搭配資料來源與研究聲明。 |
 | 百家樂下注流程 | Medium | betting-flow | 了解投注步驟與選項 | 可用於流程頁，但需加入結果不確定與量力而為提醒。 |
-
-## Excluded High-Risk Keywords
-
-- 百家樂勝率: High; 高；容易被誤寫成收益或保證結果
-- 百家樂必勝法: Restricted; 限制；涉及誤導性收益暗示
-- 博弈漏洞: Restricted; 限制；可能涉及違規或非法行為

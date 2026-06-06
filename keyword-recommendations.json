@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-06T16:40:46.974Z",
-  "policy": "Only Low and Medium keywords are recommended for normal SEO usage. High and Restricted keywords are flagged and excluded from automatic title, description, and heading generation.",
+  "generatedAt": "2026-06-06T16:47:04.378Z",
+  "policy": "僅保留可用於一般內容閱讀與主題延伸的低敏感度詞組。",
   "recommended": [
     {
       "keyword": "539 冷熱號",
@@ -330,7 +330,7 @@
       "suggestedPageType": "賽事研究欄位",
       "sensitivityLevel": "Low",
       "complianceRisk": "低；資料欄位說明",
-      "recommendedUsage": "可用於賽事頁欄位卡片與資料源說明。",
+      "recommendedUsage": "可用於賽事頁欄位卡片與狀態追蹤。",
       "autoUseAllowed": true,
       "relatedLongTailKeywords": [
         "賽前傷兵名單",
@@ -544,56 +544,6 @@
         "百家樂下注教學",
         "百家樂下注選項",
         "百家樂流程說明"
-      ]
-    }
-  ],
-  "excluded": [
-    {
-      "keyword": "百家樂勝率",
-      "language": "zh-Hant",
-      "category": "restricted-copy",
-      "searchIntent": "尋找結果或機率相關資訊",
-      "suggestedPageType": "僅供人工審核",
-      "sensitivityLevel": "High",
-      "complianceRisk": "高；容易被誤寫成收益或保證結果",
-      "recommendedUsage": "不得自動放入標題、描述或 H1；如需使用，只能在風險教育脈絡下人工審核。",
-      "autoUseAllowed": false,
-      "relatedLongTailKeywords": [
-        "百家樂機率",
-        "百家樂賠率風險",
-        "百家樂結果不確定"
-      ]
-    },
-    {
-      "keyword": "百家樂必勝法",
-      "language": "zh-Hant",
-      "category": "restricted-copy",
-      "searchIntent": "尋找保證獲利或不當策略",
-      "suggestedPageType": "禁止自動使用",
-      "sensitivityLevel": "Restricted",
-      "complianceRisk": "限制；涉及誤導性收益暗示",
-      "recommendedUsage": "不得自動使用；內容中應明確否定保證獲勝說法。",
-      "autoUseAllowed": false,
-      "relatedLongTailKeywords": [
-        "包贏方法",
-        "穩賺技巧",
-        "保證獲利"
-      ]
-    },
-    {
-      "keyword": "博弈漏洞",
-      "language": "zh-Hant",
-      "category": "restricted-copy",
-      "searchIntent": "尋找繞過或利用平台的方法",
-      "suggestedPageType": "禁止使用",
-      "sensitivityLevel": "Restricted",
-      "complianceRisk": "限制；可能涉及違規或非法行為",
-      "recommendedUsage": "不得使用於 SEO、自動推薦或頁面內容。",
-      "autoUseAllowed": false,
-      "relatedLongTailKeywords": [
-        "平台漏洞",
-        "繞過限制",
-        "非法套利"
       ]
     }
   ]

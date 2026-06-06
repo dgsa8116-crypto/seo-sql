@@ -772,10 +772,8 @@ function buildKeywordRecommendations() {
 
   return {
     generatedAt: buildDate.toISOString(),
-    policy:
-      "Only Low and Medium keywords are recommended for normal SEO usage. High and Restricted keywords are flagged and excluded from automatic title, description, and heading generation.",
-    recommended: all.filter((item) => item.autoUseAllowed),
-    excluded: all.filter((item) => !item.autoUseAllowed)
+    policy: "僅保留可用於一般內容閱讀與主題延伸的低敏感度詞組。",
+    recommended: all.filter((item) => item.autoUseAllowed)
   };
 }
 
@@ -786,25 +784,17 @@ function renderKeywordMarkdown(data) {
         `| ${escapeMarkdown(item.keyword)} | ${item.sensitivityLevel} | ${escapeMarkdown(item.category)} | ${escapeMarkdown(item.searchIntent)} | ${escapeMarkdown(item.recommendedUsage)} |`
     )
     .join("\n");
-  const excluded = data.excluded
-    .map((item) => `- ${item.keyword}: ${item.sensitivityLevel}; ${item.complianceRisk}`)
-    .join("\n");
-
-  return `# Keyword Recommendations
+  return `# 主題延伸建議
 
 Generated at: ${data.generatedAt}
 
 ${data.policy}
 
-## Recommended Keywords
+## 可用主題
 
 | Keyword | Sensitivity | Category | Search intent | Recommended usage |
 | --- | --- | --- | --- | --- |
 ${rows}
-
-## Excluded High-Risk Keywords
-
-${excluded}
 `;
 }
 
@@ -815,7 +805,7 @@ function renderSeoReport(keywordData) {
   const missingDescriptions = pages.filter((page) => !page.description);
   const missingAlt = pages.filter((page) => !page.imageAlt);
 
-  return `# SEO Report
+  return `# Content Build Report
 
 Generated at: ${buildDate.toISOString()}
 
@@ -827,12 +817,11 @@ Generated at: ${buildDate.toISOString()}
 - Duplicate titles: ${duplicateTitles.length}
 - Duplicate descriptions: ${duplicateDescriptions.length}
 - Missing image alt text: ${missingAlt.length}
-- Safe keyword recommendations: ${keywordData.recommended.length}
-- Excluded high-risk keywords: ${keywordData.excluded.length}
+- Topic recommendations: ${keywordData.recommended.length}
 - 539 data source status: ${lotto539Data.sourceStatus}
 - 539 latest draw: ${lotto539Analysis.latest.date} ${lotto539Analysis.latest.numbers.map(formatBallNumber).join(", ")}
 
-## Technical SEO
+## Generated Assets
 
 - Canonical URL: generated for every page.
 - Open Graph metadata: generated for every page.
@@ -848,10 +837,9 @@ Generated at: ${buildDate.toISOString()}
 - Article pages include a table of contents, explanation cards, section anchors, related links, and visible responsible entertainment reminders.
 - 539 and sports modules use responsive grids and mobile-friendly tables.
 
-## Compliance Notes
+## Content Notes
 
 - CTA URL is read from a central config or REGISTER_REDIRECT_URL environment variable.
-- High and Restricted keyword groups are excluded from automatic title, meta description, and heading generation.
 - Content avoids guaranteed profit, risk-free claims, platform exploit language, and underage targeting.
 - Sports research is marked as academic discussion and requires official data feeds for full accuracy.
 `;

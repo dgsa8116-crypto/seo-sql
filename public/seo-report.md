@@ -1,6 +1,6 @@
-# SEO Report
+# Content Build Report
 
-Generated at: 2026-06-06T16:40:46.974Z
+Generated at: 2026-06-06T16:47:04.378Z
 
 ## Summary
 
@@ -10,12 +10,11 @@ Generated at: 2026-06-06T16:40:46.974Z
 - Duplicate titles: 0
 - Duplicate descriptions: 0
 - Missing image alt text: 0
-- Safe keyword recommendations: 34
-- Excluded high-risk keywords: 3
+- Topic recommendations: 34
 - 539 data source status: fallback
 - 539 latest draw: 2026-06-06 13, 27, 30, 37, 38
 
-## Technical SEO
+## Generated Assets
 
 - Canonical URL: generated for every page.
 - Open Graph metadata: generated for every page.
@@ -31,9 +30,8 @@ Generated at: 2026-06-06T16:40:46.974Z
 - Article pages include a table of contents, explanation cards, section anchors, related links, and visible responsible entertainment reminders.
 - 539 and sports modules use responsive grids and mobile-friendly tables.
 
-## Compliance Notes
+## Content Notes
 
 - CTA URL is read from a central config or REGISTER_REDIRECT_URL environment variable.
-- High and Restricted keyword groups are excluded from automatic title, meta description, and heading generation.
 - Content avoids guaranteed profit, risk-free claims, platform exploit language, and underage targeting.
 - Sports research is marked as academic discussion and requires official data feeds for full accuracy.

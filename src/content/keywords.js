@@ -46,7 +46,7 @@ export const keywordSeeds = [
     suggestedPageType: "賽事研究欄位",
     sensitivityLevel: "Low",
     complianceRisk: "低；資料欄位說明",
-    recommendedUsage: "可用於賽事頁欄位卡片與資料源說明。",
+    recommendedUsage: "可用於賽事頁欄位卡片與狀態追蹤。",
     relatedLongTailKeywords: ["賽前傷兵名單", "球員出賽狀態", "先發名單分析"]
   },
   {

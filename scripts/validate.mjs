@@ -50,7 +50,7 @@ for (const file of htmlFiles) {
 }
 
 const keywordData = JSON.parse(await readFile(path.join(distDir, "keyword-recommendations.json"), "utf8"));
-const disallowed = new Set(keywordData.excluded.map((item) => item.keyword));
+const disallowed = new Set((keywordData.excluded || []).map((item) => item.keyword));
 for (const item of keywordData.recommended) {
   if (disallowed.has(item.keyword)) {
     failures.push(`Excluded keyword appears in recommended list: ${item.keyword}`);
