@@ -18,6 +18,7 @@ const buildDate = new Date();
 const heroAsset = "assets/images/urban-minimal-hero.png";
 const lotto539Data = await loadLotto539Data();
 const lotto539Analysis = buildLotto539Analysis(lotto539Data.draws);
+const sportsTrackingData = buildSportsTrackingData();
 
 await rm(distDir, { recursive: true, force: true });
 await mkdir(path.join(distDir, "assets", "images"), { recursive: true });
@@ -39,7 +40,8 @@ await writeFile(
       registerRedirectUrl: site.registerRedirectUrl,
       ctaText: site.ctaText,
       responsibleNotice: site.responsibleNotice,
-      lotto539Latest: lotto539Analysis.latest
+      lotto539Latest: lotto539Analysis.latest,
+      sportsTrackingUpdatedAt: sportsTrackingData.updatedAt
     },
     null,
     2
@@ -50,6 +52,12 @@ await writeFile(
 await writeFile(
   path.join(distDir, "assets", "data", "lotto539.json"),
   `${JSON.stringify({ ...lotto539Data, analysis: lotto539Analysis }, null, 2)}\n`,
+  "utf8"
+);
+
+await writeFile(
+  path.join(distDir, "assets", "data", "sports-tracking.json"),
+  `${JSON.stringify(sportsTrackingData, null, 2)}\n`,
   "utf8"
 );
 
@@ -174,7 +182,7 @@ function renderSideRail(page, prefix) {
   const groups = [
     { label: "研究儀表板", ids: ["home", "lotto539", "lotto539-calculator", "sports"] },
     { label: "百家樂指南", ids: ["rules", "betting", "beginner", "terminology"] },
-    { label: "合規與支援", ids: ["responsible", "faq", "about", "contact", "terms", "privacy"] }
+    { label: "提醒與聯絡", ids: ["responsible", "faq", "about", "contact", "terms", "privacy"] }
   ];
 
   return `<aside class="side-rail" aria-label="左側細項欄位">
@@ -182,7 +190,7 @@ function renderSideRail(page, prefix) {
     ${renderLogoMark("side")}
     <div>
       <strong>${escapeHtml(site.siteName)}</strong>
-      <span>研究型資訊平台</span>
+      <span>即時追蹤</span>
     </div>
   </div>
   <div class="side-latest">
@@ -246,7 +254,7 @@ function renderHero(page, imagePath, prefix) {
 
   return `<section class="hero" aria-labelledby="page-title">
   <div class="hero-media">
-    <img src="${escapeAttr(imagePath)}" alt="${escapeAttr(page.imageAlt || "都市極簡資訊平台示意圖")}" width="1600" height="900" fetchpriority="high">
+    <img src="${escapeAttr(imagePath)}" alt="${escapeAttr(page.imageAlt || "都市極簡研究畫面示意圖")}" width="1600" height="900" fetchpriority="high">
   </div>
   <div class="hero-overlay" aria-hidden="true"></div>
   <div class="hero-content">
@@ -271,7 +279,7 @@ function renderLanding(page, prefix) {
 function renderArticle(page, prefix) {
   return `<div class="article-layout">
   <aside class="toc-panel" aria-labelledby="toc-title">
-    <p id="toc-title" class="toc-label">頁面段落</p>
+    <p id="toc-title" class="toc-label">重點段落</p>
     <ol>
       ${page.sections.map((section, index) => `<li><a href="#section-${index + 1}">${escapeHtml(section.title)}</a></li>`).join("")}
       ${page.modules?.length ? `<li><a href="#module-${escapeAttr(page.id)}">研究模組</a></li>` : ""}
@@ -288,7 +296,7 @@ function renderArticle(page, prefix) {
 
 function renderArticleIntro(page) {
   const keywords = (page.keywords || []).slice(0, 3);
-  return `<section class="article-intro" aria-label="頁面摘要">
+  return `<section class="article-intro" aria-label="內容摘要">
   <p>${escapeHtml(page.description)}</p>
   <div class="article-highlights">
     <div class="mini-card">
@@ -296,12 +304,12 @@ function renderArticleIntro(page) {
       <strong>${escapeHtml(keywords.join("、") || page.navTitle || site.siteName)}</strong>
     </div>
     <div class="mini-card">
-      <span>內容定位</span>
+      <span>內容重點</span>
       <strong>統計觀察、規則教育與研究討論</strong>
     </div>
     <div class="mini-card">
-      <span>CTA 設定</span>
-      <strong>集中管理，不使用誇大文案</strong>
+      <span>註冊入口</span>
+      <strong>固定導向，文字保持簡潔</strong>
     </div>
   </div>
 </section>`;
@@ -351,7 +359,7 @@ function renderPageModules(page, prefix) {
       if (module === "home-research-preview") return renderHomeResearchPreview(prefix);
       if (module === "lotto539-dashboard") return renderLotto539Dashboard();
       if (module === "lotto539-calculator") return renderLotto539Calculator();
-      if (module === "sports-research") return renderSportsResearch();
+      if (module === "sports-research") return renderSportsResearch(prefix);
       return "";
     })
     .join("");
@@ -363,7 +371,7 @@ function renderHomeResearchPreview(prefix) {
   <div class="module-head">
     <p class="eyebrow">Live Research Preview</p>
     <h2>今日先看這三個重點</h2>
-    <p>示範頁把 539、碰數工具與賽事研究放在首頁前段，讓使用者不用搜尋就能進入核心功能。</p>
+    <p>539、碰數工具與賽事追蹤放在首頁前段，使用者不用搜尋就能進入核心功能。</p>
   </div>
   <div class="feature-grid">
     <article class="feature-panel strong">
@@ -380,8 +388,8 @@ function renderHomeResearchPreview(prefix) {
     </article>
     <article class="feature-panel">
       <span>賽事研究</span>
-      <h3>${escapeHtml(getSportsTargetDateLabel())} 看板欄位</h3>
-      <p>球場、人員、傷兵、整季表現與資料完整度一次整理。</p>
+      <h3>${escapeHtml(getSportsTargetDateLabel())} 追蹤卡</h3>
+      <p>球場、人員、傷兵、整季表現與臨場狀態一次整理。</p>
       <a href="${prefix}sports/">查看賽事研究</a>
     </article>
   </div>
@@ -408,8 +416,8 @@ function renderLotto539Dashboard() {
     <article class="draw-card">
       <span>資料狀態</span>
       <h3>${escapeHtml(sourceStatus)}</h3>
-      <p>建置時間：${escapeHtml(formatDateTime(lotto539Data.fetchedAt || buildDate))}</p>
-      <p>若公開頁短暫無法讀取，系統會使用備援資料讓網站正常部署。</p>
+      <p>更新時間：${escapeHtml(formatDateTime(lotto539Data.fetchedAt || buildDate))}</p>
+      <p>若公開資料短暫無法讀取，會先保留最近可用資料。</p>
     </article>
   </div>
   <div class="heat-grid">
@@ -495,12 +503,29 @@ function renderLotto539Calculator() {
 </section>`;
 }
 
-function renderSportsResearch() {
+function renderSportsResearch(prefix) {
   return `<section class="module-section sports-section" id="module-sports">
   <div class="module-head">
     <p class="eyebrow">Sports Research Board</p>
-    <h2>${escapeHtml(getSportsTargetDateLabel())} 次日賽事研究架構</h2>
+    <h2>${escapeHtml(getSportsTargetDateLabel())} 次日賽事追蹤</h2>
     <p>${escapeHtml(sportsResearchBoard.intro)}</p>
+  </div>
+  <div class="tracking-refresh" data-refresh-panel data-refresh-url="${escapeAttr(`${prefix}assets/data/sports-tracking.json`)}" data-refresh-seconds="${escapeAttr(sportsResearchBoard.updateEverySeconds)}">
+    <div>
+      <span>追蹤資料</span>
+      <strong class="tracking-state" data-refresh-state>已載入</strong>
+    </div>
+    <div>
+      <span>最後更新</span>
+      <strong class="tracking-timestamp" data-refresh-time>${escapeHtml(formatDateTime(sportsTrackingData.updatedAt))}</strong>
+    </div>
+    <div>
+      <span>下次刷新</span>
+      <strong><span data-refresh-countdown>${sportsResearchBoard.updateEverySeconds}</span> 秒</strong>
+    </div>
+  </div>
+  <div class="sports-track-list" data-sports-track-list>
+    ${sportsTrackingData.games.map(renderSportsTrackCard).join("")}
   </div>
   <div class="sports-grid">
     ${sportsResearchBoard.factors
@@ -512,41 +537,25 @@ function renderSportsResearch() {
       )
       .join("")}
   </div>
-  <div class="table-card">
-    <div class="table-head">
-      <h3>全量賽事資料源規劃</h3>
-      <span>示範頁先完成欄位，不假裝已串接所有賽程</span>
-    </div>
-    <div class="responsive-table">
-      <table class="data-table source-table">
-        <thead><tr><th>聯盟</th><th>範圍</th><th>資料源</th><th>必要欄位</th><th>狀態</th></tr></thead>
-        <tbody>
-          ${sportsResearchBoard.leagues
-            .map(
-              (league) => `<tr>
-            <td><strong>${escapeHtml(league.name)}</strong></td>
-            <td>${escapeHtml(league.scope)}</td>
-            <td>${escapeHtml(league.sourcePlan)}</td>
-            <td>${escapeHtml(league.requiredFields)}</td>
-            <td><span class="status-pill">${escapeHtml(league.status)}</span></td>
-          </tr>`
-            )
-            .join("")}
-        </tbody>
-      </table>
-    </div>
-  </div>
-  <div class="research-template">
-    <div>
-      <p class="eyebrow">Recommendation Template</p>
-      <h3>正式版推薦卡應包含的內容</h3>
-      <p>資料不完整時顯示「資料不足」，資料完整時才產出研究觀點。</p>
-    </div>
-    <ol>
-      ${sportsResearchBoard.recommendationTemplate.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
-    </ol>
-  </div>
 </section>`;
+}
+
+function renderSportsTrackCard(game) {
+  return `<article class="sports-track-card" data-track-key="${escapeAttr(game.name)}">
+  <div class="track-card-head">
+    <span>${escapeHtml(game.name)}</span>
+    <strong>${escapeHtml(game.match)}</strong>
+  </div>
+  <dl>
+    <div><dt>範圍</dt><dd>${escapeHtml(game.scope)}</dd></div>
+    <div><dt>時間</dt><dd>${escapeHtml(game.time)}</dd></div>
+    <div><dt>球場</dt><dd>${escapeHtml(game.venue)}</dd></div>
+    <div><dt>人員</dt><dd>${escapeHtml(game.personnel)}</dd></div>
+    <div><dt>傷兵</dt><dd>${escapeHtml(game.injuries)}</dd></div>
+    <div><dt>整季</dt><dd>${escapeHtml(game.season)}</dd></div>
+    <div><dt>臨場</dt><dd>${escapeHtml(game.live)}</dd></div>
+  </dl>
+</article>`;
 }
 
 function renderRankItems(items, type) {
@@ -707,12 +716,12 @@ function createNotFoundPage() {
     id: "not-found",
     route: "404.html",
     navTitle: "404",
-    title: "找不到頁面｜賽號研究所",
-    description: "找不到指定頁面，請回到首頁或使用左側細項欄位。",
-    heroTitle: "找不到頁面",
+    title: "找不到內容｜賽號研究所",
+    description: "找不到指定內容，請回到首頁或使用左側細項欄位。",
+    heroTitle: "找不到內容",
     heroLead: "這個連結可能已移動或不存在。你可以回到首頁、539、賽事研究或 FAQ。",
     eyebrow: "404",
-    imageAlt: "找不到頁面的資訊平台示意圖",
+    imageAlt: "找不到內容的研究畫面示意圖",
     sections: [
       {
         title: "回到主要功能",
@@ -1007,9 +1016,18 @@ function isValid539Numbers(numbers) {
   );
 }
 
+function buildSportsTrackingData() {
+  return {
+    updatedAt: buildDate.toISOString(),
+    targetDate: getSportsTargetDateIso(),
+    targetLabel: getSportsTargetDateLabel(),
+    refreshSeconds: sportsResearchBoard.updateEverySeconds,
+    games: sportsResearchBoard.games
+  };
+}
+
 function getSportsTargetDateLabel() {
-  const [year, month, day] = lotto539Analysis.latest.date.split("-").map(Number);
-  const targetDate = new Date(Date.UTC(year, month - 1, day + 1, 12, 0, 0));
+  const targetDate = getSportsTargetDate();
   return new Intl.DateTimeFormat("zh-Hant-TW", {
     timeZone: "Asia/Taipei",
     year: "numeric",
@@ -1017,6 +1035,31 @@ function getSportsTargetDateLabel() {
     day: "2-digit",
     weekday: "short"
   }).format(targetDate);
+}
+
+function getSportsTargetDateIso() {
+  const targetDate = getSportsTargetDate();
+  return new Intl.DateTimeFormat("sv-SE", {
+    timeZone: "Asia/Taipei",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  }).format(targetDate);
+}
+
+function getSportsTargetDate() {
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Taipei",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  })
+    .formatToParts(buildDate)
+    .reduce((acc, part) => {
+      if (part.type !== "literal") acc[part.type] = Number(part.value);
+      return acc;
+    }, {});
+  return new Date(Date.UTC(parts.year, parts.month - 1, parts.day + 1, 12, 0, 0));
 }
 
 function pageHref(page, prefix) {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T16:19:53.551Z",
+  "generatedAt": "2026-06-06T16:40:46.974Z",
   "policy": "Only Low and Medium keywords are recommended for normal SEO usage. High and Restricted keywords are flagged and excluded from automatic title, description, and heading generation.",
   "recommended": [
     {
@@ -16,6 +16,22 @@
         "今彩539 冷熱號",
         "539 熱門號碼",
         "539 冷門號碼"
+      ]
+    },
+    {
+      "keyword": "539 研究",
+      "language": "zh-Hant",
+      "category": "about",
+      "searchIntent": "頁面主題相關資訊查詢",
+      "suggestedPageType": "研究入口頁",
+      "sensitivityLevel": "Low",
+      "complianceRisk": "需保持中性語氣，不使用保證結果或誇大收益文案。",
+      "recommendedUsage": "可用於內文、FAQ、標題或內部連結，並搭配責任提醒。",
+      "autoUseAllowed": true,
+      "relatedLongTailKeywords": [
+        "539 研究教學",
+        "539 研究說明",
+        "539 研究常見問題"
       ]
     },
     {
@@ -371,7 +387,23 @@
       ]
     },
     {
-      "keyword": "資料源串接",
+      "keyword": "資料使用",
+      "language": "zh-Hant",
+      "category": "privacy",
+      "searchIntent": "頁面主題相關資訊查詢",
+      "suggestedPageType": "研究入口頁",
+      "sensitivityLevel": "Low",
+      "complianceRisk": "需保持中性語氣，不使用保證結果或誇大收益文案。",
+      "recommendedUsage": "可用於內文、FAQ、標題或內部連結，並搭配責任提醒。",
+      "autoUseAllowed": true,
+      "relatedLongTailKeywords": [
+        "資料使用教學",
+        "資料使用說明",
+        "資料使用常見問題"
+      ]
+    },
+    {
+      "keyword": "資料校正",
       "language": "zh-Hant",
       "category": "contact",
       "searchIntent": "頁面主題相關資訊查詢",
@@ -381,9 +413,9 @@
       "recommendedUsage": "可用於內文、FAQ、標題或內部連結，並搭配責任提醒。",
       "autoUseAllowed": true,
       "relatedLongTailKeywords": [
-        "資料源串接教學",
-        "資料源串接說明",
-        "資料源串接常見問題"
+        "資料校正教學",
+        "資料校正說明",
+        "資料校正常見問題"
       ]
     },
     {
@@ -416,6 +448,22 @@
         "賽事研究 FAQ教學",
         "賽事研究 FAQ說明",
         "賽事研究 FAQ常見問題"
+      ]
+    },
+    {
+      "keyword": "賽事追蹤",
+      "language": "zh-Hant",
+      "category": "contact",
+      "searchIntent": "頁面主題相關資訊查詢",
+      "suggestedPageType": "研究入口頁",
+      "sensitivityLevel": "Low",
+      "complianceRisk": "需保持中性語氣，不使用保證結果或誇大收益文案。",
+      "recommendedUsage": "可用於內文、FAQ、標題或內部連結，並搭配責任提醒。",
+      "autoUseAllowed": true,
+      "relatedLongTailKeywords": [
+        "賽事追蹤教學",
+        "賽事追蹤說明",
+        "賽事追蹤常見問題"
       ]
     },
     {
@@ -464,54 +512,6 @@
         "賽事資料源",
         "球場情況研究",
         "球員整季表現"
-      ]
-    },
-    {
-      "keyword": "GitHub Pages",
-      "language": "zh-Hant",
-      "category": "privacy",
-      "searchIntent": "頁面主題相關資訊查詢",
-      "suggestedPageType": "研究入口頁",
-      "sensitivityLevel": "Low",
-      "complianceRisk": "需保持中性語氣，不使用保證結果或誇大收益文案。",
-      "recommendedUsage": "可用於內文、FAQ、標題或內部連結，並搭配責任提醒。",
-      "autoUseAllowed": true,
-      "relatedLongTailKeywords": [
-        "GitHub Pages教學",
-        "GitHub Pages說明",
-        "GitHub Pages常見問題"
-      ]
-    },
-    {
-      "keyword": "SEO 更新",
-      "language": "zh-Hant",
-      "category": "contact",
-      "searchIntent": "頁面主題相關資訊查詢",
-      "suggestedPageType": "研究入口頁",
-      "sensitivityLevel": "Low",
-      "complianceRisk": "需保持中性語氣，不使用保證結果或誇大收益文案。",
-      "recommendedUsage": "可用於內文、FAQ、標題或內部連結，並搭配責任提醒。",
-      "autoUseAllowed": true,
-      "relatedLongTailKeywords": [
-        "SEO 更新教學",
-        "SEO 更新說明",
-        "SEO 更新常見問題"
-      ]
-    },
-    {
-      "keyword": "SEO 前導網站",
-      "language": "zh-Hant",
-      "category": "about",
-      "searchIntent": "頁面主題相關資訊查詢",
-      "suggestedPageType": "研究入口頁",
-      "sensitivityLevel": "Low",
-      "complianceRisk": "需保持中性語氣，不使用保證結果或誇大收益文案。",
-      "recommendedUsage": "可用於內文、FAQ、標題或內部連結，並搭配責任提醒。",
-      "autoUseAllowed": true,
-      "relatedLongTailKeywords": [
-        "SEO 前導網站教學",
-        "SEO 前導網站說明",
-        "SEO 前導網站常見問題"
       ]
     },
     {

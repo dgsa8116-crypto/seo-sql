@@ -1137,6 +1137,105 @@ h1 {
   min-width: 980px;
 }
 
+.tracking-refresh {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.tracking-refresh > div {
+  padding: 0.95rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(22, 24, 29, 0.05);
+}
+
+.tracking-refresh span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.tracking-refresh strong {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--ink);
+  line-height: 1.35;
+}
+
+.sports-track-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sports-track-card {
+  min-width: 0;
+  padding: 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: 0 12px 32px rgba(22, 24, 29, 0.06);
+}
+
+.track-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.track-card-head span {
+  display: inline-flex;
+  min-height: 30px;
+  align-items: center;
+  padding: 0.28rem 0.55rem;
+  color: var(--accent-dark);
+  border: 1px solid rgba(185, 28, 28, 0.18);
+  border-radius: 999px;
+  background: var(--accent-soft);
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.track-card-head strong {
+  color: var(--ink);
+  text-align: right;
+}
+
+.sports-track-card dl {
+  display: grid;
+  gap: 0.48rem;
+  margin: 0;
+}
+
+.sports-track-card dl > div {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  gap: 0.6rem;
+  align-items: start;
+  padding-top: 0.48rem;
+  border-top: 1px solid var(--line);
+}
+
+.sports-track-card dt {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.sports-track-card dd {
+  min-width: 0;
+  margin: 0;
+  color: var(--ink-soft);
+  font-weight: 720;
+}
+
 .research-template {
   display: grid;
   grid-template-columns: minmax(220px, 0.7fr) minmax(0, 1.3fr);
@@ -1231,6 +1330,8 @@ h1 {
   .heat-grid,
   .sports-grid,
   .explain-grid,
+  .sports-track-list,
+  .tracking-refresh,
   .rule-strip {
     grid-template-columns: 1fr 1fr;
   }
@@ -1347,8 +1448,18 @@ h1 {
   .heat-grid,
   .sports-grid,
   .explain-grid,
+  .sports-track-list,
+  .tracking-refresh,
   .rule-strip {
     grid-template-columns: 1fr;
+  }
+
+  .track-card-head {
+    display: grid;
+  }
+
+  .track-card-head strong {
+    text-align: left;
   }
 
   .module-section {

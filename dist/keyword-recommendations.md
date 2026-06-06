@@ -1,6 +1,6 @@
 # Keyword Recommendations
 
-Generated at: 2026-06-06T16:19:53.551Z
+Generated at: 2026-06-06T16:40:46.974Z
 
 Only Low and Medium keywords are recommended for normal SEO usage. High and Restricted keywords are flagged and excluded from automatic title, description, and heading generation.
 
@@ -9,6 +9,7 @@ Only Low and Medium keywords are recommended for normal SEO usage. High and Rest
 | Keyword | Sensitivity | Category | Search intent | Recommended usage |
 | --- | --- | --- | --- | --- |
 | 539 冷熱號 | Low | lotto539 | 查看今彩 539 近期開獎與冷熱號觀察 | 可用於 539 頁標題、導言、FAQ 與內部連結。 |
+| 539 研究 | Low | about | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
 | 539 最新開獎 | Low | lotto539 | 查詢最近一期 539 開獎號碼 | 可用於最新一期區塊與 meta description。 |
 | 539 碰數計算 | Low | home | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
 | 539 對獎 | Low | lotto539-calculator | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
@@ -31,15 +32,14 @@ Only Low and Medium keywords are recommended for normal SEO usage. High and Rest
 | 莊閒和說明 | Low | betting | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
 | 責任限制 | Low | terms | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
 | 責任娛樂 | Low | responsible | 了解風險與自我控管 | 應出現在首頁、頁尾、FAQ、條款與指南頁。 |
-| 資料源串接 | Low | contact | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
+| 資料使用 | Low | privacy | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
+| 資料校正 | Low | contact | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
 | 賽事研究 | Low | home | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
 | 賽事研究 FAQ | Low | faq | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
+| 賽事追蹤 | Low | contact | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
 | 賽號研究所 | Low | about | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
 | 隱私政策 | Low | privacy | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
 | 體育賽事研究 | Low | sports | 以研究角度閱讀賽程、球場與人員資訊 | 可用於賽事研究頁標題與內文，不使用投注承諾語氣。 |
-| GitHub Pages | Low | privacy | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
-| SEO 更新 | Low | contact | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
-| SEO 前導網站 | Low | about | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
 | 次日賽事分析 | Medium | sports | 查詢隔日賽程與賽事研究欄位 | 可用於賽事研究頁，必須搭配資料來源與研究聲明。 |
 | 百家樂下注流程 | Medium | betting-flow | 了解投注步驟與選項 | 可用於流程頁，但需加入結果不確定與量力而為提醒。 |
 

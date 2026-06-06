@@ -32,6 +32,7 @@ const requiredFiles = [
   "assets/app.js",
   "assets/config.js",
   "assets/data/lotto539.json",
+  "assets/data/sports-tracking.json",
   "assets/images/urban-minimal-hero.png"
 ];
 

@@ -47,6 +47,41 @@
     }
   });
 
+  document.querySelectorAll("[data-refresh-panel]").forEach((panel) => {
+    const url = panel.getAttribute("data-refresh-url");
+    const seconds = Math.max(Number(panel.getAttribute("data-refresh-seconds")) || 75, 15);
+    const state = panel.querySelector("[data-refresh-state]");
+    const time = panel.querySelector("[data-refresh-time]");
+    const countdown = panel.querySelector("[data-refresh-countdown]");
+    let remaining = seconds;
+
+    const tick = () => {
+      remaining -= 1;
+      if (countdown) countdown.textContent = String(Math.max(remaining, 0));
+      if (remaining <= 0) refreshTrackingData();
+    };
+
+    async function refreshTrackingData() {
+      remaining = seconds;
+      if (state) state.textContent = "更新中";
+      try {
+        const response = await fetch(`${url}${url.includes("?") ? "&" : "?"}t=${Date.now()}`, {
+          cache: "no-store"
+        });
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        const data = await response.json();
+        if (time && data.updatedAt) time.textContent = formatDateTime(data.updatedAt);
+        if (state) state.textContent = "已更新";
+        if (Array.isArray(data.games)) updateSportsCards(data.games);
+      } catch {
+        if (state) state.textContent = "保留現有資料";
+      }
+      if (countdown) countdown.textContent = String(seconds);
+    }
+
+    if (url) window.setInterval(tick, 1000);
+  });
+
   function parseDraws(value) {
     try {
       const parsed = JSON.parse(value || "[]");
@@ -117,12 +152,52 @@
     container.innerHTML = html;
   }
 
+  function updateSportsCards(games) {
+    games.forEach((game) => {
+      const card = document.querySelector(`[data-track-key="${cssEscape(game.name)}"]`);
+      if (!card) return;
+      const values = card.querySelectorAll("dd");
+      const nextValues = [
+        game.scope,
+        game.time,
+        game.venue,
+        game.personnel,
+        game.injuries,
+        game.season,
+        game.live
+      ];
+      values.forEach((item, index) => {
+        if (nextValues[index]) item.textContent = nextValues[index];
+      });
+    });
+  }
+
   function formatNumber(number) {
     return String(number).padStart(2, "0");
   }
 
   function formatDate(date) {
     return String(date).replace(/-/g, "/");
+  }
+
+  function formatDateTime(value) {
+    try {
+      return new Intl.DateTimeFormat("zh-Hant-TW", {
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit"
+      }).format(new Date(value));
+    } catch {
+      return String(value);
+    }
+  }
+
+  function cssEscape(value) {
+    if (window.CSS && typeof window.CSS.escape === "function") return window.CSS.escape(value);
+    return String(value).replace(/["\\]/g, "\\$&");
   }
 
   function escapeHtml(value) {

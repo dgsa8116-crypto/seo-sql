@@ -39,56 +39,96 @@ export const fallbackLotto539Draws = [
 
 export const sportsResearchBoard = {
   intro:
-    "體育賽事頁定位為學術研究討論：整理賽程、球場、名單、傷兵、整季表現與即時場況欄位；正式上線若要全量準確，必須串接穩定賽程與傷兵資料源。",
-  leagues: [
+    "明日賽事以追蹤卡直接呈現，重點放在時間、球場、人員、傷兵、整季表現與臨場狀態。超過更新間隔後，前端會重新讀取追蹤資料。",
+  updateEverySeconds: 75,
+  games: [
     {
       name: "MLB",
       scope: "美國職棒大聯盟",
-      sourcePlan: "MLB 官方賽程與 Stats API",
-      requiredFields: "先發投手、牛棚用量、打線、球場、天氣、傷兵名單",
-      status: "可 API 化"
+      match: "明日全場次",
+      time: "賽前滾動追蹤",
+      venue: "球場、天氣、風向、溫度",
+      personnel: "先發投手、打線、牛棚用量",
+      injuries: "IL 名單、每日觀察名單",
+      season: "勝敗、OPS、ERA、WHIP、近 10 場",
+      live: "賽前 90 分鐘確認"
     },
     {
       name: "NPB",
       scope: "日本職棒",
-      sourcePlan: "NPB 官方賽程、球團公告、日媒傷兵資訊",
-      requiredFields: "先發投手、登錄名單、球場、近期打擊與投手數據",
-      status: "需來源整合"
+      match: "明日全場次",
+      time: "日間更新",
+      venue: "球場、屋頂狀態、天候",
+      personnel: "預告先發、登錄名單、牛棚狀態",
+      injuries: "抹消、復歸、休養名單",
+      season: "打擊率、OPS、防禦率、近期先發局數",
+      live: "賽前名單確認"
     },
     {
       name: "KBO",
       scope: "韓國職棒",
-      sourcePlan: "KBO 官方賽程、球團公告、韓媒傷兵資訊",
-      requiredFields: "先發投手、打線預估、球場、近期戰績",
-      status: "需來源整合"
+      match: "明日全場次",
+      time: "賽程日更新",
+      venue: "球場、降雨、延賽風險",
+      personnel: "先發投手、中心打線、後援輪替",
+      injuries: "登錄異動、傷兵、休養",
+      season: "團隊得分、先發局數、牛棚負荷",
+      live: "賽前狀態確認"
     },
     {
       name: "CPBL",
       scope: "中華職棒",
-      sourcePlan: "中職官方賽程、球團公告、球場天候資訊",
-      requiredFields: "先發投手、登錄名單、球場、近況與傷兵",
-      status: "需來源整合"
+      match: "明日全場次",
+      time: "台灣時間更新",
+      venue: "球場、天候、場地狀態",
+      personnel: "先發投手、先發打線、登錄異動",
+      injuries: "傷兵、休養、二軍調整",
+      season: "團隊攻守、近況、主客場表現",
+      live: "開賽前確認"
     },
     {
       name: "足球",
-      scope: "歐洲、美洲、亞洲主要與小型賽事",
-      sourcePlan: "各聯盟官方賽程、FIFA/UEFA/AFC 賽事資料、傷兵公告",
-      requiredFields: "預計先發、賽地、賽程密度、傷停、近期 xG 與攻守數據",
-      status: "需分聯盟串接"
+      scope: "主要聯賽與小型賽事",
+      match: "明日賽事列表",
+      time: "依時區排序",
+      venue: "主客場、草皮、天候",
+      personnel: "預計先發、輪換、停賽",
+      injuries: "傷停、復出、禁賽",
+      season: "xG、攻守效率、近 5 場",
+      live: "賽前名單確認"
     },
     {
       name: "籃球",
       scope: "NBA、WNBA、國際與小型聯賽",
-      sourcePlan: "官方賽程、球隊 injury report、球員 tracking/stat feed",
-      requiredFields: "出賽狀態、輪休、pace、usage、主客場與背靠背",
-      status: "需 API 權限"
+      match: "明日賽事列表",
+      time: "開賽前更新",
+      venue: "主客場、旅程、背靠背",
+      personnel: "先發預估、輪替、上場時間",
+      injuries: "出賽狀態、輪休、每日觀察",
+      season: "pace、usage、效率值、近況",
+      live: "賽前 injury report"
     },
     {
       name: "冰球",
       scope: "NHL 與其他冰球賽事",
-      sourcePlan: "官方賽程、守門員資訊、傷兵與球隊公告",
-      requiredFields: "先發守門員、special teams、傷兵、客場旅程",
-      status: "需 API 權限"
+      match: "明日賽事列表",
+      time: "賽前滾動追蹤",
+      venue: "主客場、旅程、連戰狀態",
+      personnel: "先發守門員、攻防組合",
+      injuries: "傷兵、每日觀察、復出",
+      season: "得失球、PP/PK、守門員近況",
+      live: "賽前守門員確認"
+    },
+    {
+      name: "小型賽事",
+      scope: "次級聯賽、盃賽與區域賽",
+      match: "明日補充列表",
+      time: "分批更新",
+      venue: "場地、旅程、開賽時區",
+      personnel: "公布名單、輪替、缺席",
+      injuries: "傷停、賽前公告",
+      season: "近期戰績、攻守表現、賽程密度",
+      live: "開賽前二次確認"
     }
   ],
   factors: [
@@ -109,20 +149,12 @@ export const sportsResearchBoard = {
       text: "觀察長期數據、近況、主客場差異與對戰型態，不用單一場結果推論。"
     },
     {
-      title: "資料完整度",
-      text: "若賽程、名單或傷兵資料缺漏，頁面應顯示資料不足，而不是硬給推薦。"
+      title: "追蹤更新",
+      text: "超過更新間隔後重新讀取追蹤資料，時間、狀態與卡片內容會同步刷新。"
     },
     {
-      title: "研究結論分級",
-      text: "用 A/B/C 或資料不足標示研究信心，不使用保證、穩賺、必勝等字眼。"
+      title: "研究重點",
+      text: "以球場、人員、傷兵、整季表現與即時狀態排序，不用單一指標判斷。"
     }
-  ],
-  recommendationTemplate: [
-    "比賽：聯盟 / 客隊 @ 主隊 / 開賽時間",
-    "場地：球場、城市、天氣或室內條件",
-    "人員：預計先發、輪替、傷兵、賽前確認時間",
-    "數據：整季攻守、近 10 場、主客場、旅途與休息天數",
-    "研究觀點：資料支持的討論重點與不確定因素",
-    "聲明：僅供研究討論，不保證結果"
   ]
 };

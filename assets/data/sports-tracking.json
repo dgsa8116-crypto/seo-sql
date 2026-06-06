@@ -1,0 +1,96 @@
+{
+  "updatedAt": "2026-06-06T16:40:46.974Z",
+  "targetDate": "2026-06-08",
+  "targetLabel": "2026/06/08（週一）",
+  "refreshSeconds": 75,
+  "games": [
+    {
+      "name": "MLB",
+      "scope": "美國職棒大聯盟",
+      "match": "明日全場次",
+      "time": "賽前滾動追蹤",
+      "venue": "球場、天氣、風向、溫度",
+      "personnel": "先發投手、打線、牛棚用量",
+      "injuries": "IL 名單、每日觀察名單",
+      "season": "勝敗、OPS、ERA、WHIP、近 10 場",
+      "live": "賽前 90 分鐘確認"
+    },
+    {
+      "name": "NPB",
+      "scope": "日本職棒",
+      "match": "明日全場次",
+      "time": "日間更新",
+      "venue": "球場、屋頂狀態、天候",
+      "personnel": "預告先發、登錄名單、牛棚狀態",
+      "injuries": "抹消、復歸、休養名單",
+      "season": "打擊率、OPS、防禦率、近期先發局數",
+      "live": "賽前名單確認"
+    },
+    {
+      "name": "KBO",
+      "scope": "韓國職棒",
+      "match": "明日全場次",
+      "time": "賽程日更新",
+      "venue": "球場、降雨、延賽風險",
+      "personnel": "先發投手、中心打線、後援輪替",
+      "injuries": "登錄異動、傷兵、休養",
+      "season": "團隊得分、先發局數、牛棚負荷",
+      "live": "賽前狀態確認"
+    },
+    {
+      "name": "CPBL",
+      "scope": "中華職棒",
+      "match": "明日全場次",
+      "time": "台灣時間更新",
+      "venue": "球場、天候、場地狀態",
+      "personnel": "先發投手、先發打線、登錄異動",
+      "injuries": "傷兵、休養、二軍調整",
+      "season": "團隊攻守、近況、主客場表現",
+      "live": "開賽前確認"
+    },
+    {
+      "name": "足球",
+      "scope": "主要聯賽與小型賽事",
+      "match": "明日賽事列表",
+      "time": "依時區排序",
+      "venue": "主客場、草皮、天候",
+      "personnel": "預計先發、輪換、停賽",
+      "injuries": "傷停、復出、禁賽",
+      "season": "xG、攻守效率、近 5 場",
+      "live": "賽前名單確認"
+    },
+    {
+      "name": "籃球",
+      "scope": "NBA、WNBA、國際與小型聯賽",
+      "match": "明日賽事列表",
+      "time": "開賽前更新",
+      "venue": "主客場、旅程、背靠背",
+      "personnel": "先發預估、輪替、上場時間",
+      "injuries": "出賽狀態、輪休、每日觀察",
+      "season": "pace、usage、效率值、近況",
+      "live": "賽前 injury report"
+    },
+    {
+      "name": "冰球",
+      "scope": "NHL 與其他冰球賽事",
+      "match": "明日賽事列表",
+      "time": "賽前滾動追蹤",
+      "venue": "主客場、旅程、連戰狀態",
+      "personnel": "先發守門員、攻防組合",
+      "injuries": "傷兵、每日觀察、復出",
+      "season": "得失球、PP/PK、守門員近況",
+      "live": "賽前守門員確認"
+    },
+    {
+      "name": "小型賽事",
+      "scope": "次級聯賽、盃賽與區域賽",
+      "match": "明日補充列表",
+      "time": "分批更新",
+      "venue": "場地、旅程、開賽時區",
+      "personnel": "公布名單、輪替、缺席",
+      "injuries": "傷停、賽前公告",
+      "season": "近期戰績、攻守表現、賽程密度",
+      "live": "開賽前二次確認"
+    }
+  ]
+}

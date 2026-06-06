@@ -1,17 +1,17 @@
 export const siteConfig = {
   siteName: "賽號研究所",
   siteDescription:
-    "整理 539 開獎觀察、簡易碰數工具、百家樂規則與體育賽事研究欄位的繁體中文資訊平台。",
+    "整理 539 開獎觀察、簡易碰數工具、百家樂規則與體育賽事追蹤的繁體中文研究入口。",
   publicBaseUrl: "https://dgsa8116-crypto.github.io/seo-sql/",
   registerRedirectUrl: "https://becgame88168.com/",
   ctaText: "前往註冊",
   seoTitle: "賽號研究所｜539 冷熱號、碰數計算與賽事研究看板",
   seoDescription:
-    "都市極簡風格的研究型前導網站，提供 539 最新號碼、冷熱號觀察、簡易碰數計算、賽事資料欄位與責任娛樂提醒。",
+    "都市極簡風格的研究入口，提供 539 最新號碼、冷熱號觀察、簡易碰數計算、賽事追蹤與責任娛樂提醒。",
   contactEmail: "support@example.com",
   responsibleNotice:
-    "本網站僅提供統計觀察、規則教育與學術研究討論，不保證任何結果或收益。請遵守所在地法律並量力而為。",
-  ageNotice: "本網站內容僅供達法定年齡的成年人閱讀。",
+    "僅提供統計觀察、規則教育與學術研究討論，不保證任何結果或收益。請遵守所在地法律並量力而為。",
+  ageNotice: "內容僅供達法定年齡的成年人閱讀。",
   regionalNotice:
     "各地法規與平台可用性不同，使用任何娛樂服務前請先確認所在地規範。",
   organizationName: "賽號研究所內容團隊",
