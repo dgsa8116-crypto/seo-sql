@@ -1,0 +1,615 @@
+{
+  "sourceName": "樂透彩幸運發財網",
+  "sourceUrl": "https://www.pilio.idv.tw/lto539/list.asp",
+  "sourceStatus": "fallback",
+  "fetchedAt": "2026-06-06T15:59:27.308Z",
+  "draws": [
+    {
+      "date": "2026-06-06",
+      "weekday": "六",
+      "numbers": [
+        13,
+        27,
+        30,
+        37,
+        38
+      ]
+    },
+    {
+      "date": "2026-06-05",
+      "weekday": "五",
+      "numbers": [
+        7,
+        21,
+        26,
+        27,
+        31
+      ]
+    },
+    {
+      "date": "2026-06-04",
+      "weekday": "四",
+      "numbers": [
+        2,
+        8,
+        24,
+        29,
+        35
+      ]
+    },
+    {
+      "date": "2026-06-03",
+      "weekday": "三",
+      "numbers": [
+        2,
+        8,
+        17,
+        25,
+        38
+      ]
+    },
+    {
+      "date": "2026-06-02",
+      "weekday": "二",
+      "numbers": [
+        7,
+        12,
+        22,
+        26,
+        30
+      ]
+    },
+    {
+      "date": "2026-06-01",
+      "weekday": "一",
+      "numbers": [
+        5,
+        14,
+        19,
+        20,
+        28
+      ]
+    },
+    {
+      "date": "2026-05-30",
+      "weekday": "六",
+      "numbers": [
+        2,
+        3,
+        4,
+        13,
+        39
+      ]
+    },
+    {
+      "date": "2026-05-29",
+      "weekday": "五",
+      "numbers": [
+        12,
+        15,
+        20,
+        34,
+        35
+      ]
+    },
+    {
+      "date": "2026-05-28",
+      "weekday": "四",
+      "numbers": [
+        6,
+        9,
+        12,
+        19,
+        31
+      ]
+    },
+    {
+      "date": "2026-05-27",
+      "weekday": "三",
+      "numbers": [
+        2,
+        3,
+        18,
+        19,
+        21
+      ]
+    },
+    {
+      "date": "2026-05-26",
+      "weekday": "二",
+      "numbers": [
+        2,
+        7,
+        11,
+        14,
+        37
+      ]
+    },
+    {
+      "date": "2026-05-25",
+      "weekday": "一",
+      "numbers": [
+        5,
+        6,
+        12,
+        36,
+        37
+      ]
+    },
+    {
+      "date": "2026-05-23",
+      "weekday": "六",
+      "numbers": [
+        6,
+        15,
+        16,
+        24,
+        38
+      ]
+    },
+    {
+      "date": "2026-05-22",
+      "weekday": "五",
+      "numbers": [
+        4,
+        8,
+        15,
+        16,
+        37
+      ]
+    },
+    {
+      "date": "2026-05-21",
+      "weekday": "四",
+      "numbers": [
+        9,
+        25,
+        28,
+        34,
+        36
+      ]
+    },
+    {
+      "date": "2026-05-20",
+      "weekday": "三",
+      "numbers": [
+        1,
+        20,
+        21,
+        23,
+        35
+      ]
+    },
+    {
+      "date": "2026-05-19",
+      "weekday": "二",
+      "numbers": [
+        4,
+        6,
+        24,
+        31,
+        32
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "weekday": "一",
+      "numbers": [
+        8,
+        15,
+        20,
+        32,
+        33
+      ]
+    },
+    {
+      "date": "2026-05-16",
+      "weekday": "六",
+      "numbers": [
+        2,
+        11,
+        28,
+        32,
+        33
+      ]
+    },
+    {
+      "date": "2026-05-15",
+      "weekday": "五",
+      "numbers": [
+        1,
+        13,
+        23,
+        25,
+        36
+      ]
+    },
+    {
+      "date": "2026-05-14",
+      "weekday": "四",
+      "numbers": [
+        8,
+        18,
+        28,
+        35,
+        39
+      ]
+    },
+    {
+      "date": "2026-05-13",
+      "weekday": "三",
+      "numbers": [
+        2,
+        6,
+        7,
+        9,
+        23
+      ]
+    },
+    {
+      "date": "2026-05-12",
+      "weekday": "二",
+      "numbers": [
+        1,
+        4,
+        12,
+        22,
+        26
+      ]
+    }
+  ],
+  "analysis": {
+    "latest": {
+      "date": "2026-06-06",
+      "weekday": "六",
+      "numbers": [
+        13,
+        27,
+        30,
+        37,
+        38
+      ]
+    },
+    "drawCount": 23,
+    "recentDraws": [
+      {
+        "date": "2026-06-06",
+        "weekday": "六",
+        "numbers": [
+          13,
+          27,
+          30,
+          37,
+          38
+        ]
+      },
+      {
+        "date": "2026-06-05",
+        "weekday": "五",
+        "numbers": [
+          7,
+          21,
+          26,
+          27,
+          31
+        ]
+      },
+      {
+        "date": "2026-06-04",
+        "weekday": "四",
+        "numbers": [
+          2,
+          8,
+          24,
+          29,
+          35
+        ]
+      },
+      {
+        "date": "2026-06-03",
+        "weekday": "三",
+        "numbers": [
+          2,
+          8,
+          17,
+          25,
+          38
+        ]
+      },
+      {
+        "date": "2026-06-02",
+        "weekday": "二",
+        "numbers": [
+          7,
+          12,
+          22,
+          26,
+          30
+        ]
+      },
+      {
+        "date": "2026-06-01",
+        "weekday": "一",
+        "numbers": [
+          5,
+          14,
+          19,
+          20,
+          28
+        ]
+      },
+      {
+        "date": "2026-05-30",
+        "weekday": "六",
+        "numbers": [
+          2,
+          3,
+          4,
+          13,
+          39
+        ]
+      },
+      {
+        "date": "2026-05-29",
+        "weekday": "五",
+        "numbers": [
+          12,
+          15,
+          20,
+          34,
+          35
+        ]
+      },
+      {
+        "date": "2026-05-28",
+        "weekday": "四",
+        "numbers": [
+          6,
+          9,
+          12,
+          19,
+          31
+        ]
+      },
+      {
+        "date": "2026-05-27",
+        "weekday": "三",
+        "numbers": [
+          2,
+          3,
+          18,
+          19,
+          21
+        ]
+      },
+      {
+        "date": "2026-05-26",
+        "weekday": "二",
+        "numbers": [
+          2,
+          7,
+          11,
+          14,
+          37
+        ]
+      },
+      {
+        "date": "2026-05-25",
+        "weekday": "一",
+        "numbers": [
+          5,
+          6,
+          12,
+          36,
+          37
+        ]
+      },
+      {
+        "date": "2026-05-23",
+        "weekday": "六",
+        "numbers": [
+          6,
+          15,
+          16,
+          24,
+          38
+        ]
+      },
+      {
+        "date": "2026-05-22",
+        "weekday": "五",
+        "numbers": [
+          4,
+          8,
+          15,
+          16,
+          37
+        ]
+      },
+      {
+        "date": "2026-05-21",
+        "weekday": "四",
+        "numbers": [
+          9,
+          25,
+          28,
+          34,
+          36
+        ]
+      },
+      {
+        "date": "2026-05-20",
+        "weekday": "三",
+        "numbers": [
+          1,
+          20,
+          21,
+          23,
+          35
+        ]
+      }
+    ],
+    "hotNumbers": [
+      {
+        "number": 2,
+        "count": 7,
+        "missing": 2
+      },
+      {
+        "number": 8,
+        "count": 5,
+        "missing": 2
+      },
+      {
+        "number": 12,
+        "count": 5,
+        "missing": 4
+      },
+      {
+        "number": 6,
+        "count": 5,
+        "missing": 8
+      },
+      {
+        "number": 37,
+        "count": 4,
+        "missing": 0
+      },
+      {
+        "number": 7,
+        "count": 4,
+        "missing": 1
+      },
+      {
+        "number": 35,
+        "count": 4,
+        "missing": 2
+      },
+      {
+        "number": 20,
+        "count": 4,
+        "missing": 5
+      },
+      {
+        "number": 28,
+        "count": 4,
+        "missing": 5
+      },
+      {
+        "number": 4,
+        "count": 4,
+        "missing": 6
+      }
+    ],
+    "coldNumbers": [
+      {
+        "number": 10,
+        "count": 0,
+        "missing": 23
+      },
+      {
+        "number": 17,
+        "count": 1,
+        "missing": 3
+      },
+      {
+        "number": 29,
+        "count": 1,
+        "missing": 2
+      },
+      {
+        "number": 33,
+        "count": 2,
+        "missing": 17
+      },
+      {
+        "number": 16,
+        "count": 2,
+        "missing": 12
+      },
+      {
+        "number": 11,
+        "count": 2,
+        "missing": 10
+      },
+      {
+        "number": 18,
+        "count": 2,
+        "missing": 9
+      },
+      {
+        "number": 34,
+        "count": 2,
+        "missing": 7
+      },
+      {
+        "number": 3,
+        "count": 2,
+        "missing": 6
+      },
+      {
+        "number": 39,
+        "count": 2,
+        "missing": 6
+      }
+    ],
+    "topPairs": [
+      {
+        "numbers": [
+          1,
+          23
+        ],
+        "count": 2
+      },
+      {
+        "numbers": [
+          2,
+          3
+        ],
+        "count": 2
+      },
+      {
+        "numbers": [
+          2,
+          7
+        ],
+        "count": 2
+      },
+      {
+        "numbers": [
+          2,
+          8
+        ],
+        "count": 2
+      },
+      {
+        "numbers": [
+          2,
+          11
+        ],
+        "count": 2
+      },
+      {
+        "numbers": [
+          6,
+          9
+        ],
+        "count": 2
+      },
+      {
+        "numbers": [
+          6,
+          12
+        ],
+        "count": 2
+      },
+      {
+        "numbers": [
+          6,
+          24
+        ],
+        "count": 2
+      }
+    ]
+  }
+}
