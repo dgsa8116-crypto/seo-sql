@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="../assets/styles.css">
   <script src="../assets/config.js" defer></script>
   <script src="../assets/app.js" defer></script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://dgsa8116-crypto.github.io/seo-sql/#organization","name":"賽號研究所內容團隊","url":"https://dgsa8116-crypto.github.io/seo-sql/","contactPoint":{"@type":"ContactPoint","email":"support@example.com","contactType":"customer support","availableLanguage":["zh-Hant"]}},{"@type":"WebSite","@id":"https://dgsa8116-crypto.github.io/seo-sql/#website","name":"賽號研究所","url":"https://dgsa8116-crypto.github.io/seo-sql/","inLanguage":"zh-Hant-TW","publisher":{"@id":"https://dgsa8116-crypto.github.io/seo-sql/#organization"}},{"@type":"Article","@id":"https://dgsa8116-crypto.github.io/seo-sql/sports/#webpage","url":"https://dgsa8116-crypto.github.io/seo-sql/sports/","name":"體育賽事研究看板｜次日賽程、球場、人員與傷兵追蹤","description":"直接顯示次日體育賽事追蹤，包含 MLB、NPB、KBO、CPBL、足球、籃球、冰球與小型賽事。","inLanguage":"zh-Hant-TW","isPartOf":{"@id":"https://dgsa8116-crypto.github.io/seo-sql/#website"},"publisher":{"@id":"https://dgsa8116-crypto.github.io/seo-sql/#organization"},"dateModified":"2026-06-06T17:06:46.292Z"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://dgsa8116-crypto.github.io/seo-sql/"},{"@type":"ListItem","position":2,"name":"賽事研究","item":"https://dgsa8116-crypto.github.io/seo-sql/sports/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"賽事追蹤多久更新？","acceptedAnswer":{"@type":"Answer","text":"畫面超過更新間隔後會重新讀取追蹤資料，更新時間與狀態會直接顯示。"}},{"@type":"Question","name":"這裡的賽事研究是投注建議嗎？","acceptedAnswer":{"@type":"Answer","text":"不是。這裡只整理賽程、球場、人員、傷兵與整季表現，不保證任何結果。"}}]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://dgsa8116-crypto.github.io/seo-sql/#organization","name":"賽號研究所內容團隊","url":"https://dgsa8116-crypto.github.io/seo-sql/","contactPoint":{"@type":"ContactPoint","email":"support@example.com","contactType":"customer support","availableLanguage":["zh-Hant"]}},{"@type":"WebSite","@id":"https://dgsa8116-crypto.github.io/seo-sql/#website","name":"賽號研究所","url":"https://dgsa8116-crypto.github.io/seo-sql/","inLanguage":"zh-Hant-TW","publisher":{"@id":"https://dgsa8116-crypto.github.io/seo-sql/#organization"}},{"@type":"Article","@id":"https://dgsa8116-crypto.github.io/seo-sql/sports/#webpage","url":"https://dgsa8116-crypto.github.io/seo-sql/sports/","name":"體育賽事研究看板｜次日賽程、球場、人員與傷兵追蹤","description":"直接顯示次日體育賽事追蹤，包含 MLB、NPB、KBO、CPBL、足球、籃球、冰球與小型賽事。","inLanguage":"zh-Hant-TW","isPartOf":{"@id":"https://dgsa8116-crypto.github.io/seo-sql/#website"},"publisher":{"@id":"https://dgsa8116-crypto.github.io/seo-sql/#organization"},"dateModified":"2026-06-06T17:24:50.390Z"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://dgsa8116-crypto.github.io/seo-sql/"},{"@type":"ListItem","position":2,"name":"賽事研究","item":"https://dgsa8116-crypto.github.io/seo-sql/sports/"}]},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"賽事追蹤多久更新？","acceptedAnswer":{"@type":"Answer","text":"畫面超過更新間隔後會重新讀取追蹤資料，更新時間與狀態會直接顯示。"}},{"@type":"Question","name":"這裡的賽事研究代表結果判斷嗎？","acceptedAnswer":{"@type":"Answer","text":"不是。這裡只整理賽程、球場、人員、傷兵與整季表現，不保證任何結果。"}}]}]}</script>
 </head>
 <body class="page-sports">
   <a class="skip-link" href="#content">跳到主要內容</a>
@@ -151,7 +151,7 @@
   <div class="module-head">
     <p class="eyebrow">Sports Research Board</p>
     <h2>2026/06/08（週一） 次日賽事追蹤</h2>
-    <p>明日賽事以追蹤卡直接呈現，重點放在時間、球場、人員、傷兵、整季表現與臨場狀態。超過更新間隔後，前端會重新讀取追蹤資料。</p>
+    <p>次日賽事以追蹤卡直接呈現。2026/06/08 已確認賽程會列出對戰、時間與研究重點；未排定的聯盟會明確標示休兵與下一輪追蹤點。</p>
   </div>
   <div class="tracking-refresh" data-refresh-panel data-refresh-url="../assets/data/sports-tracking.json" data-refresh-seconds="75">
     <div>
@@ -160,7 +160,7 @@
     </div>
     <div>
       <span>最後更新</span>
-      <strong class="tracking-timestamp" data-refresh-time>2026/06/07 上午01:06</strong>
+      <strong class="tracking-timestamp" data-refresh-time>2026/06/07 上午01:24</strong>
     </div>
     <div>
       <span>下次刷新</span>
@@ -170,115 +170,411 @@
   <div class="sports-track-list" data-sports-track-list>
     <article class="sports-track-card" data-track-key="MLB">
   <div class="track-card-head">
-    <span>MLB</span>
-    <strong>明日全場次</strong>
+    <div>
+      <span>MLB</span>
+      <em>已排定</em>
+    </div>
+    <strong data-track-match>8 場：2026/06/08 美東賽程</strong>
+  </div>
+  <p class="track-summary" data-track-summary>賽程依 MLB.com 2026/06/08 公開賽程整理。</p>
+  <div class="track-events" data-track-events>
+    <article class="track-event">
+    <div class="track-event-main">
+      <strong>Seattle Mariners @ Baltimore Orioles</strong>
+      <span>06/08 18:35 ET｜台灣 06/09 06:35</span>
+    </div>
+    <p>Oriole Park at Camden Yards</p>
+    <ul>
+      <li><b>人員</b>先發投手、打線與捕手搭配需賽前確認。</li>
+      <li><b>傷兵</b>查看 IL 與每日觀察名單，不用舊名單判斷。</li>
+      <li><b>整季</b>比較兩隊近 10 場攻擊效率、牛棚連投與先發投手局數。</li>
+      <li><b>臨場</b>室外球場，賽前確認風向與溫度。</li>
+    </ul>
+  </article><article class="track-event">
+    <div class="track-event-main">
+      <strong>Boston Red Sox @ Tampa Bay Rays</strong>
+      <span>06/08 18:40 ET｜台灣 06/09 06:40</span>
+    </div>
+    <p>Tampa Bay 主場</p>
+    <ul>
+      <li><b>人員</b>打線左右打配置與先發投手型態是主要觀察點。</li>
+      <li><b>傷兵</b>每日觀察名單與牛棚可用性需賽前更新。</li>
+      <li><b>整季</b>比較上壘率、長打率、先發投手 WHIP 與近期牛棚負荷。</li>
+      <li><b>臨場</b>主場環境與屋頂/場地狀態以官方資訊為準。</li>
+    </ul>
+  </article><article class="track-event">
+    <div class="track-event-main">
+      <strong>New York Yankees @ Cleveland Guardians</strong>
+      <span>06/08 18:40 ET｜台灣 06/09 06:40</span>
+    </div>
+    <p>Progressive Field</p>
+    <ul>
+      <li><b>人員</b>先發投手對中心打線與後段牛棚安排要分開看。</li>
+      <li><b>傷兵</b>長期 IL 與每日觀察球員會影響守備與代打深度。</li>
+      <li><b>整季</b>比較團隊 OPS、三振率、ERA、WHIP 與近況。</li>
+      <li><b>臨場</b>克里夫蘭室外場，溫度與風向會影響飛球判讀。</li>
+    </ul>
+  </article><article class="track-event">
+    <div class="track-event-main">
+      <strong>Philadelphia Phillies @ Toronto Blue Jays</strong>
+      <span>06/08 19:07 ET｜台灣 06/09 07:07</span>
+    </div>
+    <p>Rogers Centre</p>
+    <ul>
+      <li><b>人員</b>先發投手與左右打輪值會影響前半場節奏。</li>
+      <li><b>傷兵</b>賽前看捕手、內野與牛棚可用名單。</li>
+      <li><b>整季</b>比較主客場攻擊效率、長打率與先發投手近期局數。</li>
+      <li><b>臨場</b>多倫多場館環境較穩定，重點放在打線與投手名單。</li>
+    </ul>
+  </article><article class="track-event">
+    <div class="track-event-main">
+      <strong>Houston Astros @ Los Angeles Angels</strong>
+      <span>06/08 21:38 ET｜台灣 06/09 09:38</span>
+    </div>
+    <p>Angel Stadium</p>
+    <ul>
+      <li><b>人員</b>客隊旅行與主隊打線完整度需賽前確認。</li>
+      <li><b>傷兵</b>每日觀察名單、休養與牛棚連用是風險點。</li>
+      <li><b>整季</b>比較先發投手局數、團隊長打率與牛棚近 3 日使用量。</li>
+      <li><b>臨場</b>晚場室外環境，確認風向與溫度變化。</li>
+    </ul>
+  </article><article class="track-event">
+    <div class="track-event-main">
+      <strong>Cincinnati Reds @ San Diego Padres</strong>
+      <span>06/08 21:40 ET｜台灣 06/09 09:40</span>
+    </div>
+    <p>Petco Park</p>
+    <ul>
+      <li><b>人員</b>先發投手控球、捕手搭配與牛棚順位要同步看。</li>
+      <li><b>傷兵</b>確認主力野手是否休養或限制出賽。</li>
+      <li><b>整季</b>比較兩隊近期得分、盜壘企圖與先發投手 WHIP。</li>
+      <li><b>臨場</b>Petco Park 夜場需看海風、溫度與打線公布。</li>
+    </ul>
+  </article><article class="track-event">
+    <div class="track-event-main">
+      <strong>Washington Nationals @ San Francisco Giants</strong>
+      <span>06/08 21:45 ET｜台灣 06/09 09:45</span>
+    </div>
+    <p>Oracle Park</p>
+    <ul>
+      <li><b>人員</b>外野守備、左投右投對位與牛棚可用性是重點。</li>
+      <li><b>傷兵</b>賽前看每日觀察名單與主力輪休。</li>
+      <li><b>整季</b>比較主客場 OPS、先發投手 ERA/WHIP 與守備失誤。</li>
+      <li><b>臨場</b>海灣球場風向明顯，開賽前需確認現場風速。</li>
+    </ul>
+  </article><article class="track-event">
+    <div class="track-event-main">
+      <strong>Milwaukee Brewers @ Athletics</strong>
+      <span>06/08 22:05 ET｜台灣 06/09 10:05</span>
+    </div>
+    <p>Athletics 主場</p>
+    <ul>
+      <li><b>人員</b>先發投手與後援投手連用狀態需賽前查核。</li>
+      <li><b>傷兵</b>觀察主力打者是否休養、是否有臨時傷停。</li>
+      <li><b>整季</b>比較客隊旅行、團隊 OPS、ERA 與牛棚負荷。</li>
+      <li><b>臨場</b>晚場需確認主場氣溫、風向與打線。</li>
+    </ul>
+  </article>
   </div>
   <dl>
     <div><dt>範圍</dt><dd>美國職棒大聯盟</dd></div>
-    <div><dt>時間</dt><dd>賽前滾動追蹤</dd></div>
-    <div><dt>球場</dt><dd>球場、天氣、風向、溫度</dd></div>
-    <div><dt>人員</dt><dd>先發投手、打線、牛棚用量</dd></div>
-    <div><dt>傷兵</dt><dd>IL 名單、每日觀察名單</dd></div>
-    <div><dt>整季</dt><dd>勝敗、OPS、ERA、WHIP、近 10 場</dd></div>
-    <div><dt>臨場</dt><dd>賽前 90 分鐘確認</dd></div>
+    <div><dt>時間</dt><dd>美東 18:35 起；台灣 06/09 06:35 起</dd></div>
+    <div><dt>球場</dt><dd>8 個主隊場館；室外球場需賽前確認天氣、風向與溫度</dd></div>
+    <div><dt>人員</dt><dd>先發投手、打線與牛棚連用需以賽前公告二次確認</dd></div>
+    <div><dt>傷兵</dt><dd>IL 名單與每日觀察名單賽前重查</dd></div>
+    <div><dt>整季</dt><dd>先看先發局數、團隊 OPS、ERA、WHIP、近 10 場與牛棚負荷</dd></div>
+    <div><dt>臨場</dt><dd>開賽前 90 分鐘確認天候、打線、先發投手與牛棚用量</dd></div>
   </dl>
 </article><article class="sports-track-card" data-track-key="NPB">
   <div class="track-card-head">
-    <span>NPB</span>
-    <strong>明日全場次</strong>
+    <div>
+      <span>NPB</span>
+      <em>預備日</em>
+    </div>
+    <strong data-track-match>1 場預備日：DeNA vs 福岡軟銀</strong>
+  </div>
+  <p class="track-summary" data-track-summary>賽程依 NPB 2026/06/08 公開賽程整理。</p>
+  <div class="track-events" data-track-events>
+    <article class="track-event">
+    <div class="track-event-main">
+      <strong>福岡軟銀 Hawks @ DeNA BayStars（預備日）</strong>
+      <span>06/08 18:00 JST｜台灣 17:00</span>
+    </div>
+    <p>橫濱</p>
+    <ul>
+      <li><b>人員</b>預告先發與登錄名單需賽前確認。</li>
+      <li><b>傷兵</b>抹消、復歸與主力休養名單會影響打線深度。</li>
+      <li><b>整季</b>比較交流戰近況、先發投手局數與牛棚連投。</li>
+      <li><b>臨場</b>先確認預備日是否啟用，再更新投手與打線。</li>
+    </ul>
+  </article>
   </div>
   <dl>
     <div><dt>範圍</dt><dd>日本職棒</dd></div>
-    <div><dt>時間</dt><dd>日間更新</dd></div>
-    <div><dt>球場</dt><dd>球場、屋頂狀態、天候</dd></div>
-    <div><dt>人員</dt><dd>預告先發、登錄名單、牛棚狀態</dd></div>
-    <div><dt>傷兵</dt><dd>抹消、復歸、休養名單</dd></div>
-    <div><dt>整季</dt><dd>打擊率、OPS、防禦率、近期先發局數</dd></div>
-    <div><dt>臨場</dt><dd>賽前名單確認</dd></div>
+    <div><dt>時間</dt><dd>2026/06/08 18:00 日本時間；台灣 17:00</dd></div>
+    <div><dt>球場</dt><dd>橫濱；預備日是否啟用需賽前確認</dd></div>
+    <div><dt>人員</dt><dd>預告先發、登錄名單、牛棚狀態需以 NPB 或球團公告為準</dd></div>
+    <div><dt>傷兵</dt><dd>抹消、復歸、休養與登錄異動需賽前確認</dd></div>
+    <div><dt>整季</dt><dd>打擊率、OPS、防禦率、近期先發局數與交流戰近況</dd></div>
+    <div><dt>臨場</dt><dd>預備日場次若未啟用，卡片會保留狀態提醒</dd></div>
   </dl>
 </article><article class="sports-track-card" data-track-key="KBO">
   <div class="track-card-head">
-    <span>KBO</span>
-    <strong>明日全場次</strong>
+    <div>
+      <span>KBO</span>
+      <em>06/08 休兵</em>
+    </div>
+    <strong data-track-match>2026/06/08 無排定例行賽</strong>
+  </div>
+  <p class="track-summary" data-track-summary>KBO 06/08 未排定；下一輪依 MyKBO Stats 06/09 公開賽程整理。</p>
+  <div class="track-events" data-track-events>
+    <article class="track-event">
+    <div class="track-event-main">
+      <strong>Kia Tigers @ Hanwha Eagles</strong>
+      <span>下一輪 06/09 18:30 KST｜台灣 17:30</span>
+    </div>
+    <p>Daejeon</p>
+    <ul>
+      <li><b>人員</b>06/09 先發投手與中心打線確認。</li>
+      <li><b>傷兵</b>登錄異動與休養名單賽前更新。</li>
+      <li><b>整季</b>比較得分效率、先發局數與牛棚負荷。</li>
+      <li><b>臨場</b>06/08 休兵，06/09 賽前二次確認。</li>
+    </ul>
+  </article><article class="track-event">
+    <div class="track-event-main">
+      <strong>NC Dinos @ Kiwoom Heroes</strong>
+      <span>下一輪 06/09 18:30 KST｜台灣 17:30</span>
+    </div>
+    <p>Seoul-Gocheok</p>
+    <ul>
+      <li><b>人員</b>高尺室內場，重點看先發投手與打線。</li>
+      <li><b>傷兵</b>登錄異動與替補輪換需確認。</li>
+      <li><b>整季</b>比較近況、牛棚連用與團隊上壘率。</li>
+      <li><b>臨場</b>室內場降低天候變數。</li>
+    </ul>
+  </article><article class="track-event">
+    <div class="track-event-main">
+      <strong>Doosan Bears @ Lotte Giants</strong>
+      <span>下一輪 06/09 18:30 KST｜台灣 17:30</span>
+    </div>
+    <p>Busan-Sajik</p>
+    <ul>
+      <li><b>人員</b>先發投手、捕手與牛棚順位是重點。</li>
+      <li><b>傷兵</b>主力傷停與休養名單需賽前確認。</li>
+      <li><b>整季</b>比較先發投手局數、團隊得分與主客場表現。</li>
+      <li><b>臨場</b>釜山場地與天候賽前確認。</li>
+    </ul>
+  </article><article class="track-event">
+    <div class="track-event-main">
+      <strong>SSG Landers @ LG Twins</strong>
+      <span>下一輪 06/09 18:30 KST｜台灣 17:30</span>
+    </div>
+    <p>Seoul-Jamsil</p>
+    <ul>
+      <li><b>人員</b>中心打線與牛棚可用性需確認。</li>
+      <li><b>傷兵</b>登錄異動、休養與外援狀態賽前更新。</li>
+      <li><b>整季</b>比較蠶室場地特性、得分效率與投手近況。</li>
+      <li><b>臨場</b>蠶室室外場，降雨與風向需確認。</li>
+    </ul>
+  </article><article class="track-event">
+    <div class="track-event-main">
+      <strong>Samsung Lions @ KT Wiz</strong>
+      <span>下一輪 06/09 18:30 KST｜台灣 17:30</span>
+    </div>
+    <p>Suwon</p>
+    <ul>
+      <li><b>人員</b>先發投手與後援輪替需要當日確認。</li>
+      <li><b>傷兵</b>傷兵、休養與登錄變動賽前重查。</li>
+      <li><b>整季</b>比較團隊得分、牛棚負荷與近 5 場內容。</li>
+      <li><b>臨場</b>水原場地與天候賽前確認。</li>
+    </ul>
+  </article>
   </div>
   <dl>
     <div><dt>範圍</dt><dd>韓國職棒</dd></div>
-    <div><dt>時間</dt><dd>賽程日更新</dd></div>
-    <div><dt>球場</dt><dd>球場、降雨、延賽風險</dd></div>
-    <div><dt>人員</dt><dd>先發投手、中心打線、後援輪替</dd></div>
-    <div><dt>傷兵</dt><dd>登錄異動、傷兵、休養</dd></div>
-    <div><dt>整季</dt><dd>團隊得分、先發局數、牛棚負荷</dd></div>
-    <div><dt>臨場</dt><dd>賽前狀態確認</dd></div>
+    <div><dt>時間</dt><dd>下一輪 06/09 18:30 KST；台灣 17:30</dd></div>
+    <div><dt>球場</dt><dd>06/09 場地包含大田、高尺、社稷、蠶室、水原</dd></div>
+    <div><dt>人員</dt><dd>06/09 先發投手與登錄異動需當日確認</dd></div>
+    <div><dt>傷兵</dt><dd>傷兵、休養與外援登錄狀態需賽前更新</dd></div>
+    <div><dt>整季</dt><dd>團隊得分、先發局數、牛棚負荷與近況</dd></div>
+    <div><dt>臨場</dt><dd>06/08 無賽事；下一輪賽前更新五場資訊</dd></div>
   </dl>
 </article><article class="sports-track-card" data-track-key="CPBL">
   <div class="track-card-head">
-    <span>CPBL</span>
-    <strong>明日全場次</strong>
+    <div>
+      <span>CPBL</span>
+      <em>06/08 休兵</em>
+    </div>
+    <strong data-track-match>2026/06/08 無排定例行賽</strong>
+  </div>
+  <p class="track-summary" data-track-summary>CPBL 06/08 未排定；下一輪依 2026 中職公開賽程整理。</p>
+  <div class="track-events" data-track-events>
+    <article class="track-event">
+    <div class="track-event-main">
+      <strong>味全龍 @ 富邦悍將</strong>
+      <span>下一輪 06/09 18:35 台灣時間</span>
+    </div>
+    <p>新莊</p>
+    <ul>
+      <li><b>人員</b>先發投手、先發打線與捕手搭配需確認。</li>
+      <li><b>傷兵</b>傷兵、休養與二軍調整會影響先發名單。</li>
+      <li><b>整季</b>比較主客場攻守、牛棚連用與近期得分。</li>
+      <li><b>臨場</b>新莊天候與場地狀態賽前確認。</li>
+    </ul>
+  </article><article class="track-event">
+    <div class="track-event-main">
+      <strong>台鋼雄鷹 @ 中信兄弟</strong>
+      <span>下一輪 06/09 18:35 台灣時間</span>
+    </div>
+    <p>洲際</p>
+    <ul>
+      <li><b>人員</b>先發投手、中心打線與後援安排需賽前確認。</li>
+      <li><b>傷兵</b>主力休養、傷兵與登錄異動賽前更新。</li>
+      <li><b>整季</b>比較近況、主場表現與牛棚用量。</li>
+      <li><b>臨場</b>洲際天候、風向與場地狀態需確認。</li>
+    </ul>
+  </article>
   </div>
   <dl>
     <div><dt>範圍</dt><dd>中華職棒</dd></div>
-    <div><dt>時間</dt><dd>台灣時間更新</dd></div>
-    <div><dt>球場</dt><dd>球場、天候、場地狀態</dd></div>
-    <div><dt>人員</dt><dd>先發投手、先發打線、登錄異動</dd></div>
-    <div><dt>傷兵</dt><dd>傷兵、休養、二軍調整</dd></div>
-    <div><dt>整季</dt><dd>團隊攻守、近況、主客場表現</dd></div>
-    <div><dt>臨場</dt><dd>開賽前確認</dd></div>
+    <div><dt>時間</dt><dd>下一輪 06/09 18:35 台灣時間</dd></div>
+    <div><dt>球場</dt><dd>06/09 新莊、洲際</dd></div>
+    <div><dt>人員</dt><dd>先發投手、先發打線與登錄異動需賽前確認</dd></div>
+    <div><dt>傷兵</dt><dd>傷兵、休養、二軍調整與登錄異動</dd></div>
+    <div><dt>整季</dt><dd>團隊攻守、近況、主客場表現與牛棚使用</dd></div>
+    <div><dt>臨場</dt><dd>06/08 無賽事；06/09 賽前確認先發與天候</dd></div>
   </dl>
 </article><article class="sports-track-card" data-track-key="足球">
   <div class="track-card-head">
-    <span>足球</span>
-    <strong>明日賽事列表</strong>
+    <div>
+      <span>足球</span>
+      <em>開幕前</em>
+    </div>
+    <strong data-track-match>2026/06/08 無世界盃正賽；06/11 開幕</strong>
+  </div>
+  <p class="track-summary" data-track-summary>世界盃公開賽程顯示正賽自 06/11 起。</p>
+  <div class="track-events" data-track-events>
+    <article class="track-event">
+    <div class="track-event-main">
+      <strong>FIFA World Cup 開幕前觀察</strong>
+      <span>06/08 狀態</span>
+    </div>
+    <p>主辦城市與球場自 06/11 起逐場追蹤</p>
+    <ul>
+      <li><b>人員</b>國家隊傷停與最終名單是主要觀察點。</li>
+      <li><b>傷兵</b>傷停、停賽與體能負荷賽前更新。</li>
+      <li><b>整季</b>比較近期國家隊表現、xG、定位球與防線穩定度。</li>
+      <li><b>臨場</b>06/11 開幕後再列對戰、場館與先發。</li>
+    </ul>
+  </article>
   </div>
   <dl>
-    <div><dt>範圍</dt><dd>主要聯賽與小型賽事</dd></div>
-    <div><dt>時間</dt><dd>依時區排序</dd></div>
-    <div><dt>球場</dt><dd>主客場、草皮、天候</dd></div>
-    <div><dt>人員</dt><dd>預計先發、輪換、停賽</dd></div>
-    <div><dt>傷兵</dt><dd>傷停、復出、禁賽</dd></div>
-    <div><dt>整季</dt><dd>xG、攻守效率、近 5 場</dd></div>
-    <div><dt>臨場</dt><dd>賽前名單確認</dd></div>
+    <div><dt>範圍</dt><dd>FIFA 世界盃與主要賽事</dd></div>
+    <div><dt>時間</dt><dd>世界盃 06/11 起；台灣需依時區換算</dd></div>
+    <div><dt>球場</dt><dd>開幕後依主辦城市、草皮、氣候與旅程追蹤</dd></div>
+    <div><dt>人員</dt><dd>國家隊名單、停賽、傷停與輪換需賽前確認</dd></div>
+    <div><dt>傷兵</dt><dd>傷停、復出、禁賽與體能狀態</dd></div>
+    <div><dt>整季</dt><dd>國家隊近況、xG、攻守效率、定位球與旅行距離</dd></div>
+    <div><dt>臨場</dt><dd>06/08 為開幕前觀察；06/11 後改列逐場卡片</dd></div>
   </dl>
 </article><article class="sports-track-card" data-track-key="籃球">
   <div class="track-card-head">
-    <span>籃球</span>
-    <strong>明日賽事列表</strong>
+    <div>
+      <span>籃球</span>
+      <em>NBA 已排定</em>
+    </div>
+    <strong data-track-match>NBA Finals Game 3：Spurs @ Knicks</strong>
+  </div>
+  <p class="track-summary" data-track-summary>NBA Finals Game 3 依 NBA.com 公開賽程整理；WNBA 場次只採用官方可確認資料。</p>
+  <div class="track-events" data-track-events>
+    <article class="track-event">
+    <div class="track-event-main">
+      <strong>San Antonio Spurs @ New York Knicks｜NBA Finals Game 3</strong>
+      <span>06/08 20:30 ET｜台灣 06/09 08:30</span>
+    </div>
+    <p>Madison Square Garden</p>
+    <ul>
+      <li><b>人員</b>先發、主要輪替與第四節使用率是研究重點。</li>
+      <li><b>傷兵</b>賽前 injury report 會影響輪替與防守對位。</li>
+      <li><b>整季</b>Knicks 系列賽 2-0 領先；比較 pace、usage、失誤率與籃板。</li>
+      <li><b>臨場</b>開賽前確認先發五人、傷兵與臨場節奏。</li>
+    </ul>
+  </article>
   </div>
   <dl>
     <div><dt>範圍</dt><dd>NBA、WNBA、國際與小型聯賽</dd></div>
-    <div><dt>時間</dt><dd>開賽前更新</dd></div>
-    <div><dt>球場</dt><dd>主客場、旅程、背靠背</dd></div>
-    <div><dt>人員</dt><dd>先發預估、輪替、上場時間</dd></div>
-    <div><dt>傷兵</dt><dd>出賽狀態、輪休、每日觀察</dd></div>
-    <div><dt>整季</dt><dd>pace、usage、效率值、近況</dd></div>
-    <div><dt>臨場</dt><dd>賽前 injury report</dd></div>
+    <div><dt>時間</dt><dd>06/08 20:30 ET；台灣 06/09 08:30</dd></div>
+    <div><dt>球場</dt><dd>Madison Square Garden；主客場、旅程與休息日需同步看</dd></div>
+    <div><dt>人員</dt><dd>先發預估、輪替、上場時間與犯規風險</dd></div>
+    <div><dt>傷兵</dt><dd>出賽狀態、輪休、每日觀察與賽前報告</dd></div>
+    <div><dt>整季</dt><dd>pace、usage、效率值、系列賽對位與近況</dd></div>
+    <div><dt>臨場</dt><dd>賽前 injury report 與先發名單確認</dd></div>
   </dl>
 </article><article class="sports-track-card" data-track-key="冰球">
   <div class="track-card-head">
-    <span>冰球</span>
-    <strong>明日賽事列表</strong>
+    <div>
+      <span>冰球</span>
+      <em>06/08 休兵</em>
+    </div>
+    <strong data-track-match>Stanley Cup Final 下一場 06/09</strong>
+  </div>
+  <p class="track-summary" data-track-summary>NHL 公開賽程顯示 Game 4 為 06/09 Carolina at Vegas。</p>
+  <div class="track-events" data-track-events>
+    <article class="track-event">
+    <div class="track-event-main">
+      <strong>Carolina Hurricanes @ Vegas Golden Knights｜Stanley Cup Final Game 4</strong>
+      <span>下一場 06/09 20:00 ET｜台灣 06/10 08:00</span>
+    </div>
+    <p>Vegas 主場</p>
+    <ul>
+      <li><b>人員</b>先發守門員、攻防組合與 PP/PK 是核心觀察點。</li>
+      <li><b>傷兵</b>每日觀察與受限上場球員會影響輪替深度。</li>
+      <li><b>整季</b>系列賽 1-1 後進入 Vegas 主場段，需看守門員近況。</li>
+      <li><b>臨場</b>賽前確認守門員、傷兵與特別組配置。</li>
+    </ul>
+  </article>
   </div>
   <dl>
     <div><dt>範圍</dt><dd>NHL 與其他冰球賽事</dd></div>
-    <div><dt>時間</dt><dd>賽前滾動追蹤</dd></div>
-    <div><dt>球場</dt><dd>主客場、旅程、連戰狀態</dd></div>
-    <div><dt>人員</dt><dd>先發守門員、攻防組合</dd></div>
-    <div><dt>傷兵</dt><dd>傷兵、每日觀察、復出</dd></div>
-    <div><dt>整季</dt><dd>得失球、PP/PK、守門員近況</dd></div>
-    <div><dt>臨場</dt><dd>賽前守門員確認</dd></div>
+    <div><dt>時間</dt><dd>Game 4：06/09 20:00 ET；台灣 06/10 08:00</dd></div>
+    <div><dt>球場</dt><dd>Vegas 主場；旅程、連戰狀態與主場對位需追蹤</dd></div>
+    <div><dt>人員</dt><dd>先發守門員、攻防組合與特別組</dd></div>
+    <div><dt>傷兵</dt><dd>傷兵、每日觀察、復出與受限上場</dd></div>
+    <div><dt>整季</dt><dd>得失球、PP/PK、守門員近況與系列賽調整</dd></div>
+    <div><dt>臨場</dt><dd>06/08 無賽事；06/09 賽前確認守門員與傷兵</dd></div>
   </dl>
 </article><article class="sports-track-card" data-track-key="小型賽事">
   <div class="track-card-head">
-    <span>小型賽事</span>
-    <strong>明日補充列表</strong>
+    <div>
+      <span>小型賽事</span>
+      <em>補充追蹤</em>
+    </div>
+    <strong data-track-match>06/08 補充賽事以公開賽程與名單為準</strong>
+  </div>
+  <p class="track-summary" data-track-summary>補充賽事需要公開賽程與名單同時確認。</p>
+  <div class="track-events" data-track-events>
+    <article class="track-event">
+    <div class="track-event-main">
+      <strong>小型賽事待公開賽程確認</strong>
+      <span>06/08 補充狀態</span>
+    </div>
+    <p>需確認場地與時區</p>
+    <ul>
+      <li><b>人員</b>只採用可確認名單與官方賽程。</li>
+      <li><b>傷兵</b>未確認傷停不寫成既定狀態。</li>
+      <li><b>整季</b>先看賽程密度、主客場與近期攻守表現。</li>
+      <li><b>臨場</b>若資料不足，卡片保留待確認。</li>
+    </ul>
+  </article>
   </div>
   <dl>
     <div><dt>範圍</dt><dd>次級聯賽、盃賽與區域賽</dd></div>
-    <div><dt>時間</dt><dd>分批更新</dd></div>
-    <div><dt>球場</dt><dd>場地、旅程、開賽時區</dd></div>
-    <div><dt>人員</dt><dd>公布名單、輪替、缺席</dd></div>
-    <div><dt>傷兵</dt><dd>傷停、賽前公告</dd></div>
-    <div><dt>整季</dt><dd>近期戰績、攻守表現、賽程密度</dd></div>
-    <div><dt>臨場</dt><dd>開賽前二次確認</dd></div>
+    <div><dt>時間</dt><dd>分批更新；先列可確認賽事，不用不明來源硬補</dd></div>
+    <div><dt>球場</dt><dd>場地、旅程、開賽時區與天候</dd></div>
+    <div><dt>人員</dt><dd>公布名單、輪替、缺席與臨時改期</dd></div>
+    <div><dt>傷兵</dt><dd>傷停、賽前公告與名單異動</dd></div>
+    <div><dt>整季</dt><dd>近期戰績、攻守表現、賽程密度與旅程</dd></div>
+    <div><dt>臨場</dt><dd>資料不足時標示待確認，不產生假對戰</dd></div>
   </dl>
 </article>
   </div>
@@ -314,7 +610,7 @@
         <summary><span>賽事追蹤多久更新？</span></summary>
         <p>畫面超過更新間隔後會重新讀取追蹤資料，更新時間與狀態會直接顯示。</p>
       </details><details class="faq-item">
-        <summary><span>這裡的賽事研究是投注建議嗎？</span></summary>
+        <summary><span>這裡的賽事研究代表結果判斷嗎？</span></summary>
         <p>不是。這裡只整理賽程、球場、人員、傷兵與整季表現，不保證任何結果。</p>
       </details>
     </div>

@@ -39,96 +39,308 @@ export const fallbackLotto539Draws = [
 
 export const sportsResearchBoard = {
   intro:
-    "明日賽事以追蹤卡直接呈現，重點放在時間、球場、人員、傷兵、整季表現與臨場狀態。超過更新間隔後，前端會重新讀取追蹤資料。",
+    "次日賽事以追蹤卡直接呈現。2026/06/08 已確認賽程會列出對戰、時間與研究重點；未排定的聯盟會明確標示休兵與下一輪追蹤點。",
   updateEverySeconds: 75,
   games: [
     {
       name: "MLB",
       scope: "美國職棒大聯盟",
-      match: "明日全場次",
-      time: "賽前滾動追蹤",
-      venue: "球場、天氣、風向、溫度",
-      personnel: "先發投手、打線、牛棚用量",
-      injuries: "IL 名單、每日觀察名單",
-      season: "勝敗、OPS、ERA、WHIP、近 10 場",
-      live: "賽前 90 分鐘確認"
+      status: "已排定",
+      match: "8 場：2026/06/08 美東賽程",
+      time: "美東 18:35 起；台灣 06/09 06:35 起",
+      venue: "8 個主隊場館；室外球場需賽前確認天氣、風向與溫度",
+      personnel: "先發投手、打線與牛棚連用需以賽前公告二次確認",
+      injuries: "IL 名單與每日觀察名單賽前重查",
+      season: "先看先發局數、團隊 OPS、ERA、WHIP、近 10 場與牛棚負荷",
+      live: "開賽前 90 分鐘確認天候、打線、先發投手與牛棚用量",
+      sourceNote: "賽程依 MLB.com 2026/06/08 公開賽程整理。",
+      events: [
+        {
+          time: "06/08 18:35 ET｜台灣 06/09 06:35",
+          matchup: "Seattle Mariners @ Baltimore Orioles",
+          venue: "Oriole Park at Camden Yards",
+          personnel: "先發投手、打線與捕手搭配需賽前確認。",
+          injuries: "查看 IL 與每日觀察名單，不用舊名單判斷。",
+          season: "比較兩隊近 10 場攻擊效率、牛棚連投與先發投手局數。",
+          live: "室外球場，賽前確認風向與溫度。"
+        },
+        {
+          time: "06/08 18:40 ET｜台灣 06/09 06:40",
+          matchup: "Boston Red Sox @ Tampa Bay Rays",
+          venue: "Tampa Bay 主場",
+          personnel: "打線左右打配置與先發投手型態是主要觀察點。",
+          injuries: "每日觀察名單與牛棚可用性需賽前更新。",
+          season: "比較上壘率、長打率、先發投手 WHIP 與近期牛棚負荷。",
+          live: "主場環境與屋頂/場地狀態以官方資訊為準。"
+        },
+        {
+          time: "06/08 18:40 ET｜台灣 06/09 06:40",
+          matchup: "New York Yankees @ Cleveland Guardians",
+          venue: "Progressive Field",
+          personnel: "先發投手對中心打線與後段牛棚安排要分開看。",
+          injuries: "長期 IL 與每日觀察球員會影響守備與代打深度。",
+          season: "比較團隊 OPS、三振率、ERA、WHIP 與近況。",
+          live: "克里夫蘭室外場，溫度與風向會影響飛球判讀。"
+        },
+        {
+          time: "06/08 19:07 ET｜台灣 06/09 07:07",
+          matchup: "Philadelphia Phillies @ Toronto Blue Jays",
+          venue: "Rogers Centre",
+          personnel: "先發投手與左右打輪值會影響前半場節奏。",
+          injuries: "賽前看捕手、內野與牛棚可用名單。",
+          season: "比較主客場攻擊效率、長打率與先發投手近期局數。",
+          live: "多倫多場館環境較穩定，重點放在打線與投手名單。"
+        },
+        {
+          time: "06/08 21:38 ET｜台灣 06/09 09:38",
+          matchup: "Houston Astros @ Los Angeles Angels",
+          venue: "Angel Stadium",
+          personnel: "客隊旅行與主隊打線完整度需賽前確認。",
+          injuries: "每日觀察名單、休養與牛棚連用是風險點。",
+          season: "比較先發投手局數、團隊長打率與牛棚近 3 日使用量。",
+          live: "晚場室外環境，確認風向與溫度變化。"
+        },
+        {
+          time: "06/08 21:40 ET｜台灣 06/09 09:40",
+          matchup: "Cincinnati Reds @ San Diego Padres",
+          venue: "Petco Park",
+          personnel: "先發投手控球、捕手搭配與牛棚順位要同步看。",
+          injuries: "確認主力野手是否休養或限制出賽。",
+          season: "比較兩隊近期得分、盜壘企圖與先發投手 WHIP。",
+          live: "Petco Park 夜場需看海風、溫度與打線公布。"
+        },
+        {
+          time: "06/08 21:45 ET｜台灣 06/09 09:45",
+          matchup: "Washington Nationals @ San Francisco Giants",
+          venue: "Oracle Park",
+          personnel: "外野守備、左投右投對位與牛棚可用性是重點。",
+          injuries: "賽前看每日觀察名單與主力輪休。",
+          season: "比較主客場 OPS、先發投手 ERA/WHIP 與守備失誤。",
+          live: "海灣球場風向明顯，開賽前需確認現場風速。"
+        },
+        {
+          time: "06/08 22:05 ET｜台灣 06/09 10:05",
+          matchup: "Milwaukee Brewers @ Athletics",
+          venue: "Athletics 主場",
+          personnel: "先發投手與後援投手連用狀態需賽前查核。",
+          injuries: "觀察主力打者是否休養、是否有臨時傷停。",
+          season: "比較客隊旅行、團隊 OPS、ERA 與牛棚負荷。",
+          live: "晚場需確認主場氣溫、風向與打線。"
+        }
+      ]
     },
     {
       name: "NPB",
       scope: "日本職棒",
-      match: "明日全場次",
-      time: "日間更新",
-      venue: "球場、屋頂狀態、天候",
-      personnel: "預告先發、登錄名單、牛棚狀態",
-      injuries: "抹消、復歸、休養名單",
-      season: "打擊率、OPS、防禦率、近期先發局數",
-      live: "賽前名單確認"
+      status: "預備日",
+      match: "1 場預備日：DeNA vs 福岡軟銀",
+      time: "2026/06/08 18:00 日本時間；台灣 17:00",
+      venue: "橫濱；預備日是否啟用需賽前確認",
+      personnel: "預告先發、登錄名單、牛棚狀態需以 NPB 或球團公告為準",
+      injuries: "抹消、復歸、休養與登錄異動需賽前確認",
+      season: "打擊率、OPS、防禦率、近期先發局數與交流戰近況",
+      live: "預備日場次若未啟用，卡片會保留狀態提醒",
+      sourceNote: "賽程依 NPB 2026/06/08 公開賽程整理。",
+      events: [
+        {
+          time: "06/08 18:00 JST｜台灣 17:00",
+          matchup: "福岡軟銀 Hawks @ DeNA BayStars（預備日）",
+          venue: "橫濱",
+          personnel: "預告先發與登錄名單需賽前確認。",
+          injuries: "抹消、復歸與主力休養名單會影響打線深度。",
+          season: "比較交流戰近況、先發投手局數與牛棚連投。",
+          live: "先確認預備日是否啟用，再更新投手與打線。"
+        }
+      ]
     },
     {
       name: "KBO",
       scope: "韓國職棒",
-      match: "明日全場次",
-      time: "賽程日更新",
-      venue: "球場、降雨、延賽風險",
-      personnel: "先發投手、中心打線、後援輪替",
-      injuries: "登錄異動、傷兵、休養",
-      season: "團隊得分、先發局數、牛棚負荷",
-      live: "賽前狀態確認"
+      status: "06/08 休兵",
+      match: "2026/06/08 無排定例行賽",
+      time: "下一輪 06/09 18:30 KST；台灣 17:30",
+      venue: "06/09 場地包含大田、高尺、社稷、蠶室、水原",
+      personnel: "06/09 先發投手與登錄異動需當日確認",
+      injuries: "傷兵、休養與外援登錄狀態需賽前更新",
+      season: "團隊得分、先發局數、牛棚負荷與近況",
+      live: "06/08 無賽事；下一輪賽前更新五場資訊",
+      sourceNote: "KBO 06/08 未排定；下一輪依 MyKBO Stats 06/09 公開賽程整理。",
+      events: [
+        {
+          time: "下一輪 06/09 18:30 KST｜台灣 17:30",
+          matchup: "Kia Tigers @ Hanwha Eagles",
+          venue: "Daejeon",
+          personnel: "06/09 先發投手與中心打線確認。",
+          injuries: "登錄異動與休養名單賽前更新。",
+          season: "比較得分效率、先發局數與牛棚負荷。",
+          live: "06/08 休兵，06/09 賽前二次確認。"
+        },
+        {
+          time: "下一輪 06/09 18:30 KST｜台灣 17:30",
+          matchup: "NC Dinos @ Kiwoom Heroes",
+          venue: "Seoul-Gocheok",
+          personnel: "高尺室內場，重點看先發投手與打線。",
+          injuries: "登錄異動與替補輪換需確認。",
+          season: "比較近況、牛棚連用與團隊上壘率。",
+          live: "室內場降低天候變數。"
+        },
+        {
+          time: "下一輪 06/09 18:30 KST｜台灣 17:30",
+          matchup: "Doosan Bears @ Lotte Giants",
+          venue: "Busan-Sajik",
+          personnel: "先發投手、捕手與牛棚順位是重點。",
+          injuries: "主力傷停與休養名單需賽前確認。",
+          season: "比較先發投手局數、團隊得分與主客場表現。",
+          live: "釜山場地與天候賽前確認。"
+        },
+        {
+          time: "下一輪 06/09 18:30 KST｜台灣 17:30",
+          matchup: "SSG Landers @ LG Twins",
+          venue: "Seoul-Jamsil",
+          personnel: "中心打線與牛棚可用性需確認。",
+          injuries: "登錄異動、休養與外援狀態賽前更新。",
+          season: "比較蠶室場地特性、得分效率與投手近況。",
+          live: "蠶室室外場，降雨與風向需確認。"
+        },
+        {
+          time: "下一輪 06/09 18:30 KST｜台灣 17:30",
+          matchup: "Samsung Lions @ KT Wiz",
+          venue: "Suwon",
+          personnel: "先發投手與後援輪替需要當日確認。",
+          injuries: "傷兵、休養與登錄變動賽前重查。",
+          season: "比較團隊得分、牛棚負荷與近 5 場內容。",
+          live: "水原場地與天候賽前確認。"
+        }
+      ]
     },
     {
       name: "CPBL",
       scope: "中華職棒",
-      match: "明日全場次",
-      time: "台灣時間更新",
-      venue: "球場、天候、場地狀態",
-      personnel: "先發投手、先發打線、登錄異動",
-      injuries: "傷兵、休養、二軍調整",
-      season: "團隊攻守、近況、主客場表現",
-      live: "開賽前確認"
+      status: "06/08 休兵",
+      match: "2026/06/08 無排定例行賽",
+      time: "下一輪 06/09 18:35 台灣時間",
+      venue: "06/09 新莊、洲際",
+      personnel: "先發投手、先發打線與登錄異動需賽前確認",
+      injuries: "傷兵、休養、二軍調整與登錄異動",
+      season: "團隊攻守、近況、主客場表現與牛棚使用",
+      live: "06/08 無賽事；06/09 賽前確認先發與天候",
+      sourceNote: "CPBL 06/08 未排定；下一輪依 2026 中職公開賽程整理。",
+      events: [
+        {
+          time: "下一輪 06/09 18:35 台灣時間",
+          matchup: "味全龍 @ 富邦悍將",
+          venue: "新莊",
+          personnel: "先發投手、先發打線與捕手搭配需確認。",
+          injuries: "傷兵、休養與二軍調整會影響先發名單。",
+          season: "比較主客場攻守、牛棚連用與近期得分。",
+          live: "新莊天候與場地狀態賽前確認。"
+        },
+        {
+          time: "下一輪 06/09 18:35 台灣時間",
+          matchup: "台鋼雄鷹 @ 中信兄弟",
+          venue: "洲際",
+          personnel: "先發投手、中心打線與後援安排需賽前確認。",
+          injuries: "主力休養、傷兵與登錄異動賽前更新。",
+          season: "比較近況、主場表現與牛棚用量。",
+          live: "洲際天候、風向與場地狀態需確認。"
+        }
+      ]
     },
     {
       name: "足球",
-      scope: "主要聯賽與小型賽事",
-      match: "明日賽事列表",
-      time: "依時區排序",
-      venue: "主客場、草皮、天候",
-      personnel: "預計先發、輪換、停賽",
-      injuries: "傷停、復出、禁賽",
-      season: "xG、攻守效率、近 5 場",
-      live: "賽前名單確認"
+      scope: "FIFA 世界盃與主要賽事",
+      status: "開幕前",
+      match: "2026/06/08 無世界盃正賽；06/11 開幕",
+      time: "世界盃 06/11 起；台灣需依時區換算",
+      venue: "開幕後依主辦城市、草皮、氣候與旅程追蹤",
+      personnel: "國家隊名單、停賽、傷停與輪換需賽前確認",
+      injuries: "傷停、復出、禁賽與體能狀態",
+      season: "國家隊近況、xG、攻守效率、定位球與旅行距離",
+      live: "06/08 為開幕前觀察；06/11 後改列逐場卡片",
+      sourceNote: "世界盃公開賽程顯示正賽自 06/11 起。",
+      events: [
+        {
+          time: "06/08 狀態",
+          matchup: "FIFA World Cup 開幕前觀察",
+          venue: "主辦城市與球場自 06/11 起逐場追蹤",
+          personnel: "國家隊傷停與最終名單是主要觀察點。",
+          injuries: "傷停、停賽與體能負荷賽前更新。",
+          season: "比較近期國家隊表現、xG、定位球與防線穩定度。",
+          live: "06/11 開幕後再列對戰、場館與先發。"
+        }
+      ]
     },
     {
       name: "籃球",
       scope: "NBA、WNBA、國際與小型聯賽",
-      match: "明日賽事列表",
-      time: "開賽前更新",
-      venue: "主客場、旅程、背靠背",
-      personnel: "先發預估、輪替、上場時間",
-      injuries: "出賽狀態、輪休、每日觀察",
-      season: "pace、usage、效率值、近況",
-      live: "賽前 injury report"
+      status: "NBA 已排定",
+      match: "NBA Finals Game 3：Spurs @ Knicks",
+      time: "06/08 20:30 ET；台灣 06/09 08:30",
+      venue: "Madison Square Garden；主客場、旅程與休息日需同步看",
+      personnel: "先發預估、輪替、上場時間與犯規風險",
+      injuries: "出賽狀態、輪休、每日觀察與賽前報告",
+      season: "pace、usage、效率值、系列賽對位與近況",
+      live: "賽前 injury report 與先發名單確認",
+      sourceNote: "NBA Finals Game 3 依 NBA.com 公開賽程整理；WNBA 場次只採用官方可確認資料。",
+      events: [
+        {
+          time: "06/08 20:30 ET｜台灣 06/09 08:30",
+          matchup: "San Antonio Spurs @ New York Knicks｜NBA Finals Game 3",
+          venue: "Madison Square Garden",
+          personnel: "先發、主要輪替與第四節使用率是研究重點。",
+          injuries: "賽前 injury report 會影響輪替與防守對位。",
+          season: "Knicks 系列賽 2-0 領先；比較 pace、usage、失誤率與籃板。",
+          live: "開賽前確認先發五人、傷兵與臨場節奏。"
+        }
+      ]
     },
     {
       name: "冰球",
       scope: "NHL 與其他冰球賽事",
-      match: "明日賽事列表",
-      time: "賽前滾動追蹤",
-      venue: "主客場、旅程、連戰狀態",
-      personnel: "先發守門員、攻防組合",
-      injuries: "傷兵、每日觀察、復出",
-      season: "得失球、PP/PK、守門員近況",
-      live: "賽前守門員確認"
+      status: "06/08 休兵",
+      match: "Stanley Cup Final 下一場 06/09",
+      time: "Game 4：06/09 20:00 ET；台灣 06/10 08:00",
+      venue: "Vegas 主場；旅程、連戰狀態與主場對位需追蹤",
+      personnel: "先發守門員、攻防組合與特別組",
+      injuries: "傷兵、每日觀察、復出與受限上場",
+      season: "得失球、PP/PK、守門員近況與系列賽調整",
+      live: "06/08 無賽事；06/09 賽前確認守門員與傷兵",
+      sourceNote: "NHL 公開賽程顯示 Game 4 為 06/09 Carolina at Vegas。",
+      events: [
+        {
+          time: "下一場 06/09 20:00 ET｜台灣 06/10 08:00",
+          matchup: "Carolina Hurricanes @ Vegas Golden Knights｜Stanley Cup Final Game 4",
+          venue: "Vegas 主場",
+          personnel: "先發守門員、攻防組合與 PP/PK 是核心觀察點。",
+          injuries: "每日觀察與受限上場球員會影響輪替深度。",
+          season: "系列賽 1-1 後進入 Vegas 主場段，需看守門員近況。",
+          live: "賽前確認守門員、傷兵與特別組配置。"
+        }
+      ]
     },
     {
       name: "小型賽事",
       scope: "次級聯賽、盃賽與區域賽",
-      match: "明日補充列表",
-      time: "分批更新",
-      venue: "場地、旅程、開賽時區",
-      personnel: "公布名單、輪替、缺席",
-      injuries: "傷停、賽前公告",
-      season: "近期戰績、攻守表現、賽程密度",
-      live: "開賽前二次確認"
+      status: "補充追蹤",
+      match: "06/08 補充賽事以公開賽程與名單為準",
+      time: "分批更新；先列可確認賽事，不用不明來源硬補",
+      venue: "場地、旅程、開賽時區與天候",
+      personnel: "公布名單、輪替、缺席與臨時改期",
+      injuries: "傷停、賽前公告與名單異動",
+      season: "近期戰績、攻守表現、賽程密度與旅程",
+      live: "資料不足時標示待確認，不產生假對戰",
+      sourceNote: "補充賽事需要公開賽程與名單同時確認。",
+      events: [
+        {
+          time: "06/08 補充狀態",
+          matchup: "小型賽事待公開賽程確認",
+          venue: "需確認場地與時區",
+          personnel: "只採用可確認名單與官方賽程。",
+          injuries: "未確認傷停不寫成既定狀態。",
+          season: "先看賽程密度、主客場與近期攻守表現。",
+          live: "若資料不足，卡片保留待確認。"
+        }
+      ]
     }
   ],
   factors: [

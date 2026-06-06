@@ -1225,6 +1225,11 @@ h1 {
   margin-bottom: 0.8rem;
 }
 
+.track-card-head > div {
+  display: grid;
+  gap: 0.35rem;
+}
+
 .track-card-head span {
   display: inline-flex;
   min-height: 30px;
@@ -1239,11 +1244,98 @@ h1 {
   font-weight: 900;
 }
 
+.track-card-head em {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-style: normal;
+  font-weight: 900;
+}
+
 .track-card-head strong {
   color: var(--ink);
   font-family: var(--font-display);
   font-weight: 930;
   text-align: right;
+}
+
+.track-summary {
+  margin: 0 0 0.8rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.track-events {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0 0 0.9rem;
+}
+
+.track-event {
+  min-width: 0;
+  padding: 0.85rem;
+  border: 1px solid rgba(22, 24, 29, 0.1);
+  border-radius: 8px;
+  background: rgba(247, 247, 243, 0.8);
+}
+
+.track-event-main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.45rem;
+}
+
+.track-event-main strong {
+  min-width: 0;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-weight: 930;
+  line-height: 1.35;
+}
+
+.track-event-main span {
+  flex: 0 0 auto;
+  max-width: 42%;
+  color: var(--accent-dark);
+  font-size: 0.82rem;
+  font-weight: 900;
+  line-height: 1.35;
+  text-align: right;
+}
+
+.track-event p {
+  margin: 0 0 0.55rem;
+  color: var(--ink-soft);
+  font-weight: 780;
+  line-height: 1.55;
+}
+
+.track-event ul {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.track-event li {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr);
+  gap: 0.45rem;
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.track-event b {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.track-event.is-empty {
+  color: var(--muted);
 }
 
 .sports-track-card dl {
@@ -1501,6 +1593,20 @@ h1 {
 
   .track-card-head strong {
     text-align: left;
+  }
+
+  .track-event-main {
+    display: grid;
+  }
+
+  .track-event-main span {
+    max-width: none;
+    text-align: left;
+  }
+
+  .track-event li {
+    grid-template-columns: 1fr;
+    gap: 0.1rem;
   }
 
   .module-section {

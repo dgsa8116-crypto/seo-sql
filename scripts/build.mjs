@@ -549,8 +549,15 @@ function renderSportsResearch(prefix) {
 function renderSportsTrackCard(game) {
   return `<article class="sports-track-card" data-track-key="${escapeAttr(game.name)}">
   <div class="track-card-head">
-    <span>${escapeHtml(game.name)}</span>
-    <strong>${escapeHtml(game.match)}</strong>
+    <div>
+      <span>${escapeHtml(game.name)}</span>
+      ${game.status ? `<em>${escapeHtml(game.status)}</em>` : ""}
+    </div>
+    <strong data-track-match>${escapeHtml(game.match)}</strong>
+  </div>
+  ${game.sourceNote ? `<p class="track-summary" data-track-summary>${escapeHtml(game.sourceNote)}</p>` : ""}
+  <div class="track-events" data-track-events>
+    ${renderSportsEvents(game.events)}
   </div>
   <dl>
     <div><dt>範圍</dt><dd>${escapeHtml(game.scope)}</dd></div>
@@ -562,6 +569,33 @@ function renderSportsTrackCard(game) {
     <div><dt>臨場</dt><dd>${escapeHtml(game.live)}</dd></div>
   </dl>
 </article>`;
+}
+
+function renderSportsEvents(events = []) {
+  if (!Array.isArray(events) || !events.length) {
+    return `<article class="track-event is-empty">
+    <strong>目前沒有可確認賽事</strong>
+    <p>保留追蹤欄位，待公開賽程與名單更新後再顯示。</p>
+  </article>`;
+  }
+
+  return events
+    .map(
+      (event) => `<article class="track-event">
+    <div class="track-event-main">
+      <strong>${escapeHtml(event.matchup)}</strong>
+      <span>${escapeHtml(event.time)}</span>
+    </div>
+    <p>${escapeHtml(event.venue)}</p>
+    <ul>
+      <li><b>人員</b>${escapeHtml(event.personnel)}</li>
+      <li><b>傷兵</b>${escapeHtml(event.injuries)}</li>
+      <li><b>整季</b>${escapeHtml(event.season)}</li>
+      <li><b>臨場</b>${escapeHtml(event.live)}</li>
+    </ul>
+  </article>`
+    )
+    .join("");
 }
 
 function renderRankItems(items, type) {

@@ -156,6 +156,12 @@
     games.forEach((game) => {
       const card = document.querySelector(`[data-track-key="${cssEscape(game.name)}"]`);
       if (!card) return;
+      const match = card.querySelector("[data-track-match]");
+      const summary = card.querySelector("[data-track-summary]");
+      const events = card.querySelector("[data-track-events]");
+      if (match && game.match) match.textContent = game.match;
+      if (summary && game.sourceNote) summary.textContent = game.sourceNote;
+      if (events && Array.isArray(game.events)) events.innerHTML = renderSportsEvents(game.events);
       const values = card.querySelectorAll("dd");
       const nextValues = [
         game.scope,
@@ -170,6 +176,33 @@
         if (nextValues[index]) item.textContent = nextValues[index];
       });
     });
+  }
+
+  function renderSportsEvents(events) {
+    if (!Array.isArray(events) || !events.length) {
+      return `<article class="track-event is-empty">
+        <strong>目前沒有可確認賽事</strong>
+        <p>保留追蹤欄位，待公開賽程與名單更新後再顯示。</p>
+      </article>`;
+    }
+
+    return events
+      .map(
+        (event) => `<article class="track-event">
+          <div class="track-event-main">
+            <strong>${escapeHtml(event.matchup || "")}</strong>
+            <span>${escapeHtml(event.time || "")}</span>
+          </div>
+          <p>${escapeHtml(event.venue || "")}</p>
+          <ul>
+            <li><b>人員</b>${escapeHtml(event.personnel || "")}</li>
+            <li><b>傷兵</b>${escapeHtml(event.injuries || "")}</li>
+            <li><b>整季</b>${escapeHtml(event.season || "")}</li>
+            <li><b>臨場</b>${escapeHtml(event.live || "")}</li>
+          </ul>
+        </article>`
+      )
+      .join("");
   }
 
   function formatNumber(number) {
