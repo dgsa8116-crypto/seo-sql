@@ -1,5 +1,65 @@
 export const keywordSeeds = [
   {
+    keyword: "539 冷熱號",
+    category: "lotto539",
+    searchIntent: "查看今彩 539 近期開獎與冷熱號觀察",
+    suggestedPageType: "539 統計觀察頁",
+    sensitivityLevel: "Low",
+    complianceRisk: "低；以資料整理與統計觀察為主",
+    recommendedUsage: "可用於 539 頁標題、導言、FAQ 與內部連結。",
+    relatedLongTailKeywords: ["今彩539 冷熱號", "539 熱門號碼", "539 冷門號碼"]
+  },
+  {
+    keyword: "539 最新開獎",
+    category: "lotto539",
+    searchIntent: "查詢最近一期 539 開獎號碼",
+    suggestedPageType: "最新開獎卡片",
+    sensitivityLevel: "Low",
+    complianceRisk: "低；公開開獎資訊整理",
+    recommendedUsage: "可用於最新一期區塊與 meta description。",
+    relatedLongTailKeywords: ["今彩539 最新號碼", "539 開獎結果", "539 最近一期"]
+  },
+  {
+    keyword: "539 算碰",
+    category: "lotto539-calculator",
+    searchIntent: "輸入號碼並比對近期開獎碰數",
+    suggestedPageType: "簡易工具頁",
+    sensitivityLevel: "Low",
+    complianceRisk: "低；工具型查詢，但需避免暗示預測能力",
+    recommendedUsage: "可用於算碰計算機頁 H1、摘要與 FAQ。",
+    relatedLongTailKeywords: ["539 碰數計算", "539 對獎工具", "今彩539 算碰計算機"]
+  },
+  {
+    keyword: "次日賽事分析",
+    category: "sports",
+    searchIntent: "查詢隔日賽程與賽事研究欄位",
+    suggestedPageType: "賽事研究看板",
+    sensitivityLevel: "Medium",
+    complianceRisk: "中；需避免投注誘導與保證語氣",
+    recommendedUsage: "可用於賽事研究頁，必須搭配資料來源與研究聲明。",
+    relatedLongTailKeywords: ["明日賽事研究", "體育賽事資料看板", "賽事球場分析"]
+  },
+  {
+    keyword: "球員傷兵狀態",
+    category: "sports",
+    searchIntent: "理解賽前人員與傷兵資訊",
+    suggestedPageType: "賽事研究欄位",
+    sensitivityLevel: "Low",
+    complianceRisk: "低；資料欄位說明",
+    recommendedUsage: "可用於賽事頁欄位卡片與資料源說明。",
+    relatedLongTailKeywords: ["賽前傷兵名單", "球員出賽狀態", "先發名單分析"]
+  },
+  {
+    keyword: "體育賽事研究",
+    category: "sports",
+    searchIntent: "以研究角度閱讀賽程、球場與人員資訊",
+    suggestedPageType: "研究型文章頁",
+    sensitivityLevel: "Low",
+    complianceRisk: "低；學術研究討論",
+    recommendedUsage: "可用於賽事研究頁標題與內文，不使用投注承諾語氣。",
+    relatedLongTailKeywords: ["賽事資料源", "球場情況研究", "球員整季表現"]
+  },
+  {
     keyword: "百家樂規則",
     category: "rules",
     searchIntent: "了解遊戲基本規則",
@@ -40,16 +100,6 @@ export const keywordSeeds = [
     relatedLongTailKeywords: ["百家樂補牌規則", "莊家第三張牌", "閒家補牌條件"]
   },
   {
-    keyword: "百家樂術語",
-    category: "terminology",
-    searchIntent: "查詢遊戲名詞",
-    suggestedPageType: "術語指南",
-    sensitivityLevel: "Low",
-    complianceRisk: "低；資訊整理",
-    recommendedUsage: "適合建立術語頁與 FAQ 內部連結。",
-    relatedLongTailKeywords: ["百家樂莊閒和意思", "百家樂常見名詞", "百家樂投注選項說明"]
-  },
-  {
     keyword: "責任娛樂",
     category: "responsible",
     searchIntent: "了解風險與自我控管",
@@ -63,21 +113,11 @@ export const keywordSeeds = [
     keyword: "百家樂下注流程",
     category: "betting-flow",
     searchIntent: "了解投注步驟與選項",
-    suggestedPageType: "下注流程指南",
+    suggestedPageType: "流程說明",
     sensitivityLevel: "Medium",
     complianceRisk: "中；需搭配風險聲明，不可鼓勵加碼",
-    recommendedUsage: "可用於下注指南頁，但需加入結果不確定與量力而為提醒。",
+    recommendedUsage: "可用於流程頁，但需加入結果不確定與量力而為提醒。",
     relatedLongTailKeywords: ["百家樂下注教學", "百家樂下注選項", "百家樂流程說明"]
-  },
-  {
-    keyword: "莊閒和說明",
-    category: "betting-flow",
-    searchIntent: "比較常見投注選項",
-    suggestedPageType: "下注流程指南",
-    sensitivityLevel: "Medium",
-    complianceRisk: "中；需避免暗示特定選項必勝",
-    recommendedUsage: "可作為表格或 FAQ 條目，不用於誇大 CTA。",
-    relatedLongTailKeywords: ["百家樂莊家意思", "百家樂閒家意思", "百家樂和局意思"]
   },
   {
     keyword: "百家樂勝率",

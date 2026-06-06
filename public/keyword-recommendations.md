@@ -1,6 +1,6 @@
 # Keyword Recommendations
 
-Generated at: 2026-06-01T14:01:34.777Z
+Generated at: 2026-06-06T15:59:27.308Z
 
 Only Low and Medium keywords are recommended for normal SEO usage. High and Restricted keywords are flagged and excluded from automatic title, description, and heading generation.
 
@@ -8,17 +8,43 @@ Only Low and Medium keywords are recommended for normal SEO usage. High and Rest
 
 | Keyword | Sensitivity | Category | Search intent | Recommended usage |
 | --- | --- | --- | --- | --- |
+| 539 冷熱號 | Low | lotto539 | 查看今彩 539 近期開獎與冷熱號觀察 | 可用於 539 頁標題、導言、FAQ 與內部連結。 |
+| 539 最新開獎 | Low | lotto539 | 查詢最近一期 539 開獎號碼 | 可用於最新一期區塊與 meta description。 |
+| 539 碰數計算 | Low | home | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
+| 539 對獎 | Low | lotto539-calculator | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
+| 539 算碰 | Low | lotto539-calculator | 輸入號碼並比對近期開獎碰數 | 可用於算碰計算機頁 H1、摘要與 FAQ。 |
+| 539 FAQ | Low | faq | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
+| 今彩539 統計 | Low | lotto539 | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
+| 內容修正 | Low | contact | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
+| 外部連結 | Low | terms | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
+| 百家樂入門指南 | Low | beginner | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
+| 百家樂常見名詞 | Low | terminology | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
 | 百家樂第三張牌規則 | Low | rules | 理解補牌流程 | 可放在規則頁與術語頁，避免宣稱可預測結果。 |
-| 百家樂術語 | Low | terminology | 查詢遊戲名詞 | 適合建立術語頁與 FAQ 內部連結。 |
+| 百家樂術語 | Low | terminology | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
 | 百家樂規則 | Low | rules | 了解遊戲基本規則 | 可用於規則頁標題、導言與 FAQ。 |
 | 百家樂牌值計算 | Low | rules | 查詢牌面點數計算方式 | 適合用於規則頁的小節標題與 FAQ。 |
 | 百家樂新手教學 | Low | beginner | 新手入門學習 | 可用於新手頁 H1、摘要與內部連結錨點。 |
+| 服務條款 | Low | terms | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
+| 法定年齡提醒 | Low | responsible | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
+| 娛樂風險提醒 | Low | responsible | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
+| 球員傷兵狀態 | Low | sports | 理解賽前人員與傷兵資訊 | 可用於賽事頁欄位卡片與資料源說明。 |
+| 莊閒和說明 | Low | betting | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
+| 責任限制 | Low | terms | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
 | 責任娛樂 | Low | responsible | 了解風險與自我控管 | 應出現在首頁、頁尾、FAQ、條款與指南頁。 |
-| 百家樂下注流程 | Medium | betting-flow | 了解投注步驟與選項 | 可用於下注指南頁，但需加入結果不確定與量力而為提醒。 |
-| 莊閒和說明 | Medium | betting-flow | 比較常見投注選項 | 可作為表格或 FAQ 條目，不用於誇大 CTA。 |
+| 資料源串接 | Low | contact | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
+| 賽事研究 | Low | home | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
+| 賽事研究 FAQ | Low | faq | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
+| 賽號研究所 | Low | about | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
+| 隱私政策 | Low | privacy | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
+| 體育賽事研究 | Low | sports | 以研究角度閱讀賽程、球場與人員資訊 | 可用於賽事研究頁標題與內文，不使用投注承諾語氣。 |
+| GitHub Pages | Low | privacy | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
+| SEO 更新 | Low | contact | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
+| SEO 前導網站 | Low | about | 頁面主題相關資訊查詢 | 可用於內文、FAQ、標題或內部連結，並搭配責任提醒。 |
+| 次日賽事分析 | Medium | sports | 查詢隔日賽程與賽事研究欄位 | 可用於賽事研究頁，必須搭配資料來源與研究聲明。 |
+| 百家樂下注流程 | Medium | betting-flow | 了解投注步驟與選項 | 可用於流程頁，但需加入結果不確定與量力而為提醒。 |
 
 ## Excluded High-Risk Keywords
 
-- 百家樂勝率：High，高；容易被誤寫成收益或保證結果
-- 百家樂必勝法：Restricted，限制；涉及誤導性收益暗示
-- 博弈漏洞：Restricted，限制；可能涉及違規或非法行為
+- 百家樂勝率: High; 高；容易被誤寫成收益或保證結果
+- 百家樂必勝法: Restricted; 限制；涉及誤導性收益暗示
+- 博弈漏洞: Restricted; 限制；可能涉及違規或非法行為

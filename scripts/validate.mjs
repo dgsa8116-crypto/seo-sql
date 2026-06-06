@@ -9,6 +9,9 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const distDir = path.join(root, "dist");
 const requiredFiles = [
   "index.html",
+  "lotto539/index.html",
+  "lotto539/calculator/index.html",
+  "sports/index.html",
   "rules/index.html",
   "betting/index.html",
   "beginner/index.html",
@@ -28,6 +31,7 @@ const requiredFiles = [
   "assets/styles.css",
   "assets/app.js",
   "assets/config.js",
+  "assets/data/lotto539.json",
   "assets/images/urban-minimal-hero.png"
 ];
 
