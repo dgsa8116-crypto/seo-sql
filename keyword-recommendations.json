@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-06T17:24:50.390Z",
+  "generatedAt": "2026-06-06T17:48:53.083Z",
   "policy": "僅保留可用於一般內容閱讀與主題延伸的低敏感度詞組。",
   "recommended": [
     {
@@ -336,6 +336,38 @@
         "百家樂選項差異教學",
         "百家樂選項差異說明",
         "百家樂選項差異常見問題"
+      ]
+    },
+    {
+      "keyword": "估計勝率",
+      "language": "zh-Hant",
+      "category": "sports",
+      "searchIntent": "頁面主題相關資訊查詢",
+      "suggestedPageType": "文章型頁面",
+      "sensitivityLevel": "Low",
+      "complianceRisk": "需保持中性語氣，不使用保證結果或誇大收益文案。",
+      "recommendedUsage": "可用於內文、FAQ、標題或內部連結，並搭配責任提醒。",
+      "autoUseAllowed": true,
+      "relatedLongTailKeywords": [
+        "估計勝率教學",
+        "估計勝率說明",
+        "估計勝率常見問題"
+      ]
+    },
+    {
+      "keyword": "即將開賽賽事",
+      "language": "zh-Hant",
+      "category": "sports",
+      "searchIntent": "頁面主題相關資訊查詢",
+      "suggestedPageType": "文章型頁面",
+      "sensitivityLevel": "Low",
+      "complianceRisk": "需保持中性語氣，不使用保證結果或誇大收益文案。",
+      "recommendedUsage": "可用於內文、FAQ、標題或內部連結，並搭配責任提醒。",
+      "autoUseAllowed": true,
+      "relatedLongTailKeywords": [
+        "即將開賽賽事教學",
+        "即將開賽賽事說明",
+        "即將開賽賽事常見問題"
       ]
     },
     {

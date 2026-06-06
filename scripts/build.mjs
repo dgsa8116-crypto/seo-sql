@@ -513,7 +513,7 @@ function renderSportsResearch(prefix) {
   return `<section class="module-section sports-section" id="module-sports">
   <div class="module-head">
     <p class="eyebrow">Sports Research Board</p>
-    <h2>${escapeHtml(getSportsTargetDateLabel())} 次日賽事追蹤</h2>
+    <h2>最新準備開賽賽事追蹤</h2>
     <p>${escapeHtml(sportsResearchBoard.intro)}</p>
   </div>
   <div class="tracking-refresh" data-refresh-panel data-refresh-url="${escapeAttr(`${prefix}assets/data/sports-tracking.json`)}" data-refresh-seconds="${escapeAttr(sportsResearchBoard.updateEverySeconds)}">
@@ -530,6 +530,18 @@ function renderSportsResearch(prefix) {
       <strong><span data-refresh-countdown>${sportsResearchBoard.updateEverySeconds}</span> 秒</strong>
     </div>
   </div>
+  <div class="upcoming-match-shell">
+    <div class="section-subhead">
+      <div>
+        <p class="eyebrow">Upcoming Match Queue</p>
+        <h3>主客隊優劣與估計勝率</h3>
+      </div>
+      <p>依開賽接近度排序，比例為研究模型估算，賽前仍需確認先發、傷兵、天候與名單。</p>
+    </div>
+    <div class="upcoming-match-list" data-upcoming-match-list>
+      ${renderUpcomingMatchCards(sportsTrackingData.upcomingEvents)}
+    </div>
+  </div>
   <div class="sports-track-list" data-sports-track-list>
     ${sportsTrackingData.games.map(renderSportsTrackCard).join("")}
   </div>
@@ -544,6 +556,84 @@ function renderSportsResearch(prefix) {
       .join("")}
   </div>
 </section>`;
+}
+
+function renderUpcomingMatchCards(events = []) {
+  if (!Array.isArray(events) || !events.length) {
+    return `<article class="upcoming-match-card is-empty">
+      <strong>目前沒有可確認的即將開賽資料</strong>
+      <p>保留追蹤欄位，待公開賽程、人員與場地資料更新後再顯示。</p>
+    </article>`;
+  }
+
+  return events.map(renderUpcomingMatchCard).join("");
+}
+
+function renderUpcomingMatchCard(event) {
+  const probability = event.estimatedProbability || {};
+  const awayWin = clampPercent(probability.awayWin);
+  const homeWin = clampPercent(probability.homeWin);
+  const awayName = event.awayTeam || "客隊";
+  const homeName = event.homeTeam || "主隊";
+  const keyFactors = Array.isArray(event.keyFactors) ? event.keyFactors : [];
+
+  return `<article class="upcoming-match-card" data-upcoming-match-id="${escapeAttr(event.id || event.matchup || "")}">
+  <div class="match-card-top">
+    <span>${escapeHtml(event.league || "賽事")}</span>
+    <strong>${escapeHtml(event.status || "追蹤中")}</strong>
+  </div>
+  <h3>${escapeHtml(event.matchup || `${awayName} @ ${homeName}`)}</h3>
+  <div class="match-meta">
+    <span>${escapeHtml(event.time || "")}</span>
+    <span>${escapeHtml(event.venue || "")}</span>
+  </div>
+  <div class="match-probability" aria-label="研究模型估計勝率">
+    ${renderProbabilityBar(`客隊 ${awayName}`, awayWin)}
+    ${renderProbabilityBar(`主隊 ${homeName}`, homeWin)}
+  </div>
+  <div class="match-confidence">
+    <span>信心等級</span>
+    <strong>${escapeHtml(probability.confidence || "待確認")}</strong>
+  </div>
+  <p class="match-basis">${escapeHtml(probability.basis || "待賽前資料更新後重新估算。")}</p>
+  <div class="match-edge-grid">
+    ${renderMatchEdge(`客隊 ${awayName}`, event.away)}
+    ${renderMatchEdge(`主隊 ${homeName}`, event.home)}
+  </div>
+  ${
+    keyFactors.length
+      ? `<div class="match-factor-row">${keyFactors
+          .map((factor) => `<span>${escapeHtml(factor)}</span>`)
+          .join("")}</div>`
+      : ""
+  }
+  <p class="match-live-check"><b>賽前檢查</b>${escapeHtml(event.liveCheck || "確認公開賽程、名單與場地狀態。")}</p>
+  <p class="match-note">${escapeHtml(event.sourceNote || "資料依公開賽程整理。")} 估計勝率只供研究，不保證結果。</p>
+</article>`;
+}
+
+function renderProbabilityBar(label, value) {
+  return `<div class="probability-row" style="--prob: ${value}%">
+    <div>
+      <span>${escapeHtml(label)}</span>
+      <strong>${value}%</strong>
+    </div>
+    <i aria-hidden="true"></i>
+  </div>`;
+}
+
+function renderMatchEdge(label, edge = {}) {
+  return `<section class="match-edge-card">
+    <h4>${escapeHtml(label)}</h4>
+    <p><b>優勢</b>${escapeHtml(edge.strength || "待賽前資料更新。")}</p>
+    <p><b>劣勢</b>${escapeHtml(edge.weakness || "待賽前資料更新。")}</p>
+  </section>`;
+}
+
+function clampPercent(value) {
+  const number = Number(value);
+  if (!Number.isFinite(number)) return 50;
+  return Math.max(0, Math.min(100, Math.round(number)));
 }
 
 function renderSportsTrackCard(game) {
@@ -1050,6 +1140,7 @@ function buildSportsTrackingData() {
     targetDate: getSportsTargetDateIso(),
     targetLabel: getSportsTargetDateLabel(),
     refreshSeconds: sportsResearchBoard.updateEverySeconds,
+    upcomingEvents: sportsResearchBoard.upcomingEvents || [],
     games: sportsResearchBoard.games
   };
 }

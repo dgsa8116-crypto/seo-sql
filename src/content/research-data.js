@@ -39,8 +39,469 @@ export const fallbackLotto539Draws = [
 
 export const sportsResearchBoard = {
   intro:
-    "次日賽事以追蹤卡直接呈現。2026/06/08 已確認賽程會列出對戰、時間與研究重點；未排定的聯盟會明確標示休兵與下一輪追蹤點。",
+    "最新準備開賽的賽事會優先以逐場卡片呈現，直接看主客隊優劣、球場情況、人員變數與研究模型估計勝率；所有比例只供賽前研究，不保證結果。",
   updateEverySeconds: 75,
+  upcomingEvents: [
+    {
+      id: "nhl-20260607-car-vgk-g3",
+      league: "NHL",
+      status: "即將開賽",
+      time: "06/06 20:00 ET｜台灣 06/07 08:00",
+      matchup: "Carolina Hurricanes @ Vegas Golden Knights",
+      awayTeam: "Carolina Hurricanes",
+      homeTeam: "Vegas Golden Knights",
+      venue: "T-Mobile Arena｜Vegas 主場",
+      sourceNote: "NHL 公開賽程顯示 Stanley Cup Final Game 3 為 Carolina at Vegas。",
+      estimatedProbability: {
+        awayWin: 48,
+        homeWin: 52,
+        confidence: "中",
+        basis: "系列賽 1-1，Vegas 主場加成明顯；Carolina 整季防守與東區戰績較佳，差距不拉大。"
+      },
+      away: {
+        strength: "整季戰績與防守結構穩定，Game 2 延長賽扳平系列賽後士氣回升。",
+        weakness: "客場換位後最後變陣權在主隊，特別組與守門員負荷需賽前確認。"
+      },
+      home: {
+        strength: "回到主場後可掌握對位與換線節奏，前兩戰進攻產量仍具威脅。",
+        weakness: "Game 2 後段失守，若防區出球失誤增加會被 Carolina 前壓放大。"
+      },
+      keyFactors: ["先發守門員", "PP/PK 特別組", "最後變陣權", "傷兵與受限上場名單"],
+      liveCheck: "開賽前確認守門員、傷兵、特別組配置與主場冰面狀態。"
+    },
+    {
+      id: "npb-20260607-marines-giants",
+      league: "NPB",
+      status: "即將開賽",
+      time: "06/07 14:00 JST｜台灣 13:00",
+      matchup: "Chiba Lotte Marines @ Yomiuri Giants",
+      awayTeam: "Chiba Lotte Marines",
+      homeTeam: "Yomiuri Giants",
+      venue: "Tokyo Dome",
+      sourceNote: "NPB 2026/06/07 交流戰公開賽程。",
+      estimatedProbability: {
+        awayWin: 45,
+        homeWin: 55,
+        confidence: "中低",
+        basis: "東京巨蛋主場與屋內穩定環境給主隊小幅優勢；仍需等預告先發與登錄名單。"
+      },
+      away: {
+        strength: "客隊若能提高上壘與推進效率，可降低巨蛋長打環境造成的壓力。",
+        weakness: "客場面對主隊打線深度，牛棚後段若連投會提高失分風險。"
+      },
+      home: {
+        strength: "主場環境熟悉，長打與守備路線較好掌握。",
+        weakness: "若中心打線被壓制，後段得分可能過度依賴長打。"
+      },
+      keyFactors: ["預告先發", "屋內場打球飛行", "牛棚連投", "中心打線狀態"],
+      liveCheck: "賽前確認先發投手、登錄異動與打序。"
+    },
+    {
+      id: "npb-20260607-fighters-swallows",
+      league: "NPB",
+      status: "即將開賽",
+      time: "06/07 14:00 JST｜台灣 13:00",
+      matchup: "Hokkaido Nippon-Ham Fighters @ Tokyo Yakult Swallows",
+      awayTeam: "Hokkaido Nippon-Ham Fighters",
+      homeTeam: "Tokyo Yakult Swallows",
+      venue: "Jingu Stadium",
+      sourceNote: "NPB 2026/06/07 交流戰公開賽程。",
+      estimatedProbability: {
+        awayWin: 52,
+        homeWin: 48,
+        confidence: "低",
+        basis: "客隊近期攻守平衡略佔優，但神宮室外環境與風向會放大變數。"
+      },
+      away: {
+        strength: "若先發能吃局數，後段牛棚安排會更有彈性。",
+        weakness: "室外客場需要適應風向與外野落點，防守容錯較低。"
+      },
+      home: {
+        strength: "熟悉神宮場地與風向，短局數反擊能力不能忽視。",
+        weakness: "若先發控球不穩，容易讓客隊用上壘率累積壓力。"
+      },
+      keyFactors: ["神宮風向", "先發控球", "外野守備", "後段牛棚"],
+      liveCheck: "確認天候、風向、先發投手與先發打線。"
+    },
+    {
+      id: "npb-20260607-hawks-baystars",
+      league: "NPB",
+      status: "即將開賽",
+      time: "06/07 14:00 JST｜台灣 13:00",
+      matchup: "Fukuoka SoftBank Hawks @ Yokohama DeNA BayStars",
+      awayTeam: "Fukuoka SoftBank Hawks",
+      homeTeam: "Yokohama DeNA BayStars",
+      venue: "Yokohama Stadium",
+      sourceNote: "NPB 2026/06/07 交流戰公開賽程。",
+      estimatedProbability: {
+        awayWin: 54,
+        homeWin: 46,
+        confidence: "中低",
+        basis: "SoftBank 陣容深度給客隊小幅優勢；橫濱室外場需確認風向與先發。"
+      },
+      away: {
+        strength: "投打深度與後段輪替選擇較多，客場仍具壓制力。",
+        weakness: "旅行與室外場變數會影響守備落點與投手控球。"
+      },
+      home: {
+        strength: "主場打線若早段取得壘上壓力，可迫使客隊提早動用牛棚。",
+        weakness: "面對深度較好的客隊，後段牛棚抗壓會被放大檢視。"
+      },
+      keyFactors: ["橫濱風向", "先發局數", "代打深度", "牛棚序列"],
+      liveCheck: "賽前確認預告先發、登錄名單與天候。"
+    },
+    {
+      id: "kbo-20260607-eagles-giants",
+      league: "KBO",
+      status: "即將開賽",
+      time: "06/07 17:00 KST｜台灣 16:00",
+      matchup: "Hanwha Eagles @ Lotte Giants",
+      awayTeam: "Hanwha Eagles",
+      homeTeam: "Lotte Giants",
+      venue: "Busan-Sajik",
+      sourceNote: "MyKBO Stats 2026/06/07 公開賽程。",
+      estimatedProbability: {
+        awayWin: 49,
+        homeWin: 51,
+        confidence: "低",
+        basis: "兩隊前兩戰互有調整空間，主場 Lotte 只取得極小幅場地優勢。"
+      },
+      away: {
+        strength: "前段打線若能延續近期上壘，會讓主隊投手用球數升高。",
+        weakness: "客場牛棚若前兩戰消耗偏高，後段風險會上升。"
+      },
+      home: {
+        strength: "社稷主場熟悉度與應援氣氛有利於中後段追分。",
+        weakness: "若先發提早退場，牛棚承壓會讓勝率快速波動。"
+      },
+      keyFactors: ["先發投手", "牛棚可用性", "主場風向", "前兩戰消耗"],
+      liveCheck: "確認先發、牛棚連投名單與賽前天候。"
+    },
+    {
+      id: "kbo-20260607-wiz-landers",
+      league: "KBO",
+      status: "即將開賽",
+      time: "06/07 17:00 KST｜台灣 16:00",
+      matchup: "KT Wiz @ SSG Landers",
+      awayTeam: "KT Wiz",
+      homeTeam: "SSG Landers",
+      venue: "Incheon-Munhak",
+      sourceNote: "MyKBO Stats 2026/06/07 公開賽程。",
+      estimatedProbability: {
+        awayWin: 46,
+        homeWin: 54,
+        confidence: "中低",
+        basis: "SSG 主場與長打環境給主隊優勢；KT 若能壓低長打才有機會拉近。"
+      },
+      away: {
+        strength: "若先發控球穩定，可限制主隊長打串聯。",
+        weakness: "客場面對長打型環境，失投成本偏高。"
+      },
+      home: {
+        strength: "主場長打與中心打線威脅較高，能快速改變比數。",
+        weakness: "過度依賴長打時，低上壘局面會讓攻勢斷層。"
+      },
+      keyFactors: ["長打控制", "投手控球", "風向", "牛棚後段"],
+      liveCheck: "賽前確認登錄名單、先發與外野風向。"
+    },
+    {
+      id: "kbo-20260607-twins-dinos",
+      league: "KBO",
+      status: "即將開賽",
+      time: "06/07 17:00 KST｜台灣 16:00",
+      matchup: "LG Twins @ NC Dinos",
+      awayTeam: "LG Twins",
+      homeTeam: "NC Dinos",
+      venue: "Changwon NC Park",
+      sourceNote: "MyKBO Stats 2026/06/07 公開賽程。",
+      estimatedProbability: {
+        awayWin: 51,
+        homeWin: 49,
+        confidence: "低",
+        basis: "LG 團隊穩定度略好，但 Changwon 主場變數讓差距接近五五波。"
+      },
+      away: {
+        strength: "攻守平衡與比賽後段調度較穩，適合拉長局數。",
+        weakness: "若客場早段落後，追分會依賴中心打線即時回應。"
+      },
+      home: {
+        strength: "主場熟悉度與前段攻勢可壓迫客隊先發。",
+        weakness: "若守備失誤或牛棚控球不穩，會放大低分差風險。"
+      },
+      keyFactors: ["守備失誤", "先發局數", "中心打線", "牛棚控球"],
+      liveCheck: "確認先發投手、中心打線與天候。"
+    },
+    {
+      id: "kbo-20260607-lions-tigers",
+      league: "KBO",
+      status: "即將開賽",
+      time: "06/07 17:00 KST｜台灣 16:00",
+      matchup: "Samsung Lions @ Kia Tigers",
+      awayTeam: "Samsung Lions",
+      homeTeam: "Kia Tigers",
+      venue: "Gwangju-KIA Champions Field",
+      sourceNote: "MyKBO Stats 2026/06/07 公開賽程。",
+      estimatedProbability: {
+        awayWin: 47,
+        homeWin: 53,
+        confidence: "中低",
+        basis: "Kia 主場與近期對戰壓制給主隊小幅優勢，Samsung 仍可用長打翻盤。"
+      },
+      away: {
+        strength: "長打與攻擊爆發力足以在單局改變比數。",
+        weakness: "若先發投手被迫高用球數，牛棚壓力會提早出現。"
+      },
+      home: {
+        strength: "主場節奏、得分串聯與後段守備穩定性較有利。",
+        weakness: "若早段留下殘壘過多，會讓客隊長打威脅保留到後段。"
+      },
+      keyFactors: ["殘壘效率", "長打控制", "牛棚連投", "主場天候"],
+      liveCheck: "確認先發投手、休養名單與場地狀態。"
+    },
+    {
+      id: "kbo-20260607-heroes-bears",
+      league: "KBO",
+      status: "即將開賽",
+      time: "06/07 17:00 KST｜台灣 16:00",
+      matchup: "Kiwoom Heroes @ Doosan Bears",
+      awayTeam: "Kiwoom Heroes",
+      homeTeam: "Doosan Bears",
+      venue: "Seoul-Jamsil",
+      sourceNote: "MyKBO Stats 2026/06/07 公開賽程。",
+      estimatedProbability: {
+        awayWin: 43,
+        homeWin: 57,
+        confidence: "中",
+        basis: "Doosan 主場與近期對 Kiwoom 的壓制提高主隊估計勝率。"
+      },
+      away: {
+        strength: "若先發能壓低保送，仍能把比賽拖進低比分。",
+        weakness: "面對主隊連續壓迫時，打線與牛棚容錯較低。"
+      },
+      home: {
+        strength: "蠶室主場與近期對戰內容占優，守備與投手調度較穩。",
+        weakness: "若早段未能擴大比分，低比分會讓客隊保留追分空間。"
+      },
+      keyFactors: ["蠶室場地", "先發保送率", "後段守備", "近期對戰"],
+      liveCheck: "確認先發、牛棚可用性與天候。"
+    },
+    {
+      id: "cpbl-20260607-guardians-lions",
+      league: "CPBL",
+      status: "即將開賽",
+      time: "06/07 16:05 台灣時間",
+      matchup: "富邦悍將 @ 統一7-ELEVEn獅",
+      awayTeam: "富邦悍將",
+      homeTeam: "統一7-ELEVEn獅",
+      venue: "台北大巨蛋",
+      sourceNote: "2026 中職 6 月公開賽程。",
+      estimatedProbability: {
+        awayWin: 42,
+        homeWin: 58,
+        confidence: "中",
+        basis: "統一主場、室內穩定環境與近期交手內容給主隊較明顯優勢。"
+      },
+      away: {
+        strength: "若先發能有效壓制前段打線，仍有機會把比賽壓在低比分。",
+        weakness: "客場面對主隊打線深度，牛棚與守備容錯偏低。"
+      },
+      home: {
+        strength: "大巨蛋室內環境穩定，主場打線與守備節奏較容易維持。",
+        weakness: "若攻勢集中在少數局數，殘壘過多會讓比分拉不開。"
+      },
+      keyFactors: ["室內場", "先發投手", "守備失誤", "牛棚用量"],
+      liveCheck: "賽前確認先發投手、打序與登錄異動。"
+    },
+    {
+      id: "cpbl-20260607-dragons-hawks",
+      league: "CPBL",
+      status: "即將開賽",
+      time: "06/07 16:05 台灣時間",
+      matchup: "味全龍 @ 台鋼雄鷹",
+      awayTeam: "味全龍",
+      homeTeam: "台鋼雄鷹",
+      venue: "澄清湖",
+      sourceNote: "2026 中職 6 月公開賽程。",
+      estimatedProbability: {
+        awayWin: 54,
+        homeWin: 46,
+        confidence: "中低",
+        basis: "味全整體穩定度略高，但澄清湖室外天候與主場熟悉度讓差距縮小。"
+      },
+      away: {
+        strength: "攻守均衡與先發深度較好，適合用穩定局數累積優勢。",
+        weakness: "客場室外環境與南部天候會影響投手控球與外野處理。"
+      },
+      home: {
+        strength: "澄清湖主場熟悉度與年輕打線衝擊力可帶來變數。",
+        weakness: "若早段守備或投手控球失誤，容易讓客隊擴大局面。"
+      },
+      keyFactors: ["澄清湖天候", "先發控球", "外野守備", "年輕打線波動"],
+      liveCheck: "確認天候、風向、先發投手與登錄名單。"
+    },
+    {
+      id: "cpbl-20260607-monkeys-brothers",
+      league: "CPBL",
+      status: "即將開賽",
+      time: "06/07 17:05 台灣時間",
+      matchup: "樂天桃猿 @ 中信兄弟",
+      awayTeam: "樂天桃猿",
+      homeTeam: "中信兄弟",
+      venue: "洲際",
+      sourceNote: "2026 中職 6 月公開賽程。",
+      estimatedProbability: {
+        awayWin: 45,
+        homeWin: 55,
+        confidence: "中低",
+        basis: "洲際主場與後段調度給中信小幅優勢；樂天若前段打線串聯可拉回五五波。"
+      },
+      away: {
+        strength: "前段打線若能快速上壘，能迫使主隊提早動用牛棚。",
+        weakness: "客場防守與後段投手若不穩，容易被主隊用小分串聯。"
+      },
+      home: {
+        strength: "洲際主場熟悉度、守備站位與後段調度較有利。",
+        weakness: "若中心打線熄火，得分需要依賴短打與推進效率。"
+      },
+      keyFactors: ["洲際風向", "後段牛棚", "中心打線", "守備站位"],
+      liveCheck: "賽前確認先發打線、投手與場地風向。"
+    },
+    {
+      id: "mlb-20260607-pirates-braves",
+      league: "MLB",
+      status: "下一波開賽",
+      time: "06/07 13:35 EDT｜台灣 06/08 01:35",
+      matchup: "Pittsburgh Pirates @ Atlanta Braves",
+      awayTeam: "Pittsburgh Pirates",
+      homeTeam: "Atlanta Braves",
+      venue: "Atlanta 主場",
+      sourceNote: "06/07 MLB 公開賽程顯示 13:35 EDT 開賽。",
+      estimatedProbability: {
+        awayWin: 41,
+        homeWin: 59,
+        confidence: "中",
+        basis: "Atlanta 主場與整體打線深度給主隊優勢；仍需確認先發投手與天候。"
+      },
+      away: {
+        strength: "若先發能壓低長打，可把比賽留在低比分。",
+        weakness: "客場面對高火力打線，牛棚後段風險較高。"
+      },
+      home: {
+        strength: "主場打線深度與長打威脅較高，適合早段建立壓力。",
+        weakness: "若先發投手控球不穩，容易讓客隊用上壘率拖慢節奏。"
+      },
+      keyFactors: ["先發投手", "長打率", "天候", "牛棚連用"],
+      liveCheck: "開賽前 90 分鐘確認打線、先發投手與天候。"
+    },
+    {
+      id: "mlb-20260607-redsox-yankees",
+      league: "MLB",
+      status: "下一波開賽",
+      time: "06/07 13:35 EDT｜台灣 06/08 01:35",
+      matchup: "Boston Red Sox @ New York Yankees",
+      awayTeam: "Boston Red Sox",
+      homeTeam: "New York Yankees",
+      venue: "Yankee Stadium",
+      sourceNote: "06/07 MLB 公開賽程顯示 13:35 EDT 開賽。",
+      estimatedProbability: {
+        awayWin: 44,
+        homeWin: 56,
+        confidence: "中低",
+        basis: "Yankees 主場與長打環境小幅占優；同區對戰變數偏高。"
+      },
+      away: {
+        strength: "打線若能提高上壘與消耗用球數，可削弱主隊先發優勢。",
+        weakness: "Yankee Stadium 長打環境會提高投手失投成本。"
+      },
+      home: {
+        strength: "主場長打牆與中心打線威脅高，能快速拉開比分。",
+        weakness: "若追求長打過度，攻勢可能受三振與殘壘影響。"
+      },
+      keyFactors: ["左右打對位", "長打牆", "牛棚狀態", "同區熟悉度"],
+      liveCheck: "確認天候、風向、先發與打線。"
+    },
+    {
+      id: "mlb-20260607-whitesox-phillies",
+      league: "MLB",
+      status: "下一波開賽",
+      time: "06/07 13:35 EDT｜台灣 06/08 01:35",
+      matchup: "Chicago White Sox @ Philadelphia Phillies",
+      awayTeam: "Chicago White Sox",
+      homeTeam: "Philadelphia Phillies",
+      venue: "Philadelphia 主場",
+      sourceNote: "06/07 MLB 公開賽程顯示 13:35 EDT 開賽。",
+      estimatedProbability: {
+        awayWin: 39,
+        homeWin: 61,
+        confidence: "中",
+        basis: "Philadelphia 主場、打線深度與整體穩定性給主隊較大優勢。"
+      },
+      away: {
+        strength: "若投手能壓制前段打線，仍可利用低比分保留機會。",
+        weakness: "客場攻擊穩定性與後段牛棚深度需要賽前確認。"
+      },
+      home: {
+        strength: "主場打線壓迫與長打能力較高，能在前半場建立分差。",
+        weakness: "若早段殘壘過多，會讓客隊保留反打空間。"
+      },
+      keyFactors: ["前段打線", "長打率", "先發局數", "天候"],
+      liveCheck: "確認打線、先發投手與牛棚可用性。"
+    },
+    {
+      id: "mlb-20260607-mariners-tigers",
+      league: "MLB",
+      status: "下一波開賽",
+      time: "06/07 13:40 EDT｜台灣 06/08 01:40",
+      matchup: "Seattle Mariners @ Detroit Tigers",
+      awayTeam: "Seattle Mariners",
+      homeTeam: "Detroit Tigers",
+      venue: "Comerica Park",
+      sourceNote: "06/07 MLB 公開賽程顯示 13:40 EDT 開賽。",
+      estimatedProbability: {
+        awayWin: 49,
+        homeWin: 51,
+        confidence: "低",
+        basis: "兩隊差距接近，Detroit 主場只提供微幅優勢；先發投手公布後才會明顯移動。"
+      },
+      away: {
+        strength: "若先發壓制長打，客隊投手戰能力可拉近勝率。",
+        weakness: "旅行與早場節奏可能影響前段攻擊手感。"
+      },
+      home: {
+        strength: "主場外野空間與熟悉路線有利守備判斷。",
+        weakness: "若打線長打不足，得分會依賴連續安打。"
+      },
+      keyFactors: ["Comerica 外野", "先發投手", "旅行節奏", "長打控制"],
+      liveCheck: "賽前確認天候、風向與先發名單。"
+    },
+    {
+      id: "nba-20260608-spurs-knicks-g3",
+      league: "NBA",
+      status: "決賽下一場",
+      time: "06/08 20:30 ET｜台灣 06/09 08:30",
+      matchup: "San Antonio Spurs @ New York Knicks",
+      awayTeam: "San Antonio Spurs",
+      homeTeam: "New York Knicks",
+      venue: "Madison Square Garden",
+      sourceNote: "NBA Finals Game 3 公開賽程。",
+      estimatedProbability: {
+        awayWin: 43,
+        homeWin: 57,
+        confidence: "中",
+        basis: "Knicks 系列賽 2-0 領先且回到 MSG，主場與系列賽節奏給主隊優勢。"
+      },
+      away: {
+        strength: "Spurs 仍有高位防守與禁區牽制能力，若降低失誤可提高競爭力。",
+        weakness: "0-2 落後後客場壓力大，年輕輪替在 MSG 的穩定度需觀察。"
+      },
+      home: {
+        strength: "Knicks 回主場掌握節奏，前兩戰系列賽數據與籃板表現占優。",
+        weakness: "若犯規麻煩或外線失準，會讓 Spurs 用禁區優勢拉近。"
+      },
+      keyFactors: ["傷兵報告", "先發五人", "籃板", "失誤率", "主場噪音"],
+      liveCheck: "開賽前確認 injury report、先發五人與主要輪替。"
+    }
+  ],
   games: [
     {
       name: "MLB",

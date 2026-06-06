@@ -1201,6 +1201,287 @@ h1 {
   line-height: 1.35;
 }
 
+.upcoming-match-shell {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 1.1rem;
+}
+
+.section-subhead {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.section-subhead h3 {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 930;
+  line-height: 1.25;
+}
+
+.section-subhead p {
+  max-width: 560px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 720;
+  line-height: 1.65;
+}
+
+.upcoming-match-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 390px), 1fr));
+  gap: 1rem;
+}
+
+.upcoming-match-card {
+  min-width: 0;
+  overflow: hidden;
+  padding: 1.05rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 14px 34px rgba(22, 24, 29, 0.07);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.upcoming-match-card:hover {
+  border-color: rgba(185, 28, 28, 0.28);
+  box-shadow: 0 18px 38px rgba(22, 24, 29, 0.1);
+  transform: translateY(-2px);
+}
+
+.upcoming-match-card.is-empty {
+  grid-column: 1 / -1;
+  color: var(--muted);
+}
+
+.match-card-top,
+.match-meta,
+.match-confidence,
+.probability-row > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.match-card-top {
+  margin-bottom: 0.75rem;
+}
+
+.match-card-top span {
+  display: inline-flex;
+  min-height: 30px;
+  align-items: center;
+  padding: 0.28rem 0.6rem;
+  color: var(--accent-dark);
+  border: 1px solid rgba(185, 28, 28, 0.18);
+  border-radius: 999px;
+  background: var(--accent-soft);
+  font-family: var(--font-display);
+  font-size: 0.82rem;
+  font-weight: 930;
+}
+
+.match-card-top strong {
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+  font-weight: 930;
+  text-align: right;
+}
+
+.upcoming-match-card h3 {
+  margin: 0 0 0.65rem;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 1.18rem;
+  font-weight: 930;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.match-meta {
+  align-items: flex-start;
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.match-meta span {
+  min-width: 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 820;
+  line-height: 1.5;
+}
+
+.match-meta span:last-child {
+  text-align: right;
+}
+
+.match-probability {
+  display: grid;
+  gap: 0.65rem;
+  margin: 0 0 0.8rem;
+}
+
+.probability-row {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.probability-row span {
+  min-width: 0;
+  color: var(--ink-soft);
+  font-size: 0.86rem;
+  font-weight: 850;
+  overflow-wrap: anywhere;
+}
+
+.probability-row strong {
+  flex: 0 0 auto;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  font-weight: 930;
+}
+
+.probability-row i {
+  position: relative;
+  display: block;
+  height: 10px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: var(--surface-muted);
+}
+
+.probability-row i::before {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: var(--prob);
+  content: "";
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--accent-dark), var(--accent));
+}
+
+.match-confidence {
+  margin-bottom: 0.65rem;
+  padding: 0.6rem 0.7rem;
+  border: 1px solid rgba(22, 24, 29, 0.08);
+  border-radius: 8px;
+  background: rgba(247, 247, 243, 0.86);
+}
+
+.match-confidence span {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.match-confidence strong {
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-weight: 930;
+}
+
+.match-basis,
+.match-live-check,
+.match-note {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  font-weight: 720;
+  line-height: 1.7;
+}
+
+.match-basis {
+  margin-bottom: 0.8rem;
+}
+
+.match-edge-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 0.8rem;
+}
+
+.match-edge-card {
+  min-width: 0;
+  padding: 0.75rem;
+  border: 1px solid rgba(22, 24, 29, 0.1);
+  border-radius: 8px;
+  background: rgba(247, 247, 243, 0.72);
+}
+
+.match-edge-card h4 {
+  margin: 0 0 0.45rem;
+  color: var(--ink);
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 930;
+  line-height: 1.35;
+}
+
+.match-edge-card p {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr);
+  gap: 0.45rem;
+  margin: 0.35rem 0 0;
+  color: var(--ink-soft);
+  font-size: 0.86rem;
+  font-weight: 720;
+  line-height: 1.55;
+}
+
+.match-edge-card b,
+.match-live-check b {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 930;
+}
+
+.match-factor-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0 0 0.8rem;
+}
+
+.match-factor-row span {
+  display: inline-flex;
+  min-height: 28px;
+  align-items: center;
+  padding: 0.22rem 0.5rem;
+  color: var(--ink-soft);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: #fff;
+  font-size: 0.78rem;
+  font-weight: 850;
+}
+
+.match-live-check {
+  display: grid;
+  grid-template-columns: 70px minmax(0, 1fr);
+  gap: 0.5rem;
+  padding-top: 0.72rem;
+  border-top: 1px solid var(--line);
+}
+
+.match-note {
+  margin-top: 0.55rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+}
+
 .sports-track-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
@@ -1581,10 +1862,32 @@ h1 {
   .heat-grid,
   .sports-grid,
   .explain-grid,
+  .section-subhead,
+  .upcoming-match-list,
+  .match-edge-grid,
   .sports-track-list,
   .tracking-refresh,
   .rule-strip {
     grid-template-columns: 1fr;
+  }
+
+  .section-subhead,
+  .match-card-top,
+  .match-meta,
+  .match-confidence,
+  .probability-row > div {
+    display: grid;
+  }
+
+  .match-meta span:last-child,
+  .match-card-top strong {
+    text-align: left;
+  }
+
+  .match-live-check,
+  .match-edge-card p {
+    grid-template-columns: 1fr;
+    gap: 0.1rem;
   }
 
   .track-card-head {

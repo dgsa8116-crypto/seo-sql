@@ -72,6 +72,7 @@
         const data = await response.json();
         if (time && data.updatedAt) time.textContent = formatDateTime(data.updatedAt);
         if (state) state.textContent = "已更新";
+        if (Array.isArray(data.upcomingEvents)) updateUpcomingMatches(data.upcomingEvents);
         if (Array.isArray(data.games)) updateSportsCards(data.games);
       } catch {
         if (state) state.textContent = "保留現有資料";
@@ -150,6 +151,88 @@
 
   function renderResult(container, html) {
     container.innerHTML = html;
+  }
+
+  function updateUpcomingMatches(events) {
+    const list = document.querySelector("[data-upcoming-match-list]");
+    if (!list) return;
+    list.innerHTML = renderUpcomingMatchCards(events);
+  }
+
+  function renderUpcomingMatchCards(events) {
+    if (!Array.isArray(events) || !events.length) {
+      return `<article class="upcoming-match-card is-empty">
+        <strong>目前沒有可確認的即將開賽資料</strong>
+        <p>保留追蹤欄位，待公開賽程、人員與場地資料更新後再顯示。</p>
+      </article>`;
+    }
+
+    return events.map(renderUpcomingMatchCard).join("");
+  }
+
+  function renderUpcomingMatchCard(event) {
+    const probability = event.estimatedProbability || {};
+    const awayWin = clampPercent(probability.awayWin);
+    const homeWin = clampPercent(probability.homeWin);
+    const awayName = event.awayTeam || "客隊";
+    const homeName = event.homeTeam || "主隊";
+    const keyFactors = Array.isArray(event.keyFactors) ? event.keyFactors : [];
+
+    return `<article class="upcoming-match-card" data-upcoming-match-id="${escapeHtml(event.id || event.matchup || "")}">
+      <div class="match-card-top">
+        <span>${escapeHtml(event.league || "賽事")}</span>
+        <strong>${escapeHtml(event.status || "追蹤中")}</strong>
+      </div>
+      <h3>${escapeHtml(event.matchup || `${awayName} @ ${homeName}`)}</h3>
+      <div class="match-meta">
+        <span>${escapeHtml(event.time || "")}</span>
+        <span>${escapeHtml(event.venue || "")}</span>
+      </div>
+      <div class="match-probability" aria-label="研究模型估計勝率">
+        ${renderProbabilityBar(`客隊 ${awayName}`, awayWin)}
+        ${renderProbabilityBar(`主隊 ${homeName}`, homeWin)}
+      </div>
+      <div class="match-confidence">
+        <span>信心等級</span>
+        <strong>${escapeHtml(probability.confidence || "待確認")}</strong>
+      </div>
+      <p class="match-basis">${escapeHtml(probability.basis || "待賽前資料更新後重新估算。")}</p>
+      <div class="match-edge-grid">
+        ${renderMatchEdge(`客隊 ${awayName}`, event.away)}
+        ${renderMatchEdge(`主隊 ${homeName}`, event.home)}
+      </div>
+      ${
+        keyFactors.length
+          ? `<div class="match-factor-row">${keyFactors.map((factor) => `<span>${escapeHtml(factor)}</span>`).join("")}</div>`
+          : ""
+      }
+      <p class="match-live-check"><b>賽前檢查</b>${escapeHtml(event.liveCheck || "確認公開賽程、名單與場地狀態。")}</p>
+      <p class="match-note">${escapeHtml(event.sourceNote || "資料依公開賽程整理。")} 估計勝率只供研究，不保證結果。</p>
+    </article>`;
+  }
+
+  function renderProbabilityBar(label, value) {
+    return `<div class="probability-row" style="--prob: ${value}%">
+      <div>
+        <span>${escapeHtml(label)}</span>
+        <strong>${value}%</strong>
+      </div>
+      <i aria-hidden="true"></i>
+    </div>`;
+  }
+
+  function renderMatchEdge(label, edge = {}) {
+    return `<section class="match-edge-card">
+      <h4>${escapeHtml(label)}</h4>
+      <p><b>優勢</b>${escapeHtml(edge.strength || "待賽前資料更新。")}</p>
+      <p><b>劣勢</b>${escapeHtml(edge.weakness || "待賽前資料更新。")}</p>
+    </section>`;
+  }
+
+  function clampPercent(value) {
+    const number = Number(value);
+    if (!Number.isFinite(number)) return 50;
+    return Math.max(0, Math.min(100, Math.round(number)));
   }
 
   function updateSportsCards(games) {
